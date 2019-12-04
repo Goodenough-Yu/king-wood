@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="../../layui/css/layui.css">
 </head>
 <style>
+    body {
+        background-color: #EEEEEE;
+    }
     .layui-logo>a>img {
         display: inline-block;
         height: 30px;
@@ -30,24 +33,22 @@
                 </a>
             </div>
             <ul class="layui-nav layui-layout-left" lay-filter="page">
-                <li class="layui-nav-item"><a data-a="nav" href="#/page/user-setting.html">考试</a></li>
-                <li class="layui-nav-item"><a data-a="nav" href="#/page/user-password.html">成绩查询</a></li>
+                <li class="layui-nav-item"><a data-a="nav" href="#/page/exam-manage.html">考试安排</a></li>
+                <li class="layui-nav-item"><a data-a="nav" href="#/page/grade-query.html">成绩查询</a></li>
                 <li class="layui-nav-item"><a data-a="nav" href="">试题解析</a></li>
             </ul>
-            <ul class="layui-nav layui-layout-right">
+            <ul class="layui-nav layui-layout-right" lay-filter="dd">
                 <li class="layui-nav-item">
-                    <a href=""><img src="//t.cn/RCzsdCq" class="layui-nav-img">我</a>
+                    <a href=""><img src="//t.cn/RCzsdCq" class="layui-nav-img">我自己</a>
                     <dl class="layui-nav-child">
-                        <dd><a href="javascript:;">基本资料</a></dd>
-                        <dd><a href="#/page/user-password.html">修改密码</a></dd>
+                        <dd><a data-a="nav-dd" href="#/page/user-setting.html">基本资料</a></dd>
+                        <dd><a data-a="nav-dd" href="#/page/user-password.html">修改密码</a></dd>
                         <dd><a href="javascript:;">退出系统</a></dd>
                     </dl>
                 </li>
             </ul>
         </div>
-        <div class="layui-container">
-            123
-        </div>
+        <div class="layui-container"></div>
     </div>
 <script src="../../layui/layui.js"></script>
 <script>
@@ -58,6 +59,11 @@
 
         // 导航栏事件监听,实现单页应用
         element.on('nav(page)', function(elem){
+            var href = initHash(elem.context.href); // 解析#获取真实路径
+            initContainer(href);
+        });
+
+        element.on('nav(dd)', function(elem){
             var href = initHash(elem.context.href); // 解析#获取真实路径
             initContainer(href);
         });
@@ -84,7 +90,7 @@
             if (urlArr.length >= 2) { // 获取真实路径
                 return urlArr[0] + urlArr[1];
             } else { // 跳转其他
-                return null;
+                return urlArr[0] + 'page/welcome.html';
             }
         };
 

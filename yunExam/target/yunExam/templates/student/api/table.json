@@ -1,0 +1,37 @@
+{
+  "code": 0,
+  "msg": "",
+  "count": 15,
+  "data": [
+    {
+      "classId": 10000,
+      "course": "user-0",
+      "score": 100
+    },
+    {
+      "classId": 10000,
+      "course": "user-0",
+      "score": 100
+    },
+    {
+      "classId": 10000,
+      "course": "user-0",
+      "score": 100
+    },
+    {
+      "classId": 10000,
+      "course": "user-0",
+      "score": 100
+    },
+    {
+      "classId": 10000,
+      "course": "user-0",
+      "score": 100
+    },
+    {
+      "classId": 10000,
+      "course": "user-0",
+      "score": 100
+    }
+  ]
+}
