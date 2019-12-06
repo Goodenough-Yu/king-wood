@@ -7,37 +7,64 @@
     <legend>考试安排</legend>
 </fieldset>
 
-<div class="layui-card">
-    <div class="layui-card-header layui-row">
-        <div class="layui-col-md8"><h2>考试名称</h2></div>
-        <div class="layui-col-md4"><h3>所属科目</h3></div>
-    </div>
-    <div class="layui-card-body layui-row">
-        <div class="layui-col-md8">
-            <h3>2019/11/10---2019/11/10</h3>
-            <h3>考试时间：<span>120分钟</span></h3>
-        </div>
-        <div class="layui-col-md4">
-            <button type="button" class="layui-btn layui-btn-fluid">参加考试</button>
-        </div>
-    </div>
-</div>
+<!-- 模板引擎视图 -->
+<div id="view" class="layui-row layui-col-space10"></div>
 
-<div class="layui-card">
-    <div class="layui-card-header layui-row">
-        <div class="layui-col-md8"><h2>考试名称</h2></div>
-        <div class="layui-col-md4"><h3>所属科目</h3></div>
+<!-- 编写模板-->
+<script type="text/html" id="examManageTpl">
+    {{#  layui.each(d.list, function(index, item) {  }}
+    <div class="layui-col-md4">
+        <div class="layui-card">
+            <div class="layui-card-header layui-row">
+                <div class="layui-col-md6"><h3><strong>{{ item.name }}</strong></h3></div>
+                <div class="layui-col-md6"><h3>{{ item.project }}</h3></div>
+            </div>
+            <div class="layui-card-body layui-row">
+                <div class="layui-col-md9">
+                    {{ item.detail }}
+                </div>
+                <div class="layui-col-md3">
+                    <a type="button" href="page/paper.html?id={{ item.examId }}" class="layui-btn layui-btn-fluid" style="padding: inherit;">参加考试</a>
+                </div>
+                <div class="layui-col-md12">
+                    <h4>考试时间：<span>{{ item.duration }}</span></h4>
+                    <h4>{{ item.time }}</h4>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="layui-card-body layui-row">
-        <div class="layui-col-md8">
-            <h3>2019/11/10---2019/11/10</h3>
-            <h3>考试时间：<span>120分钟</span></h3>
-        </div>
-        <div class="layui-col-md4">
-            <button type="button" class="layui-btn layui-btn-fluid">参加考试</button>
-        </div>
-        <div class="layui-col-md12">
-            考试要求相关说明
-        </div>
-    </div>
-</div>
+
+    {{#  }); }}
+
+    {{#  if (d.list.length === 0) { }}
+        <div class="layui-col-md12">暂无考试安排</div>
+    {{#   } }}
+</script>
+
+<!-- 渲染模板-->
+<script>
+    layui.use(['laytpl', 'jquery', 'layer'], function () {
+        var laytpl = layui.laytpl
+            ,$ = layui.jquery
+            ,layer = layui.layer;
+
+        $.ajax({
+            url: 'api/laytpl.json',
+            method: 'get',
+            success: function (data) {
+                console.log(data)
+                // 模板渲染
+                var getTpl = examManageTpl.innerHTML
+                    , view = document.getElementById('view');
+                laytpl(getTpl).render(data, function (html) {
+                    view.innerHTML = html;
+                })
+            },
+            error: function (error) {
+                console.log(error)
+                layer.msg('数据接口有误!',{icon: 5, time: 2000})
+            }
+        })
+
+    })
+</script>
