@@ -75,7 +75,7 @@
 </div>
 
 <script src="../../lib/layui-v2.5.4/layui.js?v=1.0.4" charset="utf-8"></script>
-<script src="js/lay-config.js?v=1.0.4" charset="utf-8"></script>
+<script src="../../js/lay-config.js?v=1.0.4" charset="utf-8"></script>
 <script>
     layui.use(['element', 'layer', 'layuimini'], function () {
         var $ = layui.jquery,
@@ -86,7 +86,7 @@
 
         $('.login-out').on("click", function () {
             layer.msg('退出登录成功', function () {
-                window.location = '/page/login-1.html';
+                window.location = '/login.html';
             });
         });
     });

@@ -9,7 +9,7 @@
   },
   "logoInfo": {
     "title": "后台管理",
-    "image": "images/logo.png",
+    "image": "../../images/logo.png",
     "href": ""
   },
   "menuInfo": {
