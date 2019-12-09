@@ -47,4 +47,30 @@ public class PaperSoluDaoImpl implements PaperSoluDao {
 
         return paperSolutions;
     }
+
+    @Override
+    public boolean UpdatePaperSolu(PaperSolution PS) {
+        String sql = "update paper_solution set PSscore = ? where Sid = ? and PIid = ? and QBid = ?";
+        Object[] params ={PS.getPsscore(),PS.getSid(),PS.getPiid(),PS.getQbid()};
+        return baseDao.executeUpdate(sql,params);
+    }
+
+    @Override
+    public List<Integer> FindPaperSoluBysid(int sid) throws SQLException {
+        Connection con = null;
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+        List<Integer> piids = new ArrayList<Integer>();
+
+        con = BaseDao.getConnection();
+        pstmt = con.prepareStatement("select PIid from paper_solution where Sid = ?");
+        pstmt.setInt(1, sid);
+        rs = pstmt.executeQuery();
+
+        while (rs.next()){
+            piids.add(rs.getInt("PIid"));
+        }
+
+        return piids;
+    }
 }
