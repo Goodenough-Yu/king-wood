@@ -1,8 +1,12 @@
 package com.yunexam.service;
 
+import com.yunexam.domain.PaperSolution;
+
+import java.util.List;
+
 public interface PaperSoluService {
-    int InsertSolution(int piid,int sid,int qbid,int[] solu); // 根据试卷id，学生id，题目id将答案存入paper_solution表
+    int InsertSolution(List<PaperSolution> paperSolutions); // 将答案存入paper_solution表
     boolean ReviewSolution(int piid,int sid); // 阅卷
-    int[] FindSolution(int piid,int sid); // 根据piid，sid在paper_solution表中返回qbid（数组）
-    int FindAllPaper(int sid); // 返回sid的所有piid
+    List<PaperSolution> FindSolution(int piid,int sid); // 根据piid，sid在paper_solution表中返回
+    List<Integer> FindAllPaper(int sid); // 返回sid的所有piid
 }

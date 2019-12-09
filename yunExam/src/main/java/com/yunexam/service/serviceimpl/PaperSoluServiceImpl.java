@@ -1,25 +1,29 @@
 package com.yunexam.service.serviceimpl;
 
-import com.yunexam.service.PaperInfoService;
+import com.yunexam.domain.PaperSolution;
+import com.yunexam.service.PaperSoluService;
 
-public class PaperSoluServiceImpl implements PaperInfoService {
+import java.util.List;
+
+public class PaperSoluServiceImpl implements PaperSoluService {
+
     @Override
-    public int CreatePaper(int eiid) {
+    public int InsertSolution(List<PaperSolution> paperSolutions) {
         return 0;
     }
 
     @Override
-    public int[] FindPaper(int piid) {
-        return new int[0];
+    public boolean ReviewSolution(int piid, int sid) {
+        return false;
     }
 
     @Override
-    public int[] InsertQuestion(int piid) {
-        return new int[0];
+    public List<PaperSolution> FindSolution(int piid, int sid) {
+        return null;
     }
 
     @Override
-    public int[] FindQusetion(int piid) {
-        return new int[0];
+    public List<Integer> FindAllPaper(int sid) {
+        return null;
     }
 }

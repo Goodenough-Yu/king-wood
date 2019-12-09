@@ -10,7 +10,7 @@ import java.util.List;
 
 public class QuesBankDaoImpl implements QuesBankDao {
 
-    BaseDao baseDao = new BaseDao();
+    private BaseDao baseDao = new BaseDao();
 
     @Override
     public boolean AddQuesBank(QuestionBank QB) {

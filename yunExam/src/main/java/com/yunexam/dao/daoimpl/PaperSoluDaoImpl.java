@@ -5,10 +5,12 @@ import com.yunexam.dao.PaperSoluDao;
 import com.yunexam.domain.PaperSolution;
 
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class PaperSoluDaoImpl implements PaperSoluDao {
 
-    BaseDao baseDao = new BaseDao();
+    private BaseDao baseDao = new BaseDao();
 
     @Override
     public boolean AddPaperSolu(PaperSolution PS) {
@@ -18,10 +20,11 @@ public class PaperSoluDaoImpl implements PaperSoluDao {
     }
 
     @Override
-    public PaperSolution FindPaperSolu(int piid, int sid) throws SQLException {
+    public List<PaperSolution> FindPaperSolu(int piid, int sid) throws SQLException {
         Connection con = null;
         PreparedStatement pstmt = null;
         ResultSet rs = null;
+        List<PaperSolution> paperSolutions = new ArrayList<PaperSolution>();
         PaperSolution PS = null;
 
         con = BaseDao.getConnection();
@@ -37,10 +40,11 @@ public class PaperSoluDaoImpl implements PaperSoluDao {
             PS.setQbid(rs.getInt("QBid"));
             PS.setSolution(rs.getString("solution"));
             PS.setPsscore(rs.getFloat("PSscore"));
+            paperSolutions.add(PS);
         }
 
         baseDao.closeAll(rs,pstmt,con);
 
-        return PS;
+        return paperSolutions;
     }
 }

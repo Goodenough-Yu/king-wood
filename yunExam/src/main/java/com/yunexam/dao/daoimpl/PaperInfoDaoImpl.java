@@ -12,8 +12,8 @@ public class PaperInfoDaoImpl implements PaperInfoDao {
 
     @Override
     public boolean AddPaperInfo(PaperInformation PI) {
-        String sql = "INSERT INTO paper_information(EIid,total_score,total_time) values(?,?,?)";
-        Object[] params ={PI.getEiid(),PI.getTotal_score(),PI.getTotal_time()};
+        String sql = "INSERT INTO paper_information(PIid,EIid,total_score,total_time) values(?,?,?,?)";
+        Object[] params ={PI.getPiid(),PI.getEiid(),PI.getTotal_score(),PI.getTotal_time()};
         return baseDao.executeUpdate(sql,params);
     }
 

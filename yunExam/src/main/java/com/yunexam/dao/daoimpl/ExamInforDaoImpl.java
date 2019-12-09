@@ -3,7 +3,6 @@ package com.yunexam.dao.daoimpl;
 import com.yunexam.dao.BaseDao;
 import com.yunexam.dao.ExamInforDao;
 import com.yunexam.domain.ExamInformation;
-import com.yunexam.domain.PaperInformation;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -12,7 +11,7 @@ import java.sql.SQLException;
 
 public class ExamInforDaoImpl implements ExamInforDao {
 
-    BaseDao baseDao = new BaseDao();
+    private BaseDao baseDao = new BaseDao();
 
     @Override
     public boolean AddExamInfo(ExamInformation EI) {
