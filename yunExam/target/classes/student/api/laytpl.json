@@ -1,0 +1,51 @@
+{
+  "list": [
+    {
+      "name": "弹层"
+      ,"project": "layer"
+      ,"time": "2019/11/10---2019/11/10"
+      ,"duration": "120分钟"
+      ,"detail": "考试信息相关说明"
+      ,"examId": 1
+    }
+  ,{
+      "name": "弹层"
+      ,"project": "layer"
+      ,"time": "2019/11/10---2019/11/10"
+      ,"duration": "120分钟"
+      ,"detail": "考试信息相关说明"
+      ,"examId": 2
+    }
+  ,{
+      "name": "弹层"
+      ,"project": "layer"
+      ,"time": "2019/11/10---2019/11/10"
+      ,"duration": "120分钟"
+      ,"detail": "考试信息相关说明"
+      ,"examId": 3
+    },
+    {
+      "name": "弹层"
+      ,"project": "layer"
+      ,"time": "2019/11/10---2019/11/10"
+      ,"duration": "120分钟"
+      ,"detail": "考试信息相关说明"
+      ,"examId": 4
+    },
+    {
+      "name": "弹层"
+      ,"project": "layer"
+      ,"time": "2019/11/10---2019/11/10"
+      ,"duration": "120分钟"
+      ,"detail": "考试信息相关说明"
+      ,"examId": 5
+    },{
+      "name": "弹层"
+      ,"project": "layer"
+      ,"time": "2019/11/10---2019/11/10"
+      ,"duration": "120分钟"
+      ,"detail": "考试信息相关说明"
+      ,"examId": 1
+    }
+  ]
+}
