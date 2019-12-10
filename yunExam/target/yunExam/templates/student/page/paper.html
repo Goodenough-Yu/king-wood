@@ -150,8 +150,10 @@
 
         // 渲染模板
         $.ajax({
-            url: '../api/topic.json',
+            url: '/templates/student/page/paper',
             method: 'get',
+            contentType: 'application/json;charset=utf-8',
+            dataType: 'json',
             success: function (data) {
                 console.log(data)
                 // 模板渲染
