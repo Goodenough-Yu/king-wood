@@ -12,7 +12,9 @@
           http://www.springframework.org/schema/context/spring-context.xsd">
 
     <!-- 配置spring创建容器时要扫描的包 -->
-    <context:component-scan base-package="com.yunexam"></context:component-scan>
+    <context:component-scan base-package="com.yunexam">
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"></context:include-filter>
+    </context:component-scan>
 
     <!-- 配置视图解析器 -->
     <bean id="viewResolver"
@@ -21,6 +23,11 @@
         <property name="suffix" value=".html"></property>    <!-- 文件后缀 -->
     </bean>
 
+    <!--  过滤静态资源  -->
+    <mvc:resources location="/css/" mapping="/css/**"/>
+    <mvc:resources location="/images" mapping="/images/**"/>
+    <mvc:resources location="/js" mapping="/js/**"/>
+
     <!-- 配置spring开启注解mvc的支持-->
-    <mvc:annotation-driven></mvc:annotation-driven>
+    <mvc:annotation-driven/>
 </beans>
