@@ -78,15 +78,15 @@
     </dependency>
 
     <dependency>
-      <groupId>spring-aop</groupId>
+      <groupId>org.springframework</groupId>
       <artifactId>spring-aop</artifactId>
-      <version>4.1.6</version>
+      <version>${spring.version}</version>
     </dependency>
 
     <dependency>
-      <groupId>com.fasterxml.jackson</groupId>
-      <artifactId>com.fasterxml.jackson</artifactId>
-      <version>1.9.11</version>
+      <groupId>org.springframework</groupId>
+      <artifactId>jackson</artifactId>
+      <version>${spring.version}</version>
     </dependency>
   </dependencies>
 
