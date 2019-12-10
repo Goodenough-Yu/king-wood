@@ -1,22 +1,27 @@
 package com.yunexam.service.serviceimpl;
 
+import com.yunexam.domain.PaperSolution;
+import com.yunexam.domain.QuestionBank;
 import com.yunexam.dao.PaperSoluDao;
 import com.yunexam.dao.QuesBankDao;
 import com.yunexam.dao.daoimpl.PaperSoluDaoImpl;
 import com.yunexam.dao.daoimpl.QuesBankDaoImpl;
-import com.yunexam.domain.PaperSolution;
-import com.yunexam.domain.QuestionBank;
 import com.yunexam.service.PaperSoluService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+@Service
 public class PaperSoluServiceImpl implements PaperSoluService {
+
+    @Autowired
+    PaperSoluDao paperSoluDao;
 
     @Override
     public boolean InsertSolution(List<PaperSolution> paperSolutions, int piid, int sid, int qbid) {
-        PaperSoluDao paperSoluDao = new PaperSoluDaoImpl();
         PaperSolution PS = new PaperSolution();
         PS.setPiid(piid);
         PS.setSid(sid);
@@ -31,7 +36,6 @@ public class PaperSoluServiceImpl implements PaperSoluService {
 
     @Override
     public boolean ReviewSolution(int piid, int sid) throws SQLException {
-        PaperSoluDao paperSoluDao = new PaperSoluDaoImpl();
         List<PaperSolution> paperSolutions = new ArrayList<PaperSolution>();
         paperSolutions = paperSoluDao.FindPaperSolu(piid,sid);
         PaperSolution PS = new PaperSolution();
@@ -61,7 +65,6 @@ public class PaperSoluServiceImpl implements PaperSoluService {
     @Override
     public List<PaperSolution> FindSolution(int piid, int sid) throws SQLException {
         List<PaperSolution> paperSolutions = new ArrayList<PaperSolution>();
-        PaperSoluDao paperSoluDao = new PaperSoluDaoImpl();
         paperSolutions = paperSoluDao.FindPaperSolu(piid, sid);
         return paperSolutions;
     }
