@@ -1,0 +1,70 @@
+<style>
+    .layui-card {
+        margin-top: 15px;
+    }
+</style>
+<fieldset class="layui-elem-field layui-field-title" style="margin-top: 8%;">
+    <legend>考试安排</legend>
+</fieldset>
+
+<!-- 模板引擎视图 -->
+<div id="view" class="layui-row layui-col-space10"></div>
+
+<!-- 编写模板-->
+<script type="text/html" id="examManageTpl">
+    {{#  layui.each(d.list, function(index, item) {  }}
+    <div class="layui-col-md4">
+        <div class="layui-card">
+            <div class="layui-card-header layui-row">
+                <div class="layui-col-md6"><h3><strong>{{ item.name }}</strong></h3></div>
+                <div class="layui-col-md6"><h3>{{ item.project }}</h3></div>
+            </div>
+            <div class="layui-card-body layui-row">
+                <div class="layui-col-md9">
+                    {{ item.detail }}
+                </div>
+                <div class="layui-col-md3">
+                    <a type="button" href="page/paper.html?id={{ item.examId }}" class="layui-btn layui-btn-fluid" style="padding: inherit;">参加考试</a>
+                </div>
+                <div class="layui-col-md12">
+                    <h4>考试时间：<span>{{ item.duration }}</span></h4>
+                    <h4>{{ item.time }}</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{#  }); }}
+
+    {{#  if (d.list.length === 0) { }}
+        <div class="layui-col-md12">暂无考试安排</div>
+    {{#   } }}
+</script>
+
+<!-- 渲染模板-->
+<script>
+    layui.use(['laytpl', 'jquery', 'layer'], function () {
+        var laytpl = layui.laytpl
+            ,$ = layui.jquery
+            ,layer = layui.layer;
+
+        $.ajax({
+            url: 'api/laytpl.json',
+            method: 'get',
+            success: function (data) {
+                console.log(data)
+                // 模板渲染
+                var getTpl = examManageTpl.innerHTML
+                    , view = document.getElementById('view');
+                laytpl(getTpl).render(data, function (html) {
+                    view.innerHTML = html;
+                })
+            },
+            error: function (error) {
+                console.log(error)
+                layer.msg('数据接口有误!',{icon: 5, time: 2000})
+            }
+        })
+
+    })
+</script>
