@@ -1,15 +1,18 @@
 package com.yunexam.dao;
 
+import org.springframework.stereotype.Repository;
+
 import java.sql.*;
 
+@Repository
 public class BaseDao {
 
     // 获取数据库连接
     public static Connection getConnection() {
-        String driverClassName = "com.mysql.jdbc.Driver";
+        String driverClassName = "com.mysql.cj.jdbc.Driver";
         String url = "jdbc:mysql://localhost:3306/examonlinesystem?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT";
         String username = "root";
-        String password = "Aa1230321";
+        String password = "hsy98106";
 
         Connection con = null;
 

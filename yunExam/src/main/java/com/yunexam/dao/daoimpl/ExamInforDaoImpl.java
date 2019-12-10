@@ -1,9 +1,10 @@
 package com.yunexam.dao.daoimpl;
 
+import com.yunexam.domain.ExamInformation;
 import com.yunexam.dao.BaseDao;
 import com.yunexam.dao.ExamInforDao;
-import com.yunexam.domain.ExamInformation;
-import com.yunexam.domain.PaperQuestion;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -12,9 +13,11 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+@Repository
 public class ExamInforDaoImpl implements ExamInforDao {
 
-    private BaseDao baseDao = new BaseDao();
+    @Autowired
+    private BaseDao baseDao;
 
     @Override
     public boolean AddExamInfo(ExamInformation EI) {

@@ -1,22 +1,39 @@
 package com.yunexam.service.serviceimpl;
 
+import com.yunexam.domain.PaperInformation;
+import com.yunexam.domain.QuestionBank;
 import com.yunexam.dao.*;
+import com.yunexam.dao.ExamInforDao;
+import com.yunexam.dao.PaperInfoDao;
+import com.yunexam.dao.PaperQuesDao;
+import com.yunexam.dao.QuesBankDao;
 import com.yunexam.dao.daoimpl.ExamInforDaoImpl;
 import com.yunexam.dao.daoimpl.PaperInfoDaoImpl;
 import com.yunexam.dao.daoimpl.PaperQuesDaoImpl;
 import com.yunexam.dao.daoimpl.QuesBankDaoImpl;
 import com.yunexam.domain.ExamInformation;
-import com.yunexam.domain.PaperInformation;
 import com.yunexam.domain.PaperQuestion;
-import com.yunexam.domain.QuestionBank;
 import com.yunexam.service.PaperInfoService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+@Service
 public class PaperInfoServiceImpl implements PaperInfoService {
+
+    @Autowired
+    private PaperInfoDao paperInfoDao;
+    @Autowired
+    private ExamInforDao examInforDao;
+    @Autowired
+    private QuesBankDao quesBankDao;
+    @Autowired
+    private PaperQuesDao paperQuesDao;
+
     @Override
     public int CreatePaper(int eiid){
         PaperInformation PI_put = new PaperInformation();
@@ -26,7 +43,6 @@ public class PaperInfoServiceImpl implements PaperInfoService {
         PI_put.setTotal_time(120);
         PI_put.setTotal_score(100);
 
-        PaperInfoDao paperInfoDao = new PaperInfoDaoImpl();
         paperInfoDao.AddPaperInfo(PI_put);
 
         return n;
@@ -34,25 +50,21 @@ public class PaperInfoServiceImpl implements PaperInfoService {
 
     @Override
     public List<Integer> InsertQuestion(int piid) throws SQLException {
+        PaperQuestion PQ = new PaperQuestion();
         //获取eiid
-        PaperInfoDao paperInfoDao = new PaperInfoDaoImpl();
         PaperInformation PI = paperInfoDao.FindPaperInfoBypiid(piid);
         int eiid = PI.getEiid();
 
         //获取cid
-        ExamInforDao examInforDao = new ExamInforDaoImpl();
         ExamInformation examInformation = examInforDao.FindExamInfoByeiid(eiid);
         int cid = examInformation.getCid();
 
         //获取各难度qbid
-        QuesBankDao quesBankDao = new QuesBankDaoImpl();
         List<Integer> qbid_degree_1 = quesBankDao.FindQuestion(cid,1,1);
         List<Integer> qbid_degree_2 = quesBankDao.FindQuestion(cid,1,2);
         List<Integer> qbid_degree_3 = quesBankDao.FindQuestion(cid,1,3);
 
         //生成改试卷的piid
-        PaperQuesDao paperQuesDao = new PaperQuesDaoImpl();
-        PaperQuestion PQ = new PaperQuestion();
         PQ.setPiid(piid);
         PQ.setPq_score(10);
 
@@ -87,11 +99,9 @@ public class PaperInfoServiceImpl implements PaperInfoService {
 
     @Override
     public List<QuestionBank> FindQusetion(int piid) throws SQLException {
-        PaperQuesDao paperQuesDao = new PaperQuesDaoImpl();
         List<PaperQuestion> paperQuestions = paperQuesDao.FindPaperQues(piid);
         int qbid;
         List<QuestionBank> questionBanks = new ArrayList<QuestionBank>();
-        QuesBankDao quesBankDao = new QuesBankDaoImpl();
         for(int i = 0;i<paperQuestions.size();i++){
             qbid = paperQuestions.get(i).getQbid();
             questionBanks.add(quesBankDao.FindQuesBankByqbid(qbid));

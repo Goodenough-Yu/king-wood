@@ -1,5 +1,7 @@
 package com.yunexam.domain;
 
+import org.springframework.context.annotation.Bean;
+
 import java.util.Date;
 
 public class ExamInformation {

@@ -1,14 +1,18 @@
 package com.yunexam.dao.daoimpl;
 
+import com.yunexam.domain.PaperInformation;
 import com.yunexam.dao.BaseDao;
 import com.yunexam.dao.PaperInfoDao;
-import com.yunexam.domain.PaperInformation;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 import java.sql.*;
 
+@Repository
 public class PaperInfoDaoImpl implements PaperInfoDao {
 
-    private BaseDao baseDao = new BaseDao();
+    @Autowired
+    private BaseDao baseDao;
 
     @Override
     public boolean AddPaperInfo(PaperInformation PI) {
