@@ -1,13 +1,16 @@
 package com.yunexam.dao;
 
+import org.springframework.stereotype.Repository;
+
 import java.sql.*;
 
+@Repository
 public class BaseDao {
 
     // 获取数据库连接
-    public Connection getConnection() {
-        String driverClassName = "com.mysql.jdbc.Driver";
-        String url = "jdbc:mysql://localhost:3306/javaexam";
+    public static Connection getConnection() {
+        String driverClassName = "com.mysql.cj.jdbc.Driver";
+        String url = "jdbc:mysql://localhost:3306/examonlinesystem?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT";
         String username = "root";
         String password = "hsy98106";
 
@@ -29,7 +32,7 @@ public class BaseDao {
     }
 
     // 完成 DML 操作：insert，delete，update
-    public int executeUpdate(String sql, Object[] params) {
+    public boolean executeUpdate(String sql, Object[] params) {
         Connection con = null;
         PreparedStatement pstmt = null;
         int n = 0;
@@ -51,7 +54,12 @@ public class BaseDao {
             // 关闭资源
             this.closeAll(null, pstmt, con);
         }
-        return n;
+        if(n==0){
+            return false;
+        }
+        else{
+            return true;
+        }
     }
 
     // 关闭资源
