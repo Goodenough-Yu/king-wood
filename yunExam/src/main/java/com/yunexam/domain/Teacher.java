@@ -4,7 +4,7 @@ public class Teacher {
     private int tid; // 教师id
     private String tname; // 教师姓名
     private String tpwd; // 密码
-    private int tmobile; // 手机号
+    private String tmobile; // 手机号
 
     public int getTid() {
         return tid;
@@ -30,11 +30,11 @@ public class Teacher {
         this.tpwd = tpwd;
     }
 
-    public int getTmobile() {
+    public String getTmobile() {
         return tmobile;
     }
 
-    public void setTmobile(int tmobile) {
+    public void setTmobile(String tmobile) {
         this.tmobile = tmobile;
     }
 }

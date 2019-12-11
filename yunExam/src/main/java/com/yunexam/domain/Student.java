@@ -5,7 +5,7 @@ public class Student {
     private String sname; // 学生姓名
     private String spwd; // 密码
     private String subject; // 专业
-    private int smobile; // 手机
+    private String smobile; // 手机
 
     public int getSid() {
         return sid;
@@ -39,11 +39,11 @@ public class Student {
         this.subject = subject;
     }
 
-    public int getSmobile() {
+    public String getSmobile() {
         return smobile;
     }
 
-    public void setSmobile(int smobile) {
+    public void setSmobile(String smobile) {
         this.smobile = smobile;
     }
 }
