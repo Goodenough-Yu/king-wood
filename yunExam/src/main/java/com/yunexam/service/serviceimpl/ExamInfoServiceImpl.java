@@ -1,9 +1,11 @@
 package com.yunexam.service.serviceimpl;
 
 import com.yunexam.dao.ExamInforDao;
+import com.yunexam.dao.daoimpl.ExamInforDaoImpl;
 import com.yunexam.domain.ExamInformation;
 import com.yunexam.service.ExamInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 
 import java.sql.SQLException;

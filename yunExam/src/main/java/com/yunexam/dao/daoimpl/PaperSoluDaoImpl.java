@@ -1,20 +1,19 @@
 package com.yunexam.dao.daoimpl;
 
-import com.yunexam.domain.PaperSolution;
 import com.yunexam.dao.BaseDao;
 import com.yunexam.dao.PaperSoluDao;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Repository;
+import com.yunexam.domain.PaperSolution;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-@Repository
 public class PaperSoluDaoImpl implements PaperSoluDao {
 
-    @Autowired
-    private BaseDao baseDao;
+    private BaseDao baseDao = new BaseDao();
 
     @Override
     public boolean AddPaperSolu(PaperSolution PS) {

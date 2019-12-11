@@ -1,12 +1,15 @@
 package com.yunexam.dao.daoimpl;
 
-import com.yunexam.domain.QuestionBank;
 import com.yunexam.dao.BaseDao;
 import com.yunexam.dao.QuesBankDao;
+import com.yunexam.domain.QuestionBank;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,7 +17,7 @@ import java.util.List;
 public class QuesBankDaoImpl implements QuesBankDao {
 
     @Autowired
-    private BaseDao baseDao;
+    BaseDao baseDao;
 
     @Override
     public boolean AddQuesBank(QuestionBank QB) {

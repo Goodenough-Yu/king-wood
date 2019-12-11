@@ -1,8 +1,5 @@
 package com.yunexam.service.serviceimpl;
 
-import com.yunexam.domain.PaperInformation;
-import com.yunexam.domain.QuestionBank;
-import com.yunexam.dao.*;
 import com.yunexam.dao.ExamInforDao;
 import com.yunexam.dao.PaperInfoDao;
 import com.yunexam.dao.PaperQuesDao;
@@ -12,9 +9,12 @@ import com.yunexam.dao.daoimpl.PaperInfoDaoImpl;
 import com.yunexam.dao.daoimpl.PaperQuesDaoImpl;
 import com.yunexam.dao.daoimpl.QuesBankDaoImpl;
 import com.yunexam.domain.ExamInformation;
+import com.yunexam.domain.PaperInformation;
 import com.yunexam.domain.PaperQuestion;
+import com.yunexam.domain.QuestionBank;
 import com.yunexam.service.PaperInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 
 import java.sql.SQLException;
@@ -26,13 +26,10 @@ import java.util.List;
 public class PaperInfoServiceImpl implements PaperInfoService {
 
     @Autowired
-    private PaperInfoDao paperInfoDao;
-    @Autowired
-    private ExamInforDao examInforDao;
-    @Autowired
-    private QuesBankDao quesBankDao;
-    @Autowired
-    private PaperQuesDao paperQuesDao;
+    PaperInfoDao paperInfoDao;
+    ExamInforDao examInforDao;
+    QuesBankDao quesBankDao;
+    PaperQuesDao paperQuesDao;
 
     @Override
     public int CreatePaper(int eiid){
@@ -50,14 +47,15 @@ public class PaperInfoServiceImpl implements PaperInfoService {
 
     @Override
     public List<Integer> InsertQuestion(int piid) throws SQLException {
-        PaperQuestion PQ = new PaperQuestion();
         //获取eiid
         PaperInformation PI = paperInfoDao.FindPaperInfoBypiid(piid);
         int eiid = PI.getEiid();
+        System.out.println("eiid "+eiid);
 
         //获取cid
         ExamInformation examInformation = examInforDao.FindExamInfoByeiid(eiid);
         int cid = examInformation.getCid();
+        System.out.println("cid "+cid);
 
         //获取各难度qbid
         List<Integer> qbid_degree_1 = quesBankDao.FindQuestion(cid,1,1);
@@ -65,6 +63,7 @@ public class PaperInfoServiceImpl implements PaperInfoService {
         List<Integer> qbid_degree_3 = quesBankDao.FindQuestion(cid,1,3);
 
         //生成改试卷的piid
+        PaperQuestion PQ = new PaperQuestion();
         PQ.setPiid(piid);
         PQ.setPq_score(10);
 

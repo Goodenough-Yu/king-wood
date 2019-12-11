@@ -12,7 +12,7 @@ public class BaseDao {
         String driverClassName = "com.mysql.cj.jdbc.Driver";
         String url = "jdbc:mysql://localhost:3306/examonlinesystem?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT";
         String username = "root";
-        String password = "hsy98106";
+        String password = "Aa1230321";
 
         Connection con = null;
 

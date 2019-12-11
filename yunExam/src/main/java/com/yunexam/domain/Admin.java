@@ -4,7 +4,7 @@ public class Admin {
     private int mid; // 管理员id
     private String mpwd; // 密码
     private String mname; // 管理员姓名
-    private int mmobile; // 手机号码
+    private String mmobile; // 手机号码
 
     public int getMid() {
         return mid;
@@ -30,11 +30,11 @@ public class Admin {
         this.mname = mname;
     }
 
-    public int getMmobile() {
+    public String getMmobile() {
         return mmobile;
     }
 
-    public void setMmobile(int mmobile) {
+    public void setMmobile(String mmobile) {
         this.mmobile = mmobile;
     }
 }

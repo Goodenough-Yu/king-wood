@@ -1,8 +1,8 @@
 package com.yunexam.dao.daoimpl;
 
-import com.yunexam.domain.ExamInformation;
 import com.yunexam.dao.BaseDao;
 import com.yunexam.dao.ExamInforDao;
+import com.yunexam.domain.ExamInformation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
@@ -17,7 +17,7 @@ import java.util.List;
 public class ExamInforDaoImpl implements ExamInforDao {
 
     @Autowired
-    private BaseDao baseDao;
+    BaseDao baseDao;
 
     @Override
     public boolean AddExamInfo(ExamInformation EI) {

@@ -1,8 +1,8 @@
 package com.yunexam.dao.daoimpl;
 
-import com.yunexam.domain.PaperQuestion;
 import com.yunexam.dao.BaseDao;
 import com.yunexam.dao.PaperQuesDao;
+import com.yunexam.domain.PaperQuestion;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
@@ -17,7 +17,7 @@ import java.util.List;
 public class PaperQuesDaoImpl implements PaperQuesDao {
 
     @Autowired
-    private BaseDao baseDao;
+    BaseDao baseDao;
 
     @Override
     public boolean AddPaperQues(PaperQuestion PQ) {
