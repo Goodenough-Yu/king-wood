@@ -27,7 +27,7 @@ public class StudentControl {
 
     /**
      *
-     * @return 考试查询页面
+     * @return 成绩查询页面
      */
     @RequestMapping(path = "/page/grade-query")
     public String getGrade() {

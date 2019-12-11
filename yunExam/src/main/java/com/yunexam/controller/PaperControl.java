@@ -18,6 +18,12 @@ public class PaperControl {
         return "paper.html";
     }
 
+
+    /**
+     * 获取题目
+     * @param id 考试信息id
+     * @return 所有题目
+     */
     @ResponseBody
     @RequestMapping(path = "/paper.json")
     public String getPaperQuestion(@RequestParam("id") String id) {
