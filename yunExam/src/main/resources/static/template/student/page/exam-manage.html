@@ -17,14 +17,13 @@
         <div class="layui-card">
             <div class="layui-card-header layui-row">
                 <div class="layui-col-md6"><h3><strong>{{ item.einame }}</strong></h3></div>
-                <div class="layui-col-md6"><h3>{{ item.einame }}</h3></div>
             </div>
             <div class="layui-card-body layui-row">
                 <div class="layui-col-md9">
                     暂无考试相关说明
                 </div>
                 <div class="layui-col-md3">
-                    <a type="button" href="page/paper?id={{ item.eiid }}" class="layui-btn layui-btn-fluid" style="padding: inherit;">参加考试</a>
+                    <a type="button" href="page/paper?eiid={{ item.eiid }}&title={{ item.einame }}" class="layui-btn layui-btn-fluid" style="padding: inherit;">参加考试</a>
                 </div>
                 <div class="layui-col-md12">
                     <h4>考试安排：<span>{{ item.start_time }} 至 {{ item.start_time }}</span></h4>

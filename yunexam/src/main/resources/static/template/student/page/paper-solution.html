@@ -51,63 +51,53 @@
     </div>
     <div class="layui-col-md7 layui-col-lg-offset1">
         <div class="layui-row">
-            <h3>总分:</h3>
-            <div class="layui-col-md8">
-                <h3>考试时间:</h3>
-            </div>
-            <div class="layui-col-md4">
-                <div id="countDown"></div>
-            </div>
+            <h3>分数： <strong>100分</strong></h3>
         </div>
     </div>
 </div>
 
 <!--  模板引擎视图  -->
-<div id="view" class="layui-container"></div>
-<div class="layui-container layui-row" style="margin: 30px auto;">
-    <button type="button" class="layui-btn layui-btn-lg layui-col-md3 layui-col-lg-offset3 ">
-        提交试卷
-    </button>
-    <button type="button" class="layui-btn layui-btn-lg layui-btn-normal layui-col-md3">
-        保存试卷
-    </button>
-</div>
+    <div id="view" class="layui-container"></div>
+
 
 <!--  编写模板  -->
 <script type="text/html" id="topicTpl">
-    {{#  layui.each(d.list, function(index, item) {  }}
+    {{#  layui.each(d, function(index, item) {  }}
     <div class="layui-card" style="margin-top: 15px;">
         <div class="layui-card-header layui-row">
             <div class="layui-col-md12">
                 <span class="number">{{ index + 1 }}</span>
-                {{ item.title }}
+                {{ item.question }} 10分 ( 难度：{{ item.degree }} )
             </div>
         </div>
         <div class="layui-card-body" style="padding-left: 3%;">
             <ul class="layui-input-inline">
                 <li>
-                    <label><input type="radio" name="topic{{ item.id }}" class="layui-form-radio">
-                        A. {{ item.A }}</label>
+                    <label><input type="radio" name="topic{{ item.qbid }}" class="layui-form-radio" disabled>
+                        A. {{ item.a }}</label>
                 </li>
                 <li>
-                    <label><input type="radio" name="topic{{ item.id }}" class="layui-form-radio">
-                        B. {{ item.B }}</label>
+                    <label><input type="radio" name="topic{{ item.qbid }}" class="layui-form-radio" disabled>
+                        B. {{ item.b }}</label>
                 </li>
                 <li>
 
-                    <label><input type="radio" name="topic{{ item.id }}" class="layui-form-radio">
-                        C. {{ item.C }}</label>
+                    <label><input type="radio" name="topic{{ item.qbid }}" class="layui-form-radio" disabled>
+                        C. {{ item.c }}</label>
                 </li>
                 <li>
-                    <label><input type="radio" name="topic{{ item.id }}" class="layui-form-radio">
-                        D. {{ item.D }}</label>
+                    <label><input type="radio" name="topic{{ item.qbid }}" class="layui-form-radio" disabled>
+                        D. {{ item.d }}</label>
+                </li>
+                <li>
+                    <label>答案：{{ item.answer }}</label>
                 </li>
             </ul>
         </div>
     </div>
     {{#  }); }}
 
-    {{#  if (d.list.length === 0) {  }}
+    {{#  if (d.length === 0) {  }}
     <div class="layui-col-md12" style="margin: 20px auto; text-align: center;"><h1>空白试卷</h1></div>
     {{#  }; }}
 
@@ -121,24 +111,7 @@
             ,laytpl = layui.laytpl
             ,laydate = layui.laydate
             ,$ = layui.jquery
-            ,layer = layui.layer
-            ,util = layui.util;
-
-        //倒计时
-        var thisTimer, setCountdown = function(endTime, serverTime){
-            // var endTime = new Date(y, M||0, d||1, H||0, m||0, s||0) //结束时间
-            //    ,serverTime = new Date(); //假设为当前服务器时间，这里采用的是本地时间，实际使用一般是取服务端的
-
-            clearTimeout(thisTimer);
-            util.countdown(endTime, serverTime, function(date, serverTime, timer){
-                var str = '距离考试结束还有: ' + date[1] + '时' + date[2] + '分' + date[3] + '秒';
-                lay('#countDown').html(str);
-                thisTimer = timer;
-            });
-        };
-        var endTime = new Date(new Date().getTime() + 2*60*60*1000);
-        var serverTime = new Date();
-        setCountdown(endTime, serverTime);
+            ,layer = layui.layer;
 
         //获取参数
         function GetQueryString(name) {
@@ -147,14 +120,13 @@
             if(r != null) return decodeURI(r[2]);
             return null;
         }
-
-        var paperSoluId=GetQueryString("id");//调用
+        var eiid=GetQueryString("eiid");//调用
 
         // 渲染模板
         $.ajax({
             url: '/template/student/paper.json',
             method: 'get',
-            data: {paperSoluId: paperSoluId},
+            data: {eiid: eiid},
             success: function (data) {
                 console.log(data)
                 // 模板渲染

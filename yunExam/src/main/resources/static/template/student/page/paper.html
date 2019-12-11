@@ -45,71 +45,75 @@
     }
 </style>
 <body class="layui-layout-body">
-    <div class="layui-header layui-row">
-        <div class="layui-col-md1 layui-col-lg-offset1">
-            <h1>考试名称</h1>
-        </div>
-        <div class="layui-col-md7 layui-col-lg-offset1">
-            <div class="layui-row">
-                <h3>总分:</h3>
-                <div class="layui-col-md8">
-                    <h3>考试时间:</h3>
-                </div>
-                <div class="layui-col-md4">
-                    <div id="countDown"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!--  模板引擎视图  -->
-    <div id="view" class="layui-container"></div>
-    <div class="layui-container layui-row" style="margin: 30px auto;">
-        <button type="button" class="layui-btn layui-btn-lg layui-col-md3 layui-col-lg-offset3 ">
-            提交试卷
-        </button>
-        <button type="button" class="layui-btn layui-btn-lg layui-btn-normal layui-col-md3">
-            保存试卷
-        </button>
-    </div>
+    <form action="/template/student/page/paper-solution" method="post">
+        <div id="view"></div>
+        <div class="layui-container layui-row" style="margin: 30px auto;">
+            <button type="submit" id="submitPaper" class="layui-btn layui-btn-lg layui-col-md3 layui-col-lg-offset3 ">
+                提交试卷
+            </button>
+            <button type="button" id="savePaper" class="layui-btn layui-btn-lg layui-btn-normal layui-col-md3">
+                保存试卷
+            </button>
+        </div>
+    </form>
+
 
     <!--  编写模板  -->
     <script type="text/html" id="topicTpl">
-        {{#  layui.each(d.list, function(index, item) {  }}
-        <div class="layui-card" style="margin-top: 15px;">
-            <div class="layui-card-header layui-row">
-                <div class="layui-col-md12">
-                    <span class="number">{{ index + 1 }}</span>
-                    {{ item.title }}
+        <div class="layui-header layui-row">
+            <div class="layui-col-md1 layui-col-lg-offset1">
+                <h1>{{ d.title }}</h1>
+            </div>
+            <div class="layui-col-md7 layui-col-lg-offset1">
+                <div class="layui-row">
+                    <h3>总分： <strong>100分</strong></h3>
+                    <div class="layui-col-md8">
+                        <h3>考试时间: <strong>120分钟</strong></h3>
+                    </div>
+                    <div class="layui-col-md4">
+                        <div id="countDown"></div>
+                    </div>
                 </div>
             </div>
-            <div class="layui-card-body" style="padding-left: 3%;">
-                <ul class="layui-input-inline">
-                    <li>
-                        <label><input type="radio" name="topic{{ item.id }}" class="layui-form-radio">
-                        A. {{ item.A }}</label>
-                    </li>
-                    <li>
-                        <label><input type="radio" name="topic{{ item.id }}" class="layui-form-radio">
-                        B. {{ item.B }}</label>
-                    </li>
-                    <li>
-
-                        <label><input type="radio" name="topic{{ item.id }}" class="layui-form-radio">
-                        C. {{ item.C }}</label>
-                    </li>
-                    <li>
-                        <label><input type="radio" name="topic{{ item.id }}" class="layui-form-radio">
-                        D. {{ item.D }}</label>
-                    </li>
-                </ul>
-            </div>
         </div>
-        {{#  }); }}
+        <div class="layui-container">
+            {{#  layui.each(d.questionBankList, function(index, item) {  }}
+            <div class="layui-card" style="margin-top: 15px;">
+                <div class="layui-card-header layui-row">
+                    <div class="layui-col-md12">
+                        <span class="number">{{ index + 1 }}</span>
+                        {{ item.question }} 10分 ( 难度：{{ item.degree }} )
+                    </div>
+                </div>
+                <div class="layui-card-body" style="padding-left: 3%;">
+                    <ul class="layui-input-inline">
+                        <li>
+                            <label><input type="radio" name="topic{{ item.qbid }}" class="layui-form-radio">
+                            A. {{ item.a }}</label>
+                        </li>
+                        <li>
+                            <label><input type="radio" name="topic{{ item.qbid }}" class="layui-form-radio">
+                            B. {{ item.b }}</label>
+                        </li>
+                        <li>
 
-        {{#  if (d.list.length === 0) {  }}
+                            <label><input type="radio" name="topic{{ item.qbid }}" class="layui-form-radio">
+                            C. {{ item.c }}</label>
+                        </li>
+                        <li>
+                            <label><input type="radio" name="topic{{ item.qbid }}" class="layui-form-radio">
+                            D. {{ item.d }}</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            {{#  }); }}
+
+            {{#  if (d.length === 0) {  }}
             <div class="layui-col-md12" style="margin: 20px auto; text-align: center;"><h1>空白试卷</h1></div>
-        {{#  }; }}
+            {{#  }; }}
+        </div>
 
     </script>
 
@@ -147,14 +151,14 @@
             if(r != null) return decodeURI(r[2]);
             return null;
         }
-
-        var id=GetQueryString("id");//调用
+        var eiid = GetQueryString("eiid");//调用
+        var title = GetQueryString("title");
 
         // 渲染模板
         $.ajax({
             url: '/template/student/paper.json',
             method: 'get',
-            data: {id: id},
+            data: {eiid: eiid, title: title},
             success: function (data) {
                 console.log(data)
                 // 模板渲染
@@ -168,6 +172,10 @@
                 console.log(error)
                 layer.msg('数据接口有误!',{icon: 5, time: 2000})
             }
+        })
+
+        $("#savePaper").on('click', function () {
+            layer.msg('保存试卷成功', {icon: 4, time: 2000})
         })
     })
 </script>

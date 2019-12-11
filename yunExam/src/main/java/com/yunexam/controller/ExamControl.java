@@ -5,6 +5,7 @@ import com.yunexam.service.ExamInfoService;
 import com.yunexam.service.serviceimpl.ExamInfoServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.sql.SQLException;
@@ -21,7 +22,7 @@ public class ExamControl {
      * @return 考试信息
      * @throws SQLException
      */
-    @RequestMapping(path = "/examInfo.json")
+    @RequestMapping(path = "/examInfo.json", method = RequestMethod.GET)
     public List<ExamInformation> getExamInformation() throws SQLException {
        return examInfoService.FindExamInfo();
     }
