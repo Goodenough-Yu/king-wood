@@ -40,8 +40,7 @@ public class PaperControl {
         System.out.println("eiid="+eiid);
         int piid = paperInfoService.CreatePaper(eiid);
         List<Integer> qbids = paperInfoService.InsertQuestion(piid);
-        List<QuestionBank> questionBanks = paperInfoService.FindQusetion(piid);
-        return questionBanks;
+        return paperInfoService.FindQusetion(piid);
     }
 
 

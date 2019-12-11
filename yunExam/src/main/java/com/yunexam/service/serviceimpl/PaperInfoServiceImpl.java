@@ -27,8 +27,14 @@ public class PaperInfoServiceImpl implements PaperInfoService {
 
     @Autowired
     PaperInfoDao paperInfoDao;
+
+    @Autowired
     ExamInforDao examInforDao;
+
+    @Autowired
     QuesBankDao quesBankDao;
+
+    @Autowired
     PaperQuesDao paperQuesDao;
 
     @Override
