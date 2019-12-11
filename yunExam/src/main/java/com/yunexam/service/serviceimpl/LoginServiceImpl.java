@@ -10,15 +10,26 @@ import com.yunexam.domain.Admin;
 import com.yunexam.domain.Student;
 import com.yunexam.domain.Teacher;
 import com.yunexam.service.LoginService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.sql.SQLException;
 
+@Service
 public class LoginServiceImpl implements LoginService {
+
+    @Autowired
+    StudentDao studentDao;
+
+    @Autowired
+    TeacherDao teacherDao;
+
+    @Autowired
+    AdminDao adminDao;
 
     @Override
     public boolean StudentLogin(int sid, String spwd) throws SQLException {
         Student student = new Student();
-        StudentDao studentDao = new StudentDaoImpl();
         student = studentDao.FindStuBynameAndpwd(sid,spwd);
         return student != null;
     }
@@ -26,7 +37,6 @@ public class LoginServiceImpl implements LoginService {
     @Override
     public boolean TeacherLogin(int tid, String tpwd) throws SQLException {
         Teacher teacher = new Teacher();
-        TeacherDao teacherDao = new TeacherDaoImpl();
         teacher = teacherDao.FindTeaBytidAndtpwd(tid,tpwd);
         return teacher != null;
     }
@@ -34,7 +44,6 @@ public class LoginServiceImpl implements LoginService {
     @Override
     public boolean AdminLogin(int mid, String mpwd) throws SQLException {
         Admin admin = new Admin();
-        AdminDao adminDao = new AdminDaoImpl();
         admin = adminDao.FindAdmByaidAndapwd(mid,mpwd);
         return admin != null;
     }

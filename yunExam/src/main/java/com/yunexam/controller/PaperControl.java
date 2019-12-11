@@ -1,7 +1,11 @@
 package com.yunexam.controller;
 
+import com.yunexam.dao.PaperSoluDao;
+import com.yunexam.dao.QuesBankDao;
+import com.yunexam.domain.PaperSolution;
 import com.yunexam.domain.QuestionBank;
 import com.yunexam.service.PaperInfoService;
+import com.yunexam.service.PaperSoluService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,6 +21,15 @@ public class PaperControl {
 
     @Autowired
     PaperInfoService paperInfoService;
+
+    @Autowired
+    PaperSoluService paperSoluService;
+
+    @Autowired
+    PaperSoluDao paperSoluDao;
+
+    @Autowired
+    QuesBankDao quesBankDao;
 
     /**
      * 生成试卷载体
@@ -43,5 +56,16 @@ public class PaperControl {
         return paperInfoService.FindQusetion(piid);
     }
 
+
+    /**
+     * 阅卷
+     * @param piid
+     * @param sid
+     * @return
+     * @throws SQLException
+     */
+    public  boolean reviewPaper(int piid,int sid) throws SQLException {
+        return paperSoluService.ReviewSolution(piid,sid);
+        }
 
 }

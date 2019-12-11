@@ -3,15 +3,19 @@ package com.yunexam.dao.daoimpl;
 import com.yunexam.dao.BaseDao;
 import com.yunexam.dao.StudentDao;
 import com.yunexam.domain.Student;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+@Repository
 public class StudentDaoImpl implements StudentDao {
 
-    BaseDao baseDao = new BaseDao();
+    @Autowired
+    BaseDao baseDao;
 
     @Override
     public Student FindStuBynameAndpwd(int sid, String spwd) throws SQLException {

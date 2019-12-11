@@ -7,28 +7,38 @@ import com.yunexam.dao.daoimpl.QuesBankDaoImpl;
 import com.yunexam.domain.PaperSolution;
 import com.yunexam.domain.QuestionBank;
 import com.yunexam.service.PaperSoluService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+@Service
 public class PaperSoluServiceImpl implements PaperSoluService {
 
+    @Autowired
+    PaperSoluDao paperSoluDao;
+
+    @Autowired
+    QuesBankDao quesBankDao;
 
     @Override
     public boolean InsertSolution(List<PaperSolution> paperSolutions) {
-
+        PaperSolution paperSolution = new PaperSolution();
+        for(int i = 0;i<paperSolutions.size();i++){
+            paperSolution = paperSolutions.get(i);
+            paperSoluDao.AddPaperSolu(paperSolution);
+        }
         return false;
     }
 
     @Override
     public boolean ReviewSolution(int piid, int sid) throws SQLException {
-        PaperSoluDao paperSoluDao = new PaperSoluDaoImpl();
         List<PaperSolution> paperSolutions = new ArrayList<PaperSolution>();
         paperSolutions = paperSoluDao.FindPaperSolu(piid,sid);
         PaperSolution PS = new PaperSolution();
         QuestionBank QB = new QuestionBank();
-        QuesBankDao quesBankDao = new QuesBankDaoImpl();
         int qbid;
         String solution;
         String answer;
@@ -53,7 +63,6 @@ public class PaperSoluServiceImpl implements PaperSoluService {
     @Override
     public List<PaperSolution> FindSolution(int piid, int sid) throws SQLException {
         List<PaperSolution> paperSolutions = new ArrayList<PaperSolution>();
-        PaperSoluDao paperSoluDao = new PaperSoluDaoImpl();
         paperSolutions = paperSoluDao.FindPaperSolu(piid, sid);
         return paperSolutions;
     }

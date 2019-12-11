@@ -3,6 +3,8 @@ package com.yunexam.dao.daoimpl;
 import com.yunexam.dao.BaseDao;
 import com.yunexam.dao.GradeDao;
 import com.yunexam.domain.Grade;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -11,9 +13,11 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+@Repository
 public class GradeDaoImpl implements GradeDao {
 
-    BaseDao baseDao = new BaseDao();
+    @Autowired
+    BaseDao baseDao;
 
     @Override
     public Grade FindGradeBygid(int gid) throws SQLException {
