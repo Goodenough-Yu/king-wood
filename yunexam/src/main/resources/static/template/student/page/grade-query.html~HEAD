@@ -13,7 +13,7 @@
 
 <table class="layui-table" id="gradeTable"></table>
 <script type="text/html" id="button">
-    <a type="button" href="/page/paper-solution" class="layui-btn layui-btn-fluid">查看试卷</a>
+    <button type="button" class="layui-btn layui-btn-fluid">查看试卷</button>
 </script>
 
 <script>
@@ -23,7 +23,7 @@
 
         table.render({
             elem: '#gradeTable'
-            ,url:'/template/student/grade.json'
+            ,url:'api/table.json'
             ,skin: 'line'
             ,cols: [[
                 {field:'classId', title:'班级', width:300}
