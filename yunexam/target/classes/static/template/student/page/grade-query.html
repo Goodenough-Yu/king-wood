@@ -1,0 +1,37 @@
+<style>
+    th {
+        background-color: #B7CEE6;
+    }
+    .layui-table-cell {
+        height: 40px;
+        line-height: 40px;
+    }
+</style>
+<fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+    <legend>成绩查询</legend>
+</fieldset>
+
+<table class="layui-table" id="gradeTable"></table>
+<script type="text/html" id="button">
+    <a type="button" href="/page/paper-solution" class="layui-btn layui-btn-fluid">查看试卷</a>
+</script>
+
+<script>
+    layui.use(['table', 'form'], function () {
+        var table = layui.table
+            ,form = layui.form;
+
+        table.render({
+            elem: '#gradeTable'
+            ,url:'/template/student/grade.json'
+            ,skin: 'line'
+            ,cols: [[
+                {field:'classId', title:'班级', width:300}
+                ,{field:'course', title:'考试科目', width:300}
+                ,{field:'score', title: '最终分数', width:300}
+                ,{title:'操作', templet: '#button', fix: 'right'}
+            ]]
+            ,page: true
+        });
+    })
+</script>
