@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="23359359-8dbd-43ee-b367-a3c051aebe8c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yunexam/service/GradeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yunexam/service/serviceimpl/GradeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yunexam/controller/LoginControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yunexam/controller/LoginControl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yunexam/controller/PaperSoluControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yunexam/controller/PaperSoluControl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yunexam/dao/daoimpl/CourseDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yunexam/dao/daoimpl/CourseDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yunexam/controller/LoginControl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yunexam/controller/LoginControl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yunexam/controller/PaperSoluControl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yunexam/controller/PaperSoluControl.class" afterDir="false" />
-    </list>
+    <list default="true" id="23359359-8dbd-43ee-b367-a3c051aebe8c" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +99,7 @@
       <workItem from="1576110853014" duration="205000" />
       <workItem from="1576111159669" duration="1993000" />
       <workItem from="1576113514451" duration="4387000" />
-      <workItem from="1576128687217" duration="596000" />
+      <workItem from="1576128687217" duration="642000" />
     </task>
     <servers />
   </component>
