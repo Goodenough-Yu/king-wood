@@ -25,7 +25,7 @@ public class TeacherDaoImpl implements TeacherDao {
         Teacher teacher = null;
 
         con = BaseDao.getConnection();
-        pstmt = con.prepareStatement("select * from teacher where Tid = ? and Spwd = ?");
+        pstmt = con.prepareStatement("select * from teacher where Tid = ? and Tpwd = ?");
         pstmt.setInt(1, tid);
         pstmt.setString(2,tpwd);
         rs = pstmt.executeQuery();
