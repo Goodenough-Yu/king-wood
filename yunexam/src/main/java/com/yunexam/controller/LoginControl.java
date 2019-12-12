@@ -34,43 +34,18 @@ public class LoginControl {
      * @throws SQLException
      */
     @ResponseBody
-    @RequestMapping(path = "/studentLogin", method = RequestMethod.POST)
+    @RequestMapping(path = "/login", method = RequestMethod.POST)
     public  boolean StudentLogin(
+            @RequestParam("identify") String identify,
             @RequestParam("username") String sidStr,
             @RequestParam("password") String spwd) throws SQLException {
         int sid = Integer.parseInt(sidStr);
-        return loginService.StudentLogin(sid,spwd);
-    }
-
-    /**
-     *  检查教师用户名和密码
-     * @param sidStr 用户名
-     * @param spwd 密码
-     * @return 是否存在用户
-     * @throws SQLException
-     */
-    @ResponseBody
-    @RequestMapping(path = "/teacherLogin", method = RequestMethod.POST)
-    public  boolean teacherLogin(
-            @RequestParam("username") String sidStr,
-            @RequestParam("password") String spwd) throws SQLException {
-        int sid = Integer.parseInt(sidStr);
-        return loginService.TeacherLogin(sid,spwd);
-    }
-
-    /**
-     *  检查管理员用户名和密码
-     * @param sidStr 用户名
-     * @param spwd 密码
-     * @return 是否存在用户
-     * @throws SQLException
-     */
-    @ResponseBody
-    @RequestMapping(path = "/adminLogin", method = RequestMethod.POST)
-    public  boolean AdminLogin(
-            @RequestParam("username") String sidStr,
-            @RequestParam("password") String spwd) throws SQLException {
-        int sid = Integer.parseInt(sidStr);
-        return loginService.AdminLogin(sid,spwd);
+        if (identify.equals("student")) {
+            return loginService.StudentLogin(sid,spwd);
+        } else if (identify.equals("admin")) {
+            return loginService.AdminLogin(sid,spwd);
+        } else {
+            return loginService.TeacherLogin(sid,spwd);
+        }
     }
 }
