@@ -3,15 +3,19 @@ package com.yunexam.dao.daoimpl;
 import com.yunexam.dao.BaseDao;
 import com.yunexam.dao.CourseDao;
 import com.yunexam.domain.Course;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+@Repository
 public class CourseDaoImpl implements CourseDao {
 
-    BaseDao baseDao = new BaseDao();
+    @Autowired
+    BaseDao baseDao;
 
     @Override
     public Course FindCourseBycid(int cid) throws SQLException {

@@ -1,6 +1,8 @@
 package com.yunexam.controller;
 
+import com.yunexam.domain.Admin;
 import com.yunexam.domain.Student;
+import com.yunexam.domain.Teacher;
 import com.yunexam.service.LoginService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -29,6 +31,25 @@ public class LoginControl {
         }else {
             return "login.html";
         }
+    }
 
+    public String AdminLogin(Admin admin) throws SQLException {
+        int mid = admin.getMid();
+        String mpwd = admin.getMpwd();
+        if(loginService.AdminLogin(mid,mpwd)){
+            return "1";
+        }else{
+            return "0";
+        }
+    }
+
+    public String TeacherLogin(Teacher teacher) throws SQLException {
+        int tid = teacher.getTid();
+        String tpwd = teacher.getTpwd();
+        if(loginService.TeacherLogin(tid,tpwd)){
+            return "1";
+        }else {
+            return "0";
+        }
     }
 }
