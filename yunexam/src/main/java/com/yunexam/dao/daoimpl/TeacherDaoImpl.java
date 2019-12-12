@@ -3,15 +3,19 @@ package com.yunexam.dao.daoimpl;
 import com.yunexam.dao.BaseDao;
 import com.yunexam.dao.TeacherDao;
 import com.yunexam.domain.Teacher;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+@Repository
 public class TeacherDaoImpl implements TeacherDao {
 
-    BaseDao baseDao = new BaseDao();
+    @Autowired
+    BaseDao baseDao;
 
     @Override
     public Teacher FindTeaBytidAndtpwd(int tid, String tpwd) throws SQLException {
