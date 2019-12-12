@@ -40,16 +40,8 @@
                     <h1>在线考试系统登录</h1>
                 </div>
                 <div class="layui-form-item">
-                    <select name="identify" id="identify" lay-filter="required">
-                        <option value="">请选择登录身份</option>
-                        <option value="student">学生</option>
-                        <option value="teacher" >教师</option>
-                        <option value="admin">管理员</option>
-                    </select>
-                </div>
-                <div class="layui-form-item">
                     <label class="layui-icon layui-icon-username" for="username"></label>
-                    <input type="text" name="username" id="username" lay-verify="required|username" placeholder="用户名或者邮箱" autocomplete="off" class="layui-input" value="2019001">
+                    <input type="text" name="username" id="username" lay-verify="required|account" placeholder="用户名或者邮箱" autocomplete="off" class="layui-input" value="admin">
                 </div>
                 <div class="layui-form-item">
                     <label class="layui-icon layui-icon-password" for="password"></label>
@@ -66,7 +58,7 @@
                     <input type="checkbox" name="rememberMe" value="true" lay-skin="primary" title="记住密码">
                 </div>
                 <div class="layui-form-item">
-                    <button class="layui-btn layui-btn-fluid" lay-submit="" lay-filter="login" type="submit">登 入</button>
+                    <button class="layui-btn layui-btn-fluid" lay-submit="" lay-filter="login">登 入</button>
                 </div>
             </form>
         </div>
@@ -80,6 +72,9 @@
         var form = layui.form,
             layer = layui.layer;
 
+        // 登录过期的时候，跳出ifram框架
+        if (top.location != self.location) top.location = self.location;
+
         // 粒子线条背景
         $(document).ready(function(){
             $('.layui-container').particleground({
@@ -88,49 +83,27 @@
             });
         });
 
-        // 自定义验证规则
-        form.verify({
-            username: [
-                /^[0-9]*$/
-                ,'用户名应为学号'
-            ]
-        })
+        // 进行登录操作
+        form.on('submit(login)', function (data) {
+            data = data.field;
 
-        // 进行登录监听操作
-        form.on('submit(login)', function (value) {
-            value = value.field;
-
-            // 调用ajax请求登录
-            ajax(value);
-            console.log(value)
-            return false;
-        });
-
-        // 根据登录身份，请求登录数据
-        var ajax = function (value) {
-            if (value.identify == '') {
-                layer.msg('请先选择登录身份!',{icon: 5, time: 2000})
+            if (data.username == '') {
+                layer.msg('用户名不能为空');
                 return false;
             }
-            $.ajax({
-                url: '/login',
-                method: 'post',
-                data: value,
-                success: function (data) {
-                    if(data) {
-                        layer.msg('登录成功,页面正在跳转...', function () {
-                            window.location = '/template/' + value.identify + '/';
-                        });
-                    } else {
-                        layer.msg('该用户不存在!',{icon: 5, time: 2000})
-                    }
-                },
-                fail: function (error) {
-                    console.error(error)
-                    layer.msg('登录失败!',{icon: 5, time: 2000})
-                }
-            })
-        }
+            if (data.password == '') {
+                layer.msg('密码不能为空');
+                return false;
+            }
+            if (data.captcha == '') {
+                layer.msg('验证码不能为空');
+                return false;
+            }0
+            layer.msg('登录成功', function () {
+                window.location = 'template/student/';
+            });
+            return false;
+        });
     });
 </script>
 </body>
