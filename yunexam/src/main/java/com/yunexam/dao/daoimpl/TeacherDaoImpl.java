@@ -42,4 +42,36 @@ public class TeacherDaoImpl implements TeacherDao {
 
         return teacher;
     }
+
+    @Override
+    public Teacher FindTeaBytid(int tid) throws SQLException {
+        Connection con = null;
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+        Teacher teacher = null;
+
+        con = BaseDao.getConnection();
+        pstmt = con.prepareStatement("select * from teacher where Tid = ?");
+        pstmt.setInt(1, tid);
+        rs = pstmt.executeQuery();
+
+        while (rs.next()) {
+            teacher = new Teacher();
+            teacher.setTid(rs.getInt("Tid"));
+            teacher.setTpwd(rs.getString("Tpwd"));
+            teacher.setTname(rs.getString("Tname"));
+            teacher.setTmobile(rs.getString("Tmobile"));
+        }
+
+        baseDao.closeAll(rs,pstmt,con);
+
+        return teacher;
+    }
+
+    @Override
+    public boolean UpdateTeacher(Teacher teacher) {
+        String sql = "UPDATE teacher set Tid = ?,Tname = ?,Tpwd = ?,Tmobile = ?";
+        Object[] params ={teacher.getTid(),teacher.getTname(),teacher.getTpwd(),teacher.getTmobile()};
+        return baseDao.executeUpdate(sql,params);
+    }
 }
