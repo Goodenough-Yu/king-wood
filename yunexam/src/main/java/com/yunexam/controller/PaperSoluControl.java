@@ -8,10 +8,7 @@ import com.yunexam.service.GradeService;
 import com.yunexam.service.PaperSoluService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpSession;
 import java.sql.SQLException;
@@ -38,7 +35,7 @@ public class PaperSoluControl {
 
     /**
      * 获取学生所有考试成绩
-     * @return
+     * @return map考试成绩和试卷信息
      */
     @ResponseBody
     @RequestMapping(path = "/getGrade", method = RequestMethod.GET)
@@ -46,18 +43,33 @@ public class PaperSoluControl {
         int sid = (int)httpSession.getAttribute("sid");
         Map<String,Object> map = new HashMap<String, Object>();
         map = gradeService.getGrade(sid);
-        map.put("code", 0); // 返回成功状态码
         return map;
     }
 
     /**
-     * 答题结束，获取试题解析
+     * 生成试题解析载体
      * @return
      */
-    @RequestMapping(path = "/page/paper-solution", method = RequestMethod.POST)
-    public Map<String,Object> getPaperSolution(int gid) throws SQLException {
+    @RequestMapping(path = "/page/paper-solution", method = RequestMethod.GET)
+    public String getPaperSolution(@RequestParam("gid") int gid,
+                                   @RequestParam("cname") String cname) {
+        httpSession.setAttribute("gid", gid);
+        httpSession.setAttribute("cname", cname);
+        return "paper-solution.html";
+    }
+
+    /**
+     * 获取试题解析
+     * @return
+     */
+    @ResponseBody
+    @RequestMapping(path = "/getPaperSolution", method = RequestMethod.GET)
+    public Map<String,Object> getPaperSolution() throws SQLException {
+        int gid = (int)httpSession.getAttribute("gid");
+        String cname = (String)httpSession.getAttribute("cname");
         Map<String,Object> map = new HashMap<String, Object>();
         map = gradeService.getSolution(gid);
+        map.put("title", cname);
         return map;
     }
 }

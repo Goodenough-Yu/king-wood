@@ -7,11 +7,9 @@ import com.yunexam.service.PaperInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.sql.Array;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 @Service
 public class GradeServiceImpl implements GradeService {
@@ -40,25 +38,21 @@ public class GradeServiceImpl implements GradeService {
     @Override
     public Map<String, Object> getGrade(int sid) throws SQLException {
         List<Grade> grades = gradeDao.FindGradeBysid(sid);
-        List<Course> courses = new ArrayList<Course>();
         List<ExamInformation> examInformations = new ArrayList<ExamInformation>();
         PaperInformation paperInformation = null;
         ExamInformation examInformation = null;
         Grade grade = new Grade();
-        Course course = new Course();
+        Object[] params = null;
         for(int i = 0;i<grades.size();i++){
             paperInformation = new PaperInformation();
             examInformation = new ExamInformation();
-            examInformations.add(examInformation);
             grade = grades.get(i);
             paperInformation = paperInfoDao.FindPaperInfoBypiid(grade.getPiid());
             examInformation = examInforDao.FindExamInfoByeiid(paperInformation.getEiid());
-            course = courseDao.FindCourseBycid(examInformation.getCid());
-            courses.add(course);
+            examInformations.add(examInformation);
         }
         Map<String,Object> map = new HashMap<String, Object>();
         map.put("grade",grades);
-        map.put("course",courses);
         map.put("examInformation",examInformations);
         return map;
     }
@@ -69,7 +63,7 @@ public class GradeServiceImpl implements GradeService {
         List<PaperSolution> paperSolutions = paperSoluDao.FindPaperSolu(grade.getPiid(),grade.getSid());
         List<QuestionBank> questionBanks = paperInfoService.FindQusetion(grade.getPiid());
         Map<String,Object> map = new HashMap<String, Object>();
-        map.put("grade",grade);
+        map.put("grade",grade.getScore());
         map.put("paperSolution",paperSolutions);
         map.put("questionBank",questionBanks);
         return map;

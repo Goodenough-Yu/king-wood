@@ -45,29 +45,29 @@
     }
 </style>
 <body class="layui-layout-body">
-<div class="layui-header layui-row">
-    <div class="layui-col-md1 layui-col-lg-offset1">
-        <h1>考试名称</h1>
-    </div>
-    <div class="layui-col-md7 layui-col-lg-offset1">
-        <div class="layui-row">
-            <h3>分数： <strong>100分</strong></h3>
-        </div>
-    </div>
-</div>
 
 <!--  模板引擎视图  -->
-    <div id="view" class="layui-container"></div>
+<div id="view" class="layui-container"></div>
 
 
 <!--  编写模板  -->
 <script type="text/html" id="topicTpl">
+    <div class="layui-header layui-row">
+        <div class="layui-col-md4 layui-col-lg-offset1">
+            <h1>{{ d.title }}</h1>
+        </div>
+        <div class="layui-col-md4" style="margin-top: 10px;">
+            <div class="layui-row">
+                <h2>分数： <strong style="color: red">{{ d.grade }} 分</strong></h2>
+            </div>
+        </div>
+    </div>
     {{#  layui.each(d, function(index, item) {  }}
     <div class="layui-card" style="margin-top: 15px;">
         <div class="layui-card-header layui-row">
             <div class="layui-col-md12">
                 <span class="number">{{ index + 1 }}</span>
-                {{ item.question }} 10分 ( 难度：{{ item.degree }} )
+                {{ item.question }} {{ }} ( 难度：{{ item.degree }} )
             </div>
         </div>
         <div class="layui-card-body" style="padding-left: 3%;">
@@ -106,30 +106,45 @@
 
 <script src="/layui/layui.js"></script>
 <script>
-    layui.use(['element', 'laytpl', 'util', 'laydate', 'jquery', 'layer'], function () {
+    layui.use(['element', 'laytpl', 'util', 'jquery', 'layer'], function () {
         var element = layui.element
             ,laytpl = layui.laytpl
-            ,laydate = layui.laydate
             ,$ = layui.jquery
             ,layer = layui.layer;
 
-        //获取参数
-        function GetQueryString(name) {
-            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
-            var r = window.location.search.substr(1).match(reg);
-            if(r != null) return decodeURI(r[2]);
-            return null;
-        }
-        var eiid=GetQueryString("eiid");//调用
-
-        // 渲染模板
+        //=======================
+        // 渲染模板,获取试卷分析
+        //=======================
         $.ajax({
-            url: '/template/student/paper.json',
+            url: '/template/student/getPaperSolution',
             method: 'get',
-            data: {eiid: eiid},
             success: function (data) {
+                //=======================
+                // 整理数据格式
+                //=======================
+                var dataTpl = []
+                for (var i = 0; i < data.questionBank.length; i++) {
+                    // 查找对应的题和答案
+                    for (var j = data.questionBank.length - 1; j >= 0; j--) {
+                        if (data.paperSolution[j].qbid ===  data.questionBank[i].qbid) {
+                            var objectData = {
+                                questionBank: data.questionBank[i],
+                                score: data.paperSolution[j].score,
+                                solution: data.paperSolution[j].solution
+                            }
+                            dataTpl.push(objectData)
+                        }
+                    }
+                }
+                data = {
+                    title: data.title,
+                    grade: data.grade,
+                    dataTpl: dataTpl
+                }
                 console.log(data)
+                //======================
                 // 模板渲染
+                //======================
                 var getTpl = topicTpl.innerHTML
                     , view = document.getElementById('view');
                 laytpl(getTpl).render(data, function (html) {
@@ -138,7 +153,7 @@
             },
             error: function (error) {
                 console.log(error)
-                layer.msg('数据接口有误!',{icon: 5, time: 2000})
+                layer.msg('试卷id接口有误!',{icon: 5, time: 2000})
             }
         })
     })
