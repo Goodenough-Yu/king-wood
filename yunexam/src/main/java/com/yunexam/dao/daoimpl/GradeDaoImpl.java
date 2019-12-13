@@ -37,7 +37,6 @@ public class GradeDaoImpl implements GradeDao {
             grade.setPiid(rs.getInt("PIid"));
             grade.setSid(rs.getInt("Sid"));
             grade.setScore(rs.getInt("score"));
-            grade.setUse_time(rs.getInt("use_time"));
         }
 
         baseDao.closeAll(rs,pstmt,con);
@@ -64,7 +63,6 @@ public class GradeDaoImpl implements GradeDao {
             grade.setPiid(rs.getInt("PIid"));
             grade.setSid(rs.getInt("Sid"));
             grade.setScore(rs.getInt("score"));
-            grade.setUse_time(rs.getInt("use_time"));
             grades.add(grade);
         }
 
@@ -93,7 +91,6 @@ public class GradeDaoImpl implements GradeDao {
             grade.setPiid(rs.getInt("PIid"));
             grade.setSid(rs.getInt("Sid"));
             grade.setScore(rs.getInt("score"));
-            grade.setUse_time(rs.getInt("use_time"));
             grades.add(grade);
         }
 
