@@ -37,7 +37,6 @@ public class GradeDaoImpl implements GradeDao {
             grade.setPiid(rs.getInt("PIid"));
             grade.setSid(rs.getInt("Sid"));
             grade.setScore(rs.getInt("score"));
-            grade.setUse_time(rs.getInt("use_time"));
         }
 
         baseDao.closeAll(rs,pstmt,con);
@@ -64,7 +63,6 @@ public class GradeDaoImpl implements GradeDao {
             grade.setPiid(rs.getInt("PIid"));
             grade.setSid(rs.getInt("Sid"));
             grade.setScore(rs.getInt("score"));
-            grade.setUse_time(rs.getInt("use_time"));
             grades.add(grade);
         }
 
@@ -93,7 +91,6 @@ public class GradeDaoImpl implements GradeDao {
             grade.setPiid(rs.getInt("PIid"));
             grade.setSid(rs.getInt("Sid"));
             grade.setScore(rs.getInt("score"));
-            grade.setUse_time(rs.getInt("use_time"));
             grades.add(grade);
         }
 
@@ -101,4 +98,12 @@ public class GradeDaoImpl implements GradeDao {
 
         return grades;
     }
+
+    @Override
+    public boolean AddGrade(Grade grade) {
+        String sql = "INSERT INTO grade(GId,Sid,PIid) values(?,?,?,?)";
+        Object[] params ={grade.getGid(),grade.getSid(),grade.getPiid(),grade.getScore()};
+        return baseDao.executeUpdate(sql,params);
+    }
+
 }

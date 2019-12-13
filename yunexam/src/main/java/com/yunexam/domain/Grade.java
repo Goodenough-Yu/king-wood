@@ -5,7 +5,6 @@ public class Grade {
     private int sid; // 学生id
     private int piid; // 试卷id
     private float score; // 考试得分
-    private int use_time; // 考试用时
 
     public int getGid() {
         return gid;
@@ -39,11 +38,4 @@ public class Grade {
         this.score = score;
     }
 
-    public int getUse_time() {
-        return use_time;
-    }
-
-    public void setUse_time(int use_time) {
-        this.use_time = use_time;
-    }
 }
