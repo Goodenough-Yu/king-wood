@@ -1,15 +1,14 @@
 package com.yunexam.controller;
 
+import com.yunexam.domain.PaperSolution;
 import com.yunexam.domain.QuestionBank;
 import com.yunexam.service.PaperInfoService;
 import com.yunexam.service.PaperSoluService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpSession;
 import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.List;
@@ -24,6 +23,9 @@ public class PaperControl {
 
     @Autowired
     PaperSoluService paperSoluService;
+
+    @Autowired
+    HttpSession httpSession;
 
     /**
      * 生成试卷载体
@@ -45,25 +47,34 @@ public class PaperControl {
     public Map<String, Object> getPaperQuestion(
             @RequestParam("eiid") int eiid,
             @RequestParam("title") String title) throws SQLException {
+        int sid = (int)httpSession.getAttribute("sid");
         // 调用抽题方法，返回题目数据
         int piid = paperInfoService.CreatePaper(eiid);
         List<Integer> qbids = paperInfoService.InsertQuestion(piid);
         List<QuestionBank> questionBankList = paperInfoService.FindQusetion(piid);
-        // 存入map映射
+        // 将信息存入map映射
         Map<String, Object> map = new HashMap<>();
+        map.put("sid", sid);
+        map.put("piid", piid);
         map.put("title", title);
         map.put("questionBankList", questionBankList);
         return map;
     }
 
     /**
-     * 阅卷
-     * @param piid
-     * @param sid
-     * @return
+     * 存储答题,并批改试题
+     * @param paperSolutions 试题答案
+     * @return 成绩查询页面
      * @throws SQLException
      */
-    public  boolean reviewPaper(int piid,int sid) throws SQLException {
+    @ResponseBody
+    @RequestMapping(path = "/putPaperSolution", method = RequestMethod.POST)
+    public boolean putPaperSolution(@RequestBody List<PaperSolution> paperSolutions) throws SQLException{
+        int piid = paperSolutions.get(0).getPiid(); // 试卷id
+        int sid = paperSolutions.get(0).getSid(); // 学生id
+        paperSoluService.InsertSolution(paperSolutions);
+        // 此处成绩插入数据有问题
         return paperSoluService.ReviewSolution(piid,sid);
     }
+
 }

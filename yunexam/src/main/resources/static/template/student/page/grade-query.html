@@ -23,12 +23,11 @@
 
         table.render({
             elem: '#gradeTable'
-            ,url:'/template/student/grade.json'
+            ,url:'/grade.json'
             ,skin: 'line'
             ,cols: [[
-                {field:'classId', title:'班级', width:300}
-                ,{field:'course', title:'考试科目', width:300}
-                ,{field:'score', title: '最终分数', width:300}
+                {field:'course', title:'考试科目', width:300}
+                ,{field:'grade', title: '最终分数', width:300}
                 ,{title:'操作', templet: '#button', fix: 'right'}
             ]]
             ,page: true

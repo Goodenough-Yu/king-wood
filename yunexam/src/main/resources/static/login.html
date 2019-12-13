@@ -41,7 +41,6 @@
                 </div>
                 <div class="layui-form-item">
                     <select name="identify" id="identify" lay-filter="required">
-                        <option value="">请选择登录身份</option>
                         <option value="student">学生</option>
                         <option value="teacher" >教师</option>
                         <option value="admin">管理员</option>
@@ -73,6 +72,7 @@
     </div>
 </div>
 <script src="../lib/jquery-3.4.1/jquery-3.4.1.min.js" charset="utf-8"></script>
+<script src="../lib/jquerysession.js"></script>
 <script src="../lib/layui-v2.5.4/layui.js" charset="utf-8"></script>
 <script src="../lib/jq-module/jquery.particleground.min.js" charset="utf-8"></script>
 <script>
@@ -100,6 +100,9 @@
         form.on('submit(login)', function (value) {
             value = value.field;
 
+            // 前端添加session
+            $.session.set('sid', value.username)
+
             // 调用ajax请求登录
             ajax(value);
             console.log(value)
@@ -108,10 +111,6 @@
 
         // 根据登录身份，请求登录数据
         var ajax = function (value) {
-            if (value.identify == '') {
-                layer.msg('请先选择登录身份!',{icon: 5, time: 2000})
-                return false;
-            }
             $.ajax({
                 url: '/login',
                 method: 'post',
