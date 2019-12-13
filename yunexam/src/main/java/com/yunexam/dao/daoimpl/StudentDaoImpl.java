@@ -72,8 +72,8 @@ public class StudentDaoImpl implements StudentDao {
 
     @Override
     public boolean UpdateStudent(Student student) {
-        String sql = "UPDATE student set Sid = ?,Sname = ?,Spwd = ?,subiect = ?,Smobile = ?";
-        Object[] params ={student.getSid(),student.getSname(),student.getSpwd(),student.getSubject(),student.getSmobile()};
+        String sql = "UPDATE student set Spwd = ? where Sid = ?";
+        Object[] params ={student.getSpwd(), student.getSid()};
         return baseDao.executeUpdate(sql,params);
     }
 }

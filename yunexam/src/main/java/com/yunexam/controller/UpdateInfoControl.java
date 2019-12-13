@@ -6,9 +6,10 @@ import com.yunexam.domain.Teacher;
 import com.yunexam.service.UpdateInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
+
+import javax.servlet.http.HttpSession;
+import java.sql.SQLException;
 
 @Controller
 public class UpdateInfoControl {
@@ -16,22 +17,29 @@ public class UpdateInfoControl {
     @Autowired
     UpdateInfoService updateInfoService;
 
-    public boolean UpdateAdmin(Admin admin){
-        return updateInfoService.UpdateAdmin(admin);
-    }
+    @Autowired
+    HttpSession httpSession;
+
+//    public boolean UpdateAdmin(Admin admin){
+//        return updateInfoService.UpdateAdmin(admin);
+//    }
 
     /**
-     * 修改用户密码
-     * @param student
-     * @return
+     * 修改学生密码
+     * @param oldspwd 旧密码
+     * @param newspwd 新密码
+     * @return 修改成功返回true，失败返回false
+     * @throws SQLException
      */
     @ResponseBody
-    @RequestMapping(path = "/UpdateStudent")
-    public boolean UpdateStudent(@RequestBody Student student){
-        return updateInfoService.UpdateStudent(student);
+    @RequestMapping(path = "/UpdateStudent", method = RequestMethod.POST)
+    public boolean UpdateStudent(@RequestParam("oldspwd") String oldspwd,
+                                 @RequestParam("newspwd") String newspwd) throws SQLException {
+        int sid = (int)httpSession.getAttribute("sid");
+        return updateInfoService.UpdateStudent(sid, oldspwd, newspwd);
     }
 
-    public boolean UpdateTeacher(Teacher teacher){
-        return updateInfoService.UpdateTeacher(teacher);
-    }
+//    public boolean UpdateTeacher(Teacher teacher){
+//        return updateInfoService.UpdateTeacher(teacher);
+//    }
 }

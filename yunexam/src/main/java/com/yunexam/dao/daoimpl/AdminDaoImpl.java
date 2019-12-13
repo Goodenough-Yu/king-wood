@@ -70,8 +70,8 @@ public class AdminDaoImpl implements AdminDao {
 
     @Override
     public boolean UpdateAdmin(Admin admin) {
-        String sql = "UPDATE admin set Mid = ?,Mpwd = ?,Mname = ?,Mmobile = ?";
-        Object[] params ={admin.getMid(),admin.getMpwd(),admin.getMname(),admin.getMmobile()};
+        String sql = "UPDATE admin set Mpwd = ? where Mid = ?";
+        Object[] params ={admin.getMpwd(),admin.getMid()};
         return baseDao.executeUpdate(sql,params);
     }
 }

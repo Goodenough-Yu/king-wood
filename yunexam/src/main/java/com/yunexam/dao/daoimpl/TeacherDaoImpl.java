@@ -70,8 +70,8 @@ public class TeacherDaoImpl implements TeacherDao {
 
     @Override
     public boolean UpdateTeacher(Teacher teacher) {
-        String sql = "UPDATE teacher set Tid = ?,Tname = ?,Tpwd = ?,Tmobile = ?";
-        Object[] params ={teacher.getTid(),teacher.getTname(),teacher.getTpwd(),teacher.getTmobile()};
+        String sql = "UPDATE teacher set Tpwd = ? where Tid = ?";
+        Object[] params ={teacher.getTpwd(),teacher.getTid()};
         return baseDao.executeUpdate(sql,params);
     }
 }
