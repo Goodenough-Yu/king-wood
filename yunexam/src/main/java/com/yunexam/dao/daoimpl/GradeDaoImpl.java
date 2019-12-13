@@ -101,7 +101,7 @@ public class GradeDaoImpl implements GradeDao {
 
     @Override
     public boolean AddGrade(Grade grade) {
-        String sql = "INSERT INTO grade(GId,Sid,PIid) values(?,?,?,?)";
+        String sql = "INSERT INTO grade(GId,Sid,PIid,score) values(?,?,?,?)";
         Object[] params ={grade.getGid(),grade.getSid(),grade.getPiid(),grade.getScore()};
         return baseDao.executeUpdate(sql,params);
     }
