@@ -1,0 +1,68 @@
+<style>
+    th {
+        background-color: #B7CEE6;
+    }
+    .layui-table-cell {
+        height: 40px;
+        line-height: 40px;
+    }
+</style>
+<fieldset class="layui-elem-field layui-field-title" style="margin-top: 90px;">
+    <legend>成绩查询</legend>
+</fieldset>
+
+<table class="layui-table" id="gradeTable"></table>
+<script type="text/html" id="lookForPaper">
+    <a type="button" href="page/paper-solution?gid={{ d.gid }}&cname={{ d.cname }}" class="layui-btn layui-btn-fluid">查看试卷</a>
+</script>
+
+<script>
+    layui.use(['table', 'jquery', 'layer'], function () {
+        var table = layui.table
+            ,$ = layui.jquery
+            ,layer = layui.layer;
+
+        //==========================
+        // 请求学生试卷信息
+        // 返回成绩信息和考试信息
+        //==========================
+        $.ajax({
+            url: '/template/student/getGrade',
+            method: 'get',
+            success: function (data) {
+                console.log(data)
+                // 处理数据格式
+                var dateTpl = []
+                for (var i = 0; i < data.grade.length; i++) {
+                    var format = {
+                        score: data.grade[i].score,
+                        cname: data.examInformation[i].einame,
+                        gid: data.grade[i].gid
+                    }
+                    dateTpl.push(format)
+                }
+                console.log(dateTpl)
+                //==================
+                // 渲染表格
+                //==================
+                table.render({
+                    elem: '#gradeTable'
+                    ,skin: 'line'
+                    ,cols: [[
+                        {field:'cname', title:'考试科目', width:400}
+                        ,{field:'score', title: '最终分数', width:400}
+                        ,{title:'操作', templet: '#lookForPaper', fix: 'right'}
+                    ]]
+                    ,data: dateTpl
+                    ,page: true
+                    // ,limit: 5 //每页默认显示的数量
+                })
+            },
+            fail: function (error) {
+                layer.msg("数据接口有误！", {icon: 5, time: 2000})
+                console.log(error)
+            }
+        })
+
+    })
+</script>
