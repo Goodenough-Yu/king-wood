@@ -17,20 +17,37 @@
 </script>
 
 <script>
-    layui.use(['table', 'form'], function () {
+    layui.use(['table', 'form', 'jquery', 'layer'], function () {
         var table = layui.table
+            ,$ = layui.jquery
+            ,layer = layui.layer
             ,form = layui.form;
 
+        //==================
+        // 请求数据，渲染表格，返回学生考试信息
+        //==================
         table.render({
             elem: '#gradeTable'
-            ,url:'/getGrade'
+            ,url:'/template/student/getGrade'
             ,skin: 'line'
             ,cols: [[
-                {field:'course', title:'考试科目', width:300}
-                ,{field:'grade', title: '最终分数', width:300}
+                {field:'course.cname', title:'考试科目', width:300}
+                ,{field:'grade.score', title: '最终分数', width:300}
                 ,{title:'操作', templet: '#button', fix: 'right'}
             ]]
-            ,page: true
         });
+
+        $.ajax({
+            url: '/template/student/getGrade',
+            method: 'get',
+            success: function (data) {
+                console.log(data)
+            },
+            fail: function (error) {
+                layer.msg("数据接口有误！", {icon: 5, time: 2000})
+                console.log(error)
+            }
+        })
+
     })
 </script>

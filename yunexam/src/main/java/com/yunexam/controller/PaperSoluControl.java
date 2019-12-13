@@ -37,7 +37,7 @@ public class PaperSoluControl {
     HttpSession httpSession;
 
     /**
-     * 获取考试成绩
+     * 获取学生所有考试成绩
      * @return
      */
     @ResponseBody

@@ -47,7 +47,7 @@ public class PaperControl {
      * @return 所有题目
      */
     @ResponseBody
-    @RequestMapping(path = "/paper.json", method = RequestMethod.GET)
+    @RequestMapping(path = "/getPaperQuestion", method = RequestMethod.GET)
     public Map<String, Object> getPaperQuestion(
             @RequestParam("eiid") int eiid,
             @RequestParam("title") String title) throws SQLException {
@@ -76,9 +76,9 @@ public class PaperControl {
     public boolean putPaperSolution(@RequestBody List<PaperSolution> paperSolutions) throws SQLException{
         int piid = paperSolutions.get(0).getPiid(); // 试卷id
         int sid = paperSolutions.get(0).getSid(); // 学生id
-        paperSoluService.InsertSolution(paperSolutions);
-        paperSoluService.ReviewSolution(piid,sid);
-        gradeService.getTotalScore(piid,sid);
+        paperSoluService.InsertSolution(paperSolutions); // 插入试卷到题库
+        paperSoluService.ReviewSolution(piid,sid); // 阅卷
+        gradeService.getTotalScore(piid,sid); // 获取总分
         return false;
     }
 

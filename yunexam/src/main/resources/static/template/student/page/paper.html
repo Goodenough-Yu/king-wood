@@ -46,6 +46,7 @@
 
     input[type="radio"] {
         display: inline-block !important;
+        margin: 3px 5px 5px;
     }
 </style>
 <body class="layui-layout-body">
@@ -54,15 +55,17 @@
 
     <!--  编写模板  -->
     <script type="text/html" id="topicTpl">
-        <div class="layui-header layui-row">
-            <div class="layui-col-md1 layui-col-lg-offset1">
+        <div class="layui-header layui-row" style="text-align: center;">
+            <div class="layui-col-md2 layui-col-lg-offset1">
                 <h1>{{ d.title }}</h1>
             </div>
-            <div class="layui-col-md7 layui-col-lg-offset1">
-                <div class="layui-row">
-                    <h3>总分： <strong>100分</strong></h3>
-                    <div class="layui-col-md8">
-                        <h3>考试时间: <strong>120分钟</strong></h3>
+            <div class="layui-col-md6">
+                <div class="layui-row" style="padding-top: 10px;">
+                    <div class="layui-col-md3">
+                        <h3>总分： <strong>100分</strong></h3>
+                    </div>
+                    <div class="layui-col-md5">
+                        <h3>考试时间: <strong>20分钟</strong></h3>
                     </div>
                     <div class="layui-col-md4">
                         <div id="countDown"></div>
@@ -77,26 +80,26 @@
                     <div class="layui-card-header layui-row">
                         <div class="layui-col-md12">
                             <span class="number">{{ index + 1 }}</span>
-                            {{ item.question }} 10分 ( 难度：{{ item.degree }} )
+                            {{ item.question }} ( 10分 难度：{{ item.degree }} )
                         </div>
                     </div>
                     <div class="layui-card-body" style="padding-left: 3%;">
                         <ul class="layui-input-inline">
                             <li>
-                                <label><input type="radio" name="{{ item.qbid }}" value="{{ item.a }}" class="layui-form-radio">
+                                <label><input type="radio" name="{{ item.qbid }}" value="A" class="layui-form-radio">
                                 A. {{ item.a }}</label>
                             </li>
                             <li>
-                                <label><input type="radio" name="{{ item.qbid }}" value="{{ item.b }}" class="layui-form-radio">
+                                <label><input type="radio" name="{{ item.qbid }}" value="B" class="layui-form-radio">
                                 B. {{ item.b }}</label>
                             </li>
                             <li>
 
-                                <label><input type="radio" name="{{ item.qbid }}" value="{{ item.c }}" class="layui-form-radio">
+                                <label><input type="radio" name="{{ item.qbid }}" value="C" class="layui-form-radio">
                                 C. {{ item.c }}</label>
                             </li>
                             <li>
-                                <label><input type="radio" name="{{ item.qbid }}" value="{{ item.d }}" class="layui-form-radio">
+                                <label><input type="radio" name="{{ item.qbid }}" value="D" class="layui-form-radio">
                                 D. {{ item.d }}</label>
                             </li>
                         </ul>
@@ -111,6 +114,7 @@
                         保存试卷
                     </button>
                 </div>
+                <button lay-submit="" lay-filter="autoCommit" id="subBtn" style="display: none;">自动提交按钮</button>
             </form>
 
             {{#  if (d.length === 0) {  }}
@@ -145,9 +149,17 @@
                 var str = '距离考试结束还有: ' + date[1] + '时' + date[2] + '分' + date[3] + '秒';
                 lay('#countDown').html(str);
                 thisTimer = timer;
+                //=============================
+                // 时间结束，自动提交
+                //============================
+                if (date[1] === 0 && date[2] === 0 && date[3] === 0) {
+                    layer.msg('答题时间结束,自动提交试卷', {icon: 4}, function () {
+                        $("#subBtn").click();
+                    })
+                }
             });
         };
-        var endTime = new Date(new Date().getTime() + 2*60*60*1000);
+        var endTime = new Date(new Date().getTime() + 20*60*1000);
         var serverTime = new Date();
         setCountdown(endTime, serverTime);
 
@@ -172,7 +184,7 @@
         //=============
         var sid, piid;
         $.ajax({
-            url: '/template/student/paper.json',
+            url: '/template/student/getPaperQuestion',
             method: 'get',
             data: {eiid: eiid, title: title},
             success: function (data) {
@@ -189,16 +201,64 @@
             },
             error: function (error) {
                 console.log(error)
-                layer.msg('数据接口有误!',{icon: 5, time: 2000})
+                layer.msg('session失效，请重新登录',{icon: 5, time: 2000})
             }
         })
 
 
         //==============
-        // 点击提交试卷
+        // 点击提交试卷, 用户主动提交
         // 发送ajax请求,保存批改试卷
         //==============
         form.on('submit(commit)', function (value) {
+            value = value.field
+            // 存储答题数组
+            var paperSolutionList = []
+            //询问框
+            layer.confirm('您确定提交试卷？', {
+                btn: ['确认'] //按钮
+            }, function(){ // 点击确认按钮
+                if (Object.keys(value).length < 10) {
+                    layer.msg("您还有题目没有作答，请检查!", {icon: 0, time: 2000})
+                    return false;
+                }
+
+                for (var i = 0; i < Object.keys(value).length; i++) {
+                    var object = {
+                        'sid': sid,
+                        'piid': piid,
+                        'qbid': parseInt(Object.keys(value)[i]), // 题目id
+                        'solution': value[Object.keys(value)[i]], // 选项答案
+                        'psscore': 0 // 分数
+                    }
+                    paperSolutionList.push(object)
+                }
+                console.log(paperSolutionList)
+                $.ajax({
+                    url: '/template/student/putPaperSolution',
+                    data: JSON.stringify(paperSolutionList),
+                    method: 'post',
+                    contentType: 'application/json;charset=UTF-8',
+                    dataType: 'json',
+                    success: function () {
+                        layer.msg('试卷提交成功，等待批改···', {icon: 1, time: 1000}, function () {
+                            location.href = '/template/student/#/page/grade-query';
+                        });
+                    },
+                    fail: function (error) {
+                        console.error(error);
+                    }
+                })
+            })
+            return false;
+        })
+
+
+        //==============
+        // 时间截止，自动提交试卷
+        // 发送ajax请求,保存批改试卷
+        //==============
+        form.on('submit(autoCommit)', function (value) {
             value = value.field
             // 存储答题数组
             var paperSolutionList = []
@@ -208,7 +268,7 @@
                     'sid': sid,
                     'piid': piid,
                     'qbid': parseInt(Object.keys(value)[i]), // 题目id
-                    'solution': value[Object.keys(value)[0]], // 答案
+                    'solution': value[Object.keys(value)[i]], // 选项答案
                     'psscore': 0 // 分数
                 }
                 paperSolutionList.push(object)
@@ -221,8 +281,8 @@
                 contentType: 'application/json;charset=UTF-8',
                 dataType: 'json',
                 success: function () {
-                    layer.msg('试卷提交成功，等待批改···', function () {
-                        location.href = '/template/student/#/page/grade-query.html';
+                    layer.msg('试卷提交成功，等待批改···', {icon: 1, time: 1000}, function () {
+                        location.href = '/template/student/#/page/grade-query';
                     });
                 },
                 fail: function (error) {
@@ -231,7 +291,6 @@
             })
             return false;
         })
-
 
         //============
         // 保存试卷

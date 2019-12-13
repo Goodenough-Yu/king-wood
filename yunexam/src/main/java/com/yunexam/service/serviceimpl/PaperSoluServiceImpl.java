@@ -45,9 +45,9 @@ public class PaperSoluServiceImpl implements PaperSoluService {
         for(int i = 0;i<paperSolutions.size();i++){
             PS = paperSolutions.get(i);
             qbid = PS.getQbid();
-            solution = PS.getSolution();
+            solution = PS.getSolution().toUpperCase();
             QB = quesBankDao.FindQuesBankByqbid(qbid);
-            answer = QB.getAnswer();
+            answer = QB.getAnswer().toUpperCase();
             if(solution.equals(answer)){
                 PS.setPsscore(10);
                 paperSoluDao.UpdatePaperSolu(PS);

@@ -72,10 +72,9 @@
         // 请求数据,返回学生实体
         //=========================
         $.ajax({
-            url: '/student-setting',
+            url: '/StudentInfo',
             method: 'get',
             success: function (data) {
-                console.log(data)
                 // 模板渲染
                 var getTpl = userSettingTpl.innerHTML
                     , view = document.getElementById('view');
