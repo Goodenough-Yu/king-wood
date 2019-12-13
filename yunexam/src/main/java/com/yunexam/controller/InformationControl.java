@@ -7,7 +7,11 @@ import com.yunexam.domain.StunumCourse;
 import com.yunexam.domain.Teacher;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.servlet.http.HttpSession;
 import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.List;
@@ -28,9 +32,21 @@ public class InformationControl {
     @Autowired
     ViewCouStuNumDao viewCouStuNumDao;
 
-    public Student StudentInfor(String sidstr) throws SQLException {
-        int sid = Integer.parseInt(sidstr);
-       return studentDao.FindStuBysid(sid);
+    @Autowired
+    HttpSession httpSession;
+
+    /**
+     * 根据id查找学生个人信息
+     * @return 学生
+     * @throws SQLException
+     */
+    @ResponseBody
+    @RequestMapping(path = "/StudentInfo", method = RequestMethod.GET)
+    public Map<String, Object> StudentInfo() throws SQLException {
+        Map<String, Object> map = new HashMap<>();
+        int sid = (int)httpSession.getAttribute("sid");
+        map.put("student", studentDao.FindStuBysid(sid));
+        return map;
     }
 
     public Teacher TeacherInfo(String tidstr) throws SQLException {
