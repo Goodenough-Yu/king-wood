@@ -52,15 +52,14 @@
             <ul class="layui-nav layui-layout-left" lay-filter="page">
                 <li class="layui-nav-item"><a data-a="nav" href="#/page/exam-manage">考试安排</a></li>
                 <li class="layui-nav-item"><a data-a="nav" href="#/page/grade-query.html">成绩查询</a></li>
-                <li class="layui-nav-item"><a data-a="nav" href="">试题解析</a></li>
             </ul>
             <ul class="layui-nav layui-layout-right" lay-filter="dd">
                 <li class="layui-nav-item">
-                    <a href=""><img src="//t.cn/RCzsdCq" class="layui-nav-img">我自己</a>
+                    <a href=""><img src="//t.cn/RCzsdCq" class="layui-nav-img"><span id="myself"></span></a>
                     <dl class="layui-nav-child">
                         <dd><a data-a="nav-dd" href="#/page/user-setting.html">基本资料</a></dd>
                         <dd><a data-a="nav-dd" href="#/page/user-password.html">修改密码</a></dd>
-                        <dd><a href="/static/login.html">退出系统</a></dd>
+                        <dd><a href="../../login.html">退出系统</a></dd>
                     </dl>
                 </li>
             </ul>
@@ -68,20 +67,32 @@
         <div class="layui-container"></div>
     </div>
 <script src="../../layui/layui.js"></script>
+<script src="../../lib/jquery-3.4.1/jquery-3.4.1.min.js"></script>
+<script src="../../lib/jquerysession.js"></script>
 <script>
 
     layui.use(['element', 'jquery'], function () {
         var element = layui.element
             ,$ = layui.jquery;
 
+        // 获取session,展示用户信息
+        var sid = $.session.get('sid')
+        console.log("用户session: " + sid)
+        if (sid == '') {
+            layer.msg('请重新登录', function () {
+                window.location = '';
+            })
+        }
+        $("#myself").html("学生 " + sid)
+
         // 导航栏事件监听,实现单页应用
         element.on('nav(page)', function(elem){
-            var href = initHash(elem.context.href); // 解析#获取真实路径
+            var href = initHash(elem[0].href); // 解析#获取真实路径
             initContainer(href);
         });
 
         element.on('nav(dd)', function(elem){
-            var href = initHash(elem.context.href); // 解析#获取真实路径
+            var href = initHash(elem[0].href); // 解析#获取真实路径
             initContainer(href);
         });
 

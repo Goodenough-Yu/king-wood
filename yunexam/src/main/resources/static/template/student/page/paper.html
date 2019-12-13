@@ -43,21 +43,14 @@
         text-align: center;
         font-weight: 700;
     }
+
+    input[type="radio"] {
+        display: inline-block !important;
+    }
 </style>
 <body class="layui-layout-body">
     <!--  模板引擎视图  -->
-    <form action="/template/student/page/paper-solution" method="post">
-        <div id="view"></div>
-        <div class="layui-container layui-row" style="margin: 30px auto;">
-            <button type="submit" id="submitPaper" class="layui-btn layui-btn-lg layui-col-md3 layui-col-lg-offset3 ">
-                提交试卷
-            </button>
-            <button type="button" id="savePaper" class="layui-btn layui-btn-lg layui-btn-normal layui-col-md3">
-                保存试卷
-            </button>
-        </div>
-    </form>
-
+    <div id="view"></div>
 
     <!--  编写模板  -->
     <script type="text/html" id="topicTpl">
@@ -78,37 +71,47 @@
             </div>
         </div>
         <div class="layui-container">
-            {{#  layui.each(d.questionBankList, function(index, item) {  }}
-            <div class="layui-card" style="margin-top: 15px;">
-                <div class="layui-card-header layui-row">
-                    <div class="layui-col-md12">
-                        <span class="number">{{ index + 1 }}</span>
-                        {{ item.question }} 10分 ( 难度：{{ item.degree }} )
+            <form class="layui-form" action="">
+                {{#  layui.each(d.questionBankList, function(index, item) {  }}
+                <div class="layui-card" style="margin-top: 15px;">
+                    <div class="layui-card-header layui-row">
+                        <div class="layui-col-md12">
+                            <span class="number">{{ index + 1 }}</span>
+                            {{ item.question }} 10分 ( 难度：{{ item.degree }} )
+                        </div>
+                    </div>
+                    <div class="layui-card-body" style="padding-left: 3%;">
+                        <ul class="layui-input-inline">
+                            <li>
+                                <label><input type="radio" name="{{ item.qbid }}" value="{{ item.a }}" class="layui-form-radio">
+                                A. {{ item.a }}</label>
+                            </li>
+                            <li>
+                                <label><input type="radio" name="{{ item.qbid }}" value="{{ item.b }}" class="layui-form-radio">
+                                B. {{ item.b }}</label>
+                            </li>
+                            <li>
+
+                                <label><input type="radio" name="{{ item.qbid }}" value="{{ item.c }}" class="layui-form-radio">
+                                C. {{ item.c }}</label>
+                            </li>
+                            <li>
+                                <label><input type="radio" name="{{ item.qbid }}" value="{{ item.d }}" class="layui-form-radio">
+                                D. {{ item.d }}</label>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="layui-card-body" style="padding-left: 3%;">
-                    <ul class="layui-input-inline">
-                        <li>
-                            <label><input type="radio" name="topic{{ item.qbid }}" class="layui-form-radio">
-                            A. {{ item.a }}</label>
-                        </li>
-                        <li>
-                            <label><input type="radio" name="topic{{ item.qbid }}" class="layui-form-radio">
-                            B. {{ item.b }}</label>
-                        </li>
-                        <li>
-
-                            <label><input type="radio" name="topic{{ item.qbid }}" class="layui-form-radio">
-                            C. {{ item.c }}</label>
-                        </li>
-                        <li>
-                            <label><input type="radio" name="topic{{ item.qbid }}" class="layui-form-radio">
-                            D. {{ item.d }}</label>
-                        </li>
-                    </ul>
+                {{#  }); }}
+                <div class="layui-container layui-row" style="margin: 30px auto;">
+                    <button lay-submit="" lay-filter="commit" class="layui-btn layui-btn-lg layui-col-md3 layui-col-lg-offset3 ">
+                        提交试卷
+                    </button>
+                    <button type="button" id="savePaper" class="layui-btn layui-btn-lg layui-btn-normal layui-col-md3">
+                        保存试卷
+                    </button>
                 </div>
-            </div>
-            {{#  }); }}
+            </form>
 
             {{#  if (d.length === 0) {  }}
             <div class="layui-col-md12" style="margin: 20px auto; text-align: center;"><h1>空白试卷</h1></div>
@@ -120,15 +123,19 @@
 
 <script src="/layui/layui.js"></script>
 <script>
-    layui.use(['element', 'laytpl', 'util', 'laydate', 'jquery', 'layer'], function () {
+    layui.use(['element', 'laytpl', 'util', 'laydate', 'jquery', 'layer', 'form'], function () {
         var element = layui.element
             ,laytpl = layui.laytpl
             ,laydate = layui.laydate
             ,$ = layui.jquery
             ,layer = layui.layer
-            ,util = layui.util;
+            ,util = layui.util
+            ,form = layui.form;
 
+
+        //============
         //倒计时
+        //============
         var thisTimer, setCountdown = function(endTime, serverTime){
             // var endTime = new Date(y, M||0, d||1, H||0, m||0, s||0) //结束时间
             //    ,serverTime = new Date(); //假设为当前服务器时间，这里采用的是本地时间，实际使用一般是取服务端的
@@ -144,7 +151,11 @@
         var serverTime = new Date();
         setCountdown(endTime, serverTime);
 
-        //获取参数
+
+        //================
+        //获取url参数
+        // ？eiid=1&title=考试
+        //================
         function GetQueryString(name) {
             var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
             var r = window.location.search.substr(1).match(reg);
@@ -154,13 +165,21 @@
         var eiid = GetQueryString("eiid");//调用
         var title = GetQueryString("title");
 
-        // 渲染模板
+
+        //=============
+        // 渲染模板数据
+        // 返回sid（学生），piid（试卷），title（题目），questionBankList（试题）
+        //=============
+        var sid, piid;
         $.ajax({
             url: '/template/student/paper.json',
             method: 'get',
             data: {eiid: eiid, title: title},
             success: function (data) {
                 console.log(data)
+                // 获取id
+                sid = data.sid
+                piid = data.piid
                 // 模板渲染
                 var getTpl = topicTpl.innerHTML
                     , view = document.getElementById('view');
@@ -174,6 +193,49 @@
             }
         })
 
+
+        //==============
+        // 点击提交试卷
+        // 发送ajax请求,保存批改试卷
+        //==============
+        form.on('submit(commit)', function (value) {
+            value = value.field
+            // 存储答题数组
+            var paperSolutionList = []
+
+            for (var i = 0; i < Object.keys(value).length; i++) {
+                var object = {
+                    'sid': sid,
+                    'piid': piid,
+                    'qbid': parseInt(Object.keys(value)[i]), // 题目id
+                    'solution': value[Object.keys(value)[0]], // 答案
+                    'psscore': 0 // 分数
+                }
+                paperSolutionList.push(object)
+            }
+            console.log(paperSolutionList)
+            $.ajax({
+                url: '/template/student/putPaperSolution',
+                data: JSON.stringify(paperSolutionList),
+                method: 'post',
+                contentType: 'application/json;charset=UTF-8',
+                dataType: 'json',
+                success: function () {
+                    layer.msg('试卷提交成功，等待批改···', function () {
+                        location.href = '/template/student/#/page/grade-query.html';
+                    });
+                },
+                fail: function (error) {
+                    console.error(error);
+                }
+            })
+            return false;
+        })
+
+
+        //============
+        // 保存试卷
+        //============
         $("#savePaper").on('click', function () {
             layer.msg('保存试卷成功', {icon: 4, time: 2000})
         })

@@ -8,10 +8,12 @@ import com.yunexam.service.GradeService;
 import com.yunexam.service.PaperSoluService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.servlet.http.HttpSession;
 import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.List;
@@ -31,15 +33,20 @@ public class PaperSoluControl {
     @Autowired
     GradeService gradeService;
 
+    @Autowired
+    HttpSession httpSession;
+
     /**
      * 获取考试成绩
      * @return
      */
     @ResponseBody
     @RequestMapping(path = "/grade.json", method = RequestMethod.GET)
-    public Map<String,Object> getGrade(int sid) throws SQLException {
+    public Map<String,Object> getGrade() throws SQLException {
+        int sid = (int)httpSession.getAttribute("sid");
         Map<String,Object> map = new HashMap<String, Object>();
         map = gradeService.getGrade(sid);
+        map.put("code", 0); // 返回成功状态码
         return map;
     }
 
@@ -52,14 +59,5 @@ public class PaperSoluControl {
         Map<String,Object> map = new HashMap<String, Object>();
         map = gradeService.getSolution(gid);
         return map;
-    }
-
-    /**
-     * 存储答题
-     * @param paperSolutions
-     * @return
-     */
-    public boolean putPaperSolution(List<PaperSolution> paperSolutions) {
-        return paperSoluService.InsertSolution(paperSolutions);
     }
 }

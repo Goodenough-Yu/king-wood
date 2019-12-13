@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.servlet.http.HttpSession;
 import java.sql.SQLException;
 
 @Controller
@@ -16,6 +17,9 @@ public class LoginControl {
 
     @Autowired
     LoginService loginService;
+
+    @Autowired
+    HttpSession httpSession;
 
     /**
      * 进入登录界面
@@ -35,11 +39,13 @@ public class LoginControl {
      */
     @ResponseBody
     @RequestMapping(path = "/login", method = RequestMethod.POST)
-    public  boolean StudentLogin(
+    public  boolean Login(
             @RequestParam("identify") String identify,
             @RequestParam("username") String sidStr,
             @RequestParam("password") String spwd) throws SQLException {
         int sid = Integer.parseInt(sidStr);
+        // 用户名存入session
+        httpSession.setAttribute("sid", sid);
         if (identify.equals("student")) {
             return loginService.StudentLogin(sid,spwd);
         } else if (identify.equals("admin")) {
