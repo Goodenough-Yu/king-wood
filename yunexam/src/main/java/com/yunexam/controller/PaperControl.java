@@ -2,6 +2,7 @@ package com.yunexam.controller;
 
 import com.yunexam.domain.PaperSolution;
 import com.yunexam.domain.QuestionBank;
+import com.yunexam.service.GradeService;
 import com.yunexam.service.PaperInfoService;
 import com.yunexam.service.PaperSoluService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,6 +27,9 @@ public class PaperControl {
 
     @Autowired
     HttpSession httpSession;
+
+    @Autowired
+    GradeService gradeService;
 
     /**
      * 生成试卷载体
@@ -73,8 +77,9 @@ public class PaperControl {
         int piid = paperSolutions.get(0).getPiid(); // 试卷id
         int sid = paperSolutions.get(0).getSid(); // 学生id
         paperSoluService.InsertSolution(paperSolutions);
-        // 此处成绩插入数据有问题
-        return paperSoluService.ReviewSolution(piid,sid);
+        paperSoluService.ReviewSolution(piid,sid);
+        gradeService.getTotalScore(piid,sid);
+        return false;
     }
 
 }

@@ -98,4 +98,12 @@ public class GradeDaoImpl implements GradeDao {
 
         return grades;
     }
+
+    @Override
+    public boolean AddGrade(Grade grade) {
+        String sql = "INSERT INTO grade(GId,Sid,PIid) values(?,?,?,?)";
+        Object[] params ={grade.getGid(),grade.getSid(),grade.getPiid(),grade.getScore()};
+        return baseDao.executeUpdate(sql,params);
+    }
+
 }

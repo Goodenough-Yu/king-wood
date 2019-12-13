@@ -9,4 +9,5 @@ public interface GradeDao {
     Grade FindGradeBygid(int gid) throws SQLException; // 根据gid查找成绩
     List<Grade> FindGradeBysid(int sid) throws SQLException; // 根据sid查找成绩
     List<Grade> FindGradeBysidAndpiid(int sid, int piid) throws SQLException; // 根据sid和piid查找成绩
+    boolean AddGrade(Grade grade); // 新增成绩记录
 }
