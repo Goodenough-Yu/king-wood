@@ -41,7 +41,7 @@ public class PaperSoluControl {
      * @return
      */
     @ResponseBody
-    @RequestMapping(path = "/grade.json", method = RequestMethod.GET)
+    @RequestMapping(path = "/getGrade", method = RequestMethod.GET)
     public Map<String,Object> getGrade() throws SQLException {
         int sid = (int)httpSession.getAttribute("sid");
         Map<String,Object> map = new HashMap<String, Object>();

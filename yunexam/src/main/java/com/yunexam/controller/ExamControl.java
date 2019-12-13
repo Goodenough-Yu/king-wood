@@ -22,7 +22,7 @@ public class ExamControl {
      * @return 考试信息
      * @throws SQLException
      */
-    @RequestMapping(path = "/examInfo.json", method = RequestMethod.GET)
+    @RequestMapping(path = "/getExamInformation", method = RequestMethod.GET)
     public List<ExamInformation> getExamInformation() throws SQLException {
        return examInfoService.FindExamInfo();
     }

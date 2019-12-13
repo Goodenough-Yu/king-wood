@@ -48,10 +48,16 @@
             ,layer = layui.layer;
 
         $.ajax({
-            url: '/student-setting',
+            url: '/getExamInformation',
             method: 'get',
             success: function (data) {
                 console.log(data)
+                // 模板渲染
+                var getTpl = examManageTpl.innerHTML
+                    , view = document.getElementById('view');
+                laytpl(getTpl).render(data, function (html) {
+                    view.innerHTML = html;
+                })
             },
             error: function (error) {
                 console.log(error)
