@@ -72,9 +72,9 @@ public class PaperControl {
     public boolean putPaperSolution(@RequestBody List<PaperSolution> paperSolutions) throws SQLException{
         int piid = paperSolutions.get(0).getPiid(); // 试卷id
         int sid = paperSolutions.get(0).getSid(); // 学生id
-        paperSoluService.ReviewSolution(piid,sid);
+        paperSoluService.InsertSolution(paperSolutions);
         // 此处成绩插入数据有问题
-        return paperSoluService.InsertSolution(paperSolutions);
+        return paperSoluService.ReviewSolution(piid,sid);
     }
 
 }
