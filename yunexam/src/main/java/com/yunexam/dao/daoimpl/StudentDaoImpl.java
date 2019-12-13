@@ -43,4 +43,37 @@ public class StudentDaoImpl implements StudentDao {
 
         return student;
     }
+
+    @Override
+    public Student FindStuBysid(int sid) throws SQLException {
+        Connection con = null;
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+        Student student = null;
+
+        con = BaseDao.getConnection();
+        pstmt = con.prepareStatement("select * from student where Sid = ?");
+        pstmt.setInt(1, sid);
+        rs = pstmt.executeQuery();
+
+        while (rs.next()){
+            student = new Student();
+            student.setSid(rs.getInt("Sid"));
+            student.setSpwd(rs.getString("Spwd"));
+            student.setSname(rs.getString("Sname"));
+            student.setSubject(rs.getString("subject"));
+            student.setSmobile(rs.getString("Smobile"));
+        }
+
+        baseDao.closeAll(rs,pstmt,con);
+
+        return student;
+    }
+
+    @Override
+    public boolean UpdateStudent(Student student) {
+        String sql = "UPDATE student set Sid = ?,Sname = ?,Spwd = ?,subiect = ?,Smobile = ?";
+        Object[] params ={student.getSid(),student.getSname(),student.getSpwd(),student.getSubject(),student.getSmobile()};
+        return baseDao.executeUpdate(sql,params);
+    }
 }

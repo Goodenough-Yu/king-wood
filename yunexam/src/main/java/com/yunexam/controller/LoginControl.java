@@ -35,7 +35,7 @@ public class LoginControl {
      */
     @ResponseBody
     @RequestMapping(path = "/login", method = RequestMethod.POST)
-    public  boolean StudentLogin(
+    public  boolean Login(
             @RequestParam("identify") String identify,
             @RequestParam("username") String sidStr,
             @RequestParam("password") String spwd) throws SQLException {
