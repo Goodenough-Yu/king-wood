@@ -31,6 +31,16 @@ public class LoginControl {
     }
 
     /**
+     * 进入登录界面
+     * @return
+     */
+    @RequestMapping(path = "/Logout")
+    public String Logout(){
+        httpSession.removeAttribute("sid");
+        return "login.html";
+    }
+
+    /**
      *  检查学生用户名和密码
      * @param sidStr 用户名
      * @param spwd 密码

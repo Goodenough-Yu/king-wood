@@ -73,13 +73,15 @@ public class PaperControl {
      */
     @ResponseBody
     @RequestMapping(path = "/putPaperSolution", method = RequestMethod.POST)
-    public boolean putPaperSolution(@RequestBody List<PaperSolution> paperSolutions) throws SQLException{
+    public Map<String, Object> putPaperSolution(@RequestBody List<PaperSolution> paperSolutions) throws SQLException{
+        Map<String, Object> map = new HashMap<>();
         int piid = paperSolutions.get(0).getPiid(); // 试卷id
-        int sid = paperSolutions.get(0).getSid(); // 学生id
+        int sid = (int)httpSession.getAttribute("sid"); // 学生id
         paperSoluService.InsertSolution(paperSolutions); // 插入试卷到题库
         paperSoluService.ReviewSolution(piid,sid); // 阅卷
-        gradeService.getTotalScore(piid,sid); // 获取总分
-        return false;
+        float score = gradeService.getTotalScore(piid,sid); // 获取总分
+        map.put("score", score);
+        return map;
     }
 
 }

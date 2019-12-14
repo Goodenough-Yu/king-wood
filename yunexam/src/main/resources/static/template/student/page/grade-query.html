@@ -12,15 +12,63 @@
 </fieldset>
 
 <table class="layui-table" id="gradeTable"></table>
+<div id="laypage"></div>
+
 <script type="text/html" id="lookForPaper">
     <a type="button" href="page/paper-solution?gid={{ d.gid }}&cname={{ d.cname }}" class="layui-btn layui-btn-fluid">查看试卷</a>
 </script>
 
+<table class="layui-hide" id="demo"></table>
+
 <script>
-    layui.use(['table', 'jquery', 'layer'], function () {
+    layui.use(['table', 'jquery', 'layer', 'laypage'], function () {
         var table = layui.table
             ,$ = layui.jquery
-            ,layer = layui.layer;
+            ,layer = layui.layer
+            ,laypage = layui.laypage;
+
+        var dataTpl = []
+
+        //==================
+        // 渲染表格
+        //==================
+        function tableRender(data) {
+            table.render({
+                elem: '#gradeTable'
+                ,skin: 'line'
+                ,cols: [[
+                    {field:'index', title:'考试序号', width:200}
+                    ,{field:'cname', title:'考试科目', width:300}
+                    ,{field:'score', title: '最终分数', width:300}
+                    ,{title:'操作', templet: '#lookForPaper', fix: 'right'}
+                ]]
+                ,data: data
+                ,text: '没有参与考试'
+            })
+        }
+
+        //=======================
+        //分页渲染
+        //=====================
+        function laypageRender(dataTpl) {
+            laypage.render({
+                elem: 'laypage'
+                ,count: dataTpl.length //数据总数
+                ,limit: 5 // 每页显示数据
+                ,limits: [5,10,15,20,25]
+                ,jump: function(obj, first){
+                    // 获取当前页数据
+                    var data = []
+                    for (var i = (obj.curr - 1) * obj.limit; i < obj.curr * obj.limit; i++) {
+                        data.push(dataTpl[i])
+                    }
+                    console.log(data)
+                    // 去除空数据
+                    for (var i = data.length - 1; typeof(data[i]) === 'undefined'; i--) data.pop()
+                    tableRender(data)
+                }
+            })
+        }
 
         //==========================
         // 请求学生试卷信息
@@ -31,32 +79,25 @@
             method: 'get',
             success: function (data) {
                 console.log(data)
-                // 处理数据格式
-                var dateTpl = []
-                for (var i = 0; i < data.grade.length; i++) {
-                    var format = {
-                        score: data.grade[i].score,
-                        cname: data.examInformation[i].einame,
-                        gid: data.grade[i].gid
+                if (data.grade.length) {
+                    // 处理数据格式
+                    var j = 1
+                    for (var i = data.grade.length - 1; i >= 0 ; i--) {
+                        var format = {
+                            index: j,
+                            score: data.grade[i].score,
+                            cname: data.examInformation[i].einame,
+                            gid: data.grade[i].gid
+                        }
+                        dataTpl.push(format)
+                        ++j
                     }
-                    dateTpl.push(format)
+                    console.log(dataTpl)
+                    // 分页和表格渲染
+                    laypageRender(dataTpl)
+                } else {
+                    tableRender([])
                 }
-                console.log(dateTpl)
-                //==================
-                // 渲染表格
-                //==================
-                table.render({
-                    elem: '#gradeTable'
-                    ,skin: 'line'
-                    ,cols: [[
-                        {field:'cname', title:'考试科目', width:400}
-                        ,{field:'score', title: '最终分数', width:400}
-                        ,{title:'操作', templet: '#lookForPaper', fix: 'right'}
-                    ]]
-                    ,data: dateTpl
-                    ,page: true
-                    // ,limit: 5 //每页默认显示的数量
-                })
             },
             fail: function (error) {
                 layer.msg("数据接口有误！", {icon: 5, time: 2000})

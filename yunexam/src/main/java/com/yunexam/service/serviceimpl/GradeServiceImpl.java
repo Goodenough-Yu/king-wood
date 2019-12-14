@@ -42,7 +42,6 @@ public class GradeServiceImpl implements GradeService {
         PaperInformation paperInformation = null;
         ExamInformation examInformation = null;
         Grade grade = new Grade();
-        Object[] params = null;
         for(int i = 0;i<grades.size();i++){
             paperInformation = new PaperInformation();
             examInformation = new ExamInformation();
@@ -83,6 +82,6 @@ public class GradeServiceImpl implements GradeService {
         }
         grade.setScore(totalscore);
         gradeDao.AddGrade(grade);
-        return 0;
+        return totalscore;
     }
 }
