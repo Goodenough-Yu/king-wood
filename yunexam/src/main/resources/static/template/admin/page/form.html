@@ -9,49 +9,39 @@
             <div class="layui-form-item">
                 <label class="layui-form-label">考试名称</label>
                 <div class="layui-input-block">
-                    <input type="text" name="title" autocomplete="off" placeholder="请输入考试名称" class="layui-input">
+                    <input type="text" name="einame" lay-verify="required|title" autocomplete="off" placeholder="请输入考试名称" class="layui-input">
                 </div>
             </div>
 
             <div class="layui-form-item">
-                <div class="layui-inline">
-                    <label class="layui-form-label">日期选择</label>
-                    <div class="layui-input-block">
-                        <input type="text" name="date" id="startDate" autocomplete="off" class="layui-input">
-                    </div>
-                </div>
-                <div class="layui-inline">
-                    <label class="layui-form-label">日期选择</label>
-                    <div class="layui-input-block">
-                        <input type="text" name="date" id="endDate" autocomplete="off" class="layui-input">
-                    </div>
-                </div>
-            </div>
-
-            <div class="layui-form-item">
-                <label class="layui-form-label">单行选择框</label>
+                <label class="layui-form-label">考试期限</label>
                 <div class="layui-input-block">
-                    <select name="interest" lay-filter="aihao">
-                        <option value=""></option>
-                        <option value="0">写作</option>
-                        <option value="1" selected="">阅读</option>
-                        <option value="2">游戏</option>
-                        <option value="3">音乐</option>
-                        <option value="4">旅行</option>
+                    <input type="text" name="time" id="time" lay-verify="required" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+
+            <div class="layui-form-item">
+                <label class="layui-form-label">所属课程</label>
+                <div class="layui-input-block">
+                    <select name="cid">
+                        <option value="1" selected="">语文</option>
+                        <option value="2">数学</option>
+                        <option value="3">游戏</option>
                     </select>
                 </div>
             </div>
 
             <div class="layui-form-item">
-                <button class="layui-btn" lay-submit="" lay-filter="demo2">跳转式提交</button>
+                <button class="layui-btn" lay-submit="" lay-filter="release" type="submit">发布考试</button>
             </div>
         </form>
     </div>
 </div>
 <script>
-    layui.use(['form', 'laydate'], function () {
+    layui.use(['form', 'laydate', 'jquery'], function () {
         var form = layui.form
             , layer = layui.layer
+            , $ = layui.jquery
             , laydate = layui.laydate;
 
         /**
@@ -59,49 +49,66 @@
          */
         form.render();
 
+        //=================
         //日期
+        //=================
         laydate.render({
-            elem: '#startDate'
-        });
-        laydate.render({
-            elem: '#endDate'
+            elem: '#time'
+            ,type: 'datetime'
+            ,range: true
         });
 
-
+        //====================
         //自定义验证规则
+        //====================
         form.verify({
             title: function (value) {
-                if (value.length < 5) {
-                    return '标题至少得5个字符啊';
+                if (value.length < 3) {
+                    return '标题至少得3个字符啊';
                 }
             }
-            , pass: [
-                /^[\S]{6,12}$/
-                , '密码必须6到12位，且不能出现空格'
-            ]
-            , content: function (value) {
-                layedit.sync(editIndex);
-            }
         });
 
-
+        //===================
         //监听提交
-        form.on('submit(demo1)', function (data) {
-            layer.alert(JSON.stringify(data.field), {
-                title: '最终的提交信息'
+        //===================
+        form.on('submit(release)', function (data) {
+            data = data.field
+            // 获取时间
+            times = data.time.split(' - ')
+            // 调整格式
+            var object = {
+                einame: data.einame,
+                start_time: Date.parse(times[0]),
+                finish_time: Date.parse(times[1]),
+                cid: data.cid
+            }
+
+            layer.confirm('确认发布考试', {
+                btn: ['确认', '取消']
+            }, function () {
+                $.ajax({
+                    url: '/releaseExamInformation',
+                    method: 'post',
+                    data: JSON.stringify(object),
+                    contentType: 'application/json',
+                    success: function (data) {
+                        if (data) {
+                            layer.msg('发布成功', {icon: 1, time: 2000}, function () {
+                                location.reload();
+                            })
+                        } else {
+                            layer.msg('发布失败', {icon: 2, time: 2000})
+                        }
+                    },
+                    fail: function (error) {
+                        console.error(error)
+                    }
+                })
+            }, function () {
+                layer.msg('已取消')
             })
             return false;
-        });
-
-        //表单初始赋值
-        form.val('example', {
-            "username": "贤心" // "name": "value"
-            , "password": "123456"
-            , "interest": 1
-            , "like[write]": true //复选框选中状态
-            , "close": true //开关状态
-            , "sex": "女"
-            , "desc": "我爱 layui"
         })
     });
 </script>

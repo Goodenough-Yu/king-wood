@@ -44,7 +44,7 @@
 
         <ul class="layui-nav layui-layout-right" style="margin-right: 20px;">
             <li class="layui-nav-item layuimini-setting">
-                <a href="javascript:;">admin</a>
+                <a href="javascript:;" id="myself"></a>
                 <dl class="layui-nav-child">
                     <dd>
                         <a href="javascript:;" class="login-out">退出登录</a>
@@ -73,11 +73,24 @@
 
 <script src="../../lib/layui-v2.5.4/layui.js?v=1.0.4" charset="utf-8"></script>
 <script src="../../js/lay-config.js?v=1.0.4" charset="utf-8"></script>
+<script src="../../lib/jquery-3.4.1/jquery-3.4.1.min.js"></script>
+<script src="../../lib/jquerysession.js"></script>
 <script>
-    layui.use(['element', 'layer', 'layuimini'], function () {
+    layui.use(['element', 'layer', 'layuimini', 'jquery'], function () {
         var $ = layui.jquery,
-            element = layui.element,
-            layer = layui.layer;
+            element = layui.element
+            ,$ = layui.jquery
+            ,layer = layui.layer;
+
+        // 获取session,展示用户信息
+        var sid = $.session.get('sid')
+        console.log("用户session: " + sid)
+        if (sid == '') {
+            layer.msg('请重新登录', function () {
+                window.location = '';
+            })
+        }
+        $("#myself").html("管理员 " + sid)
 
         // 初始化页面
         layuimini.init('/template/admin/api/init.json');
