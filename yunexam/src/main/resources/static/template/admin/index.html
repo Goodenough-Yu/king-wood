@@ -42,7 +42,7 @@
             </li>
         </ul>
 
-        <ul class="layui-nav layui-layout-right">
+        <ul class="layui-nav layui-layout-right" style="margin-right: 20px;">
             <li class="layui-nav-item layuimini-setting">
                 <a href="javascript:;">admin</a>
                 <dl class="layui-nav-child">
@@ -50,9 +50,6 @@
                         <a href="javascript:;" class="login-out">退出登录</a>
                     </dd>
                 </dl>
-            </li>
-            <li class="layui-nav-item layuimini-select-bgcolor mobile layui-hide-xs">
-                <a href="javascript:;" data-bgcolor="配色方案"><i class="fa fa-ellipsis-v"></i></a>
             </li>
         </ul>
     </div>
@@ -68,7 +65,7 @@
                 <a><cite>菜单管理</cite></a>
             </div>
         </div>
-        <div class="layuimini-content-page">
+        <div class="layuimini-content-template">
         </div>
     </div>
 
@@ -82,6 +79,7 @@
             element = layui.element,
             layer = layui.layer;
 
+        // 初始化页面
         layuimini.init('/template/admin/api/init.json');
 
         $('.login-out').on("click", function () {

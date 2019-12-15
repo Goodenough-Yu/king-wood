@@ -30,7 +30,7 @@
             },
             {
               "title": "发布考试",
-              "href": "page/form-step.html",
+              "href": "page/form.html",
               "icon": "fa fa-file-text",
               "target": "_self"
             }
@@ -43,7 +43,7 @@
           "child": [
             {
               "title": "试题审核",
-              "href": "page/form.html",
+              "href": "page/form-step.html",
               "icon": "fa fa-crop",
               "target": "_self"
             }
