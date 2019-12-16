@@ -1,0 +1,223 @@
+<link rel="stylesheet" href="../lib/lay-module/step-lay/step.css" media="all">
+<style>
+    .layui-form-item {
+        margin-bottom: 10px;
+    }
+</style>
+<div class="layuimini-container">
+    <div class="layuimini-main">
+        <div class="layui-fluid">
+            <div class="layui-card" style="margin-bottom: 80px;">
+                <div class="layui-card-body" style="padding-top: 40px;">
+                    <div class="layui-carousel" id="stepForm" lay-filter="stepForm" style="margin: 0 auto;">
+                        <div carousel-item>
+                            <div>
+                                <form class="layui-form" style="margin: 0 auto;max-width: 460px;padding-top: 40px;">
+                                    <div class="layui-form-item">
+                                        <label class="layui-form-label">所属科目:</label>
+                                        <div class="layui-input-block">
+                                            <select lay-verify="required">
+                                                <option value="1" selected>Java</option>
+                                                <option value="2">Python</option>
+                                                <option value="3">C#</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="layui-form-item">
+                                        <label class="layui-form-label">题目</label>
+                                        <div class="layui-input-block">
+                                            <input type="text" placeholder="题目内容" class="layui-input" lay-verify="title" required/>
+                                        </div>
+                                    </div>
+                                    <div class="layui-form-item">
+                                        <label class="layui-form-label">选项A:</label>
+                                        <div class="layui-input-block">
+                                            <input type="text" placeholder="选项A" value="" class="layui-input" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="layui-form-item">
+                                        <label class="layui-form-label">选项B:</label>
+                                        <div class="layui-input-block">
+                                            <input type="text" placeholder="选项B" value="" class="layui-input" required>
+                                        </div>
+                                    </div>
+                                    <div class="layui-form-item">
+                                        <label class="layui-form-label">选项C:</label>
+                                        <div class="layui-input-block">
+                                            <input type="text" placeholder="选项C" value="" class="layui-input" required>
+                                        </div>
+                                    </div>
+                                    <div class="layui-form-item">
+                                        <label class="layui-form-label">选项D:</label>
+                                        <div class="layui-input-block">
+                                            <input type="text" placeholder="选项D" value="" class="layui-input" required>
+                                        </div>
+                                    </div>
+                                    <div class="layui-form-item">
+                                        <label class="layui-form-label">是否单选:</label>
+                                        <div class="layui-input-block">
+                                            <select lay-verify="required">
+                                                <option value="1" selected>单选</option>
+                                                <option value="0">多选</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="layui-form-item">
+                                        <label class="layui-form-label">难度等级:</label>
+                                        <div class="layui-input-block">
+                                            <select lay-verify="required">
+                                                <option value="1" selected>1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="layui-form-item">
+                                        <div class="layui-input-block">
+                                            <button class="layui-btn" lay-submit lay-filter="formStep">
+                                                &emsp;下一步&emsp;
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div>
+                                <form class="layui-form" style="margin: 0 auto;max-width: 460px;padding-top: 40px;">
+                                    <div class="layui-form-item">
+                                        <label class="layui-form-label">所属课目:</label>
+                                        <div class="layui-input-block">
+                                            <div class="layui-form-mid layui-word-aux">Java</div>
+                                        </div>
+                                    </div>
+                                    <div class="layui-form-item">
+                                        <label class="layui-form-label">题目:</label>
+                                        <div class="layui-input-block">
+                                            <div class="layui-form-mid layui-word-aux">下列说法错误的是</div>
+                                        </div>
+                                    </div>
+                                    <div class="layui-form-item">
+                                        <label class="layui-form-label">选项A:</label>
+                                        <div class="layui-input-block">
+                                            <div class="layui-form-mid layui-word-aux">
+                                                除字典类型外，所有标准对象均可以用于布尔测试
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="layui-form-item">
+                                        <label class="layui-form-label">选项B:</label>
+                                        <div class="layui-input-block">
+                                            <div class="layui-form-mid layui-word-aux">
+                                                空字符串的布尔值是False
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="layui-form-item">
+                                        <label class="layui-form-label">选项C:</label>
+                                        <div class="layui-input-block">
+                                            <div class="layui-form-mid layui-word-aux">
+                                                空列表对象的布尔值是False
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="layui-form-item">
+                                        <label class="layui-form-label">选项D:</label>
+                                        <div class="layui-input-block">
+                                            <div class="layui-form-mid layui-word-aux">
+                                                值为0的任何数字对象的布尔值是False
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="layui-form-item">
+                                        <label class="layui-form-label">是否单选:</label>
+                                        <div class="layui-input-block">
+                                            <div class="layui-form-mid layui-word-aux">
+                                                是
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="layui-form-item">
+                                        <label class="layui-form-label">难度等级:</label>
+                                        <div class="layui-input-block">
+                                            <div class="layui-form-mid layui-word-aux">
+                                                1
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="layui-form-item">
+                                        <div class="layui-input-block">
+                                            <button type="button" class="layui-btn layui-btn-primary pre">上一步</button>
+                                            <button class="layui-btn" lay-submit lay-filter="formStep2">
+                                                &emsp;确认添加&emsp;
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div>
+                                <div style="text-align: center;margin-top: 90px;">
+                                    <i class="layui-icon layui-circle"
+                                       style="color: white;font-size:30px;font-weight:bold;background: #52C41A;padding: 20px;line-height: 80px;">&#xe605;</i>
+                                    <div style="font-size: 24px;color: #333;font-weight: 500;margin-top: 30px;">
+                                        添加成功，等待审核
+                                    </div>
+                                </div>
+                                <div style="text-align: center;margin-top: 50px;">
+                                    <button class="layui-btn next">再加一题</button>
+                                    <button class="layui-btn layui-btn-primary">查看题库</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script>
+    layui.use(['form', 'step'], function () {
+        var $ = layui.$,
+            form = layui.form,
+            step = layui.step;
+
+        /**
+         * 初始化表单，要加上，不然刷新部分组件可能会不加载
+         */
+        form.render();
+
+        step.render({
+            elem: '#stepForm',
+            filter: 'stepForm',
+            width: '100%', //设置容器宽度
+            stepWidth: '750px',
+            height: '500px',
+            stepItems: [{
+                title: '添加试题'
+            }, {
+                title: '审核试题'
+            }, {
+                title: '完成'
+            }]
+        });
+
+
+        form.on('submit(formStep)', function (data) {
+            step.next('#stepForm');
+            return false;
+        });
+
+        form.on('submit(formStep2)', function (data) {
+            step.next('#stepForm');
+            return false;
+        });
+
+        $('.pre').click(function () {
+            step.pre('#stepForm');
+        });
+
+        $('.next').click(function () {
+            step.next('#stepForm');
+        });
+    })
+</script>

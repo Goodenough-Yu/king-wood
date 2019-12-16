@@ -43,93 +43,180 @@
         text-align: center;
         font-weight: 700;
     }
+    .layui-form-radio {
+        margin: -2px 10px 0 0;
+    }
+    .selectedRight {
+        width: inherit;
+        background-color:#99FF99 !important;
+    }
+    .selectedError {
+        width: inherit;
+        background-color:#CC3333  ;
+    }
 </style>
 <body class="layui-layout-body">
-<div class="layui-header layui-row">
-    <div class="layui-col-md1 layui-col-lg-offset1">
-        <h1>考试名称</h1>
-    </div>
-    <div class="layui-col-md7 layui-col-lg-offset1">
-        <div class="layui-row">
-            <h3>分数： <strong>100分</strong></h3>
-        </div>
-    </div>
-</div>
 
 <!--  模板引擎视图  -->
-    <div id="view" class="layui-container"></div>
+<div id="view"></div>
 
 
 <!--  编写模板  -->
 <script type="text/html" id="topicTpl">
-    {{#  layui.each(d, function(index, item) {  }}
-    <div class="layui-card" style="margin-top: 15px;">
-        <div class="layui-card-header layui-row">
-            <div class="layui-col-md12">
-                <span class="number">{{ index + 1 }}</span>
-                {{ item.question }} 10分 ( 难度：{{ item.degree }} )
+    <div class="layui-header layui-row">
+        <div class="layui-col-md4 layui-col-lg-offset1">
+            <h1>{{ d.title }}</h1>
+        </div>
+        <div class="layui-col-md4" style="margin-top: 10px;">
+            <div class="layui-row">
+                <h2>最终分数： <strong style="color: red">{{ d.grade }} 分</strong></h2>
             </div>
         </div>
-        <div class="layui-card-body" style="padding-left: 3%;">
-            <ul class="layui-input-inline">
-                <li>
-                    <label><input type="radio" name="topic{{ item.qbid }}" class="layui-form-radio" disabled>
-                        A. {{ item.a }}</label>
-                </li>
-                <li>
-                    <label><input type="radio" name="topic{{ item.qbid }}" class="layui-form-radio" disabled>
-                        B. {{ item.b }}</label>
-                </li>
-                <li>
-
-                    <label><input type="radio" name="topic{{ item.qbid }}" class="layui-form-radio" disabled>
-                        C. {{ item.c }}</label>
-                </li>
-                <li>
-                    <label><input type="radio" name="topic{{ item.qbid }}" class="layui-form-radio" disabled>
-                        D. {{ item.d }}</label>
-                </li>
-                <li>
-                    <label>答案：{{ item.answer }}</label>
-                </li>
-            </ul>
-        </div>
     </div>
-    {{#  }); }}
-
-    {{#  if (d.length === 0) {  }}
-    <div class="layui-col-md12" style="margin: 20px auto; text-align: center;"><h1>空白试卷</h1></div>
-    {{#  }; }}
+    <div class="layui-container">
+        {{#  layui.each(d.dataTpl, function(index, item) {  }}
+        <div class="layui-card" style="margin-top: 15px;">
+            <div class="layui-card-header layui-row">
+                <div class="layui-col-md12">
+                    <span class="number">{{ index + 1 }}</span>
+                    {{ item.questionBank.question }}  ( 得分：<span style="color: red;">{{ item.score }}分</span>  难度：{{ item.questionBank.degree }} )
+                </div>
+            </div>
+            <div class="layui-card-body" style="padding-left: 3%;">
+                <ul class="layui-input-inline" style="width: 100%;">
+                    <!--   选项A   -->
+                    <li style="width: inherit">
+                        {{# if (item.solution === 'A' && item.questionBank.answer === 'A') { }}
+                        <!-- 学生选择正确 -->
+                        <div class="selectedRight">
+                            <input type="radio" class="layui-form-radio" disabled checked>
+                            A. {{ item.questionBank.a }}
+                        </div>
+                        {{# } else if (item.solution === 'A' && item.questionBank.answer != 'A') { }}
+                        <!-- 显示错误项-->
+                        <div class="selectedError">
+                            <input type="radio" class="layui-form-radio" disabled checked>
+                            A. {{ item.questionBank.a }}
+                        </div>
+                        <!--  显示默认项-->
+                        {{# } else { }}
+                        <input type="radio" class="layui-form-radio" disabled>
+                        A. {{ item.questionBank.a }}
+                        {{# } }}
+                    </li>
+                    <!--   选项B   -->
+                    <li style="width: inherit">
+                        {{# if (item.solution === 'B' && item.questionBank.answer === 'B') { }}
+                        <!-- 学生选择正确 -->
+                        <div class="selectedRight">
+                            <input type="radio" class="layui-form-radio" disabled checked>
+                            B. {{ item.questionBank.b }}
+                        </div>
+                        {{# } else if (item.solution === 'B' && item.questionBank.answer != 'B') { }}
+                        <!-- 显示错误项-->
+                        <div class="selectedError">
+                            <input type="radio" class="layui-form-radio" disabled checked>
+                            B. {{ item.questionBank.b }}
+                        </div>
+                        <!--   显示默认项-->
+                        {{# } else { }}
+                        <input type="radio" class="layui-form-radio" disabled>
+                        B. {{ item.questionBank.b }}
+                        {{# } }}
+                    </li>
+                    <!--   选项C   -->
+                    <li style="width: inherit">
+                        {{# if (item.solution === 'C' && item.questionBank.answer === 'C') { }}
+                        <!-- 学生选择正确 -->
+                        <div class="selectedRight">
+                            <input type="radio" class="layui-form-radio" disabled checked>
+                            C. {{ item.questionBank.c }}
+                        </div>
+                        {{# } else if (item.solution === 'C' && item.questionBank.answer != 'C') { }}
+                        <!-- 显示错误项-->
+                        <div class="selectedError">
+                            <input type="radio" class="layui-form-radio" disabled checked>
+                            C. {{ item.questionBank.c }}
+                        </div>
+                        <!--  显示默认项-->
+                        {{# } else { }}
+                        <input type="radio" class="layui-form-radio" disabled>
+                        C. {{ item.questionBank.c }}
+                        {{# } }}
+                    </li>
+                    <!--   选项D   -->
+                    <li style="width: inherit">
+                        {{# if (item.solution === 'D' && item.questionBank.answer === 'D') { }}
+                        <!-- 学生选择正确 -->
+                        <div class="selectedRight">
+                            <input type="radio" class="layui-form-radio" disabled checked>
+                            D. {{ item.questionBank.d }}
+                        </div>
+                        {{# } else if (item.solution === 'D' && item.questionBank.answer != 'D') { }}
+                        <!-- 显示错误项-->
+                        <div class="selectedError">
+                            <input type="radio" class="layui-form-radio" disabled checked>
+                            D. {{ item.questionBank.d }}
+                        </div>
+                        <!--  显示默认项-->
+                        {{# } else { }}
+                        <input type="radio" class="layui-form-radio" disabled>
+                        D. {{ item.questionBank.d }}
+                        {{# } }}
+                    </li>
+                    <li>
+                        <label>正确答案：{{ item.questionBank.answer }}</label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        {{#  }); }}
+    </div>
 
 </script>
 
 
 <script src="/layui/layui.js"></script>
 <script>
-    layui.use(['element', 'laytpl', 'util', 'laydate', 'jquery', 'layer'], function () {
+    layui.use(['element', 'laytpl', 'util', 'jquery', 'layer'], function () {
         var element = layui.element
             ,laytpl = layui.laytpl
-            ,laydate = layui.laydate
             ,$ = layui.jquery
             ,layer = layui.layer;
 
-        //获取参数
-        function GetQueryString(name) {
-            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
-            var r = window.location.search.substr(1).match(reg);
-            if(r != null) return decodeURI(r[2]);
-            return null;
-        }
-        var eiid=GetQueryString("eiid");//调用
-
-        // 渲染模板
+        //=======================
+        // 渲染模板,获取试卷分析
+        //=======================
         $.ajax({
-            url: '/template/student/paper.json',
+            url: '/template/student/getPaperSolution',
             method: 'get',
-            data: {eiid: eiid},
             success: function (data) {
+                //=======================
+                // 整理数据格式
+                //=======================
+                var dataTpl = []
+                for (var i = 0; i < data.questionBank.length; i++) {
+                    // 查找对应的题和答案
+                    for (var j = data.questionBank.length - 1; j >= 0; j--) {
+                        if (data.paperSolution[j].qbid ===  data.questionBank[i].qbid) {
+                            var objectData = {
+                                questionBank: data.questionBank[i],
+                                score: data.paperSolution[j].psscore,
+                                solution: data.paperSolution[j].solution
+                            }
+                            dataTpl.push(objectData)
+                        }
+                    }
+                }
+                data = {
+                    title: data.title,
+                    grade: data.grade,
+                    dataTpl: dataTpl
+                }
                 console.log(data)
+                //======================
                 // 模板渲染
+                //======================
                 var getTpl = topicTpl.innerHTML
                     , view = document.getElementById('view');
                 laytpl(getTpl).render(data, function (html) {
@@ -138,7 +225,7 @@
             },
             error: function (error) {
                 console.log(error)
-                layer.msg('数据接口有误!',{icon: 5, time: 2000})
+                layer.msg('试卷id接口有误!',{icon: 5, time: 2000})
             }
         })
     })
