@@ -6,6 +6,18 @@
         </fieldset>
 
         <form class="layui-form layui-form-pane" action="">
+
+            <div class="layui-form-item">
+                <label class="layui-form-label">发布科目</label>
+                <div class="layui-input-block">
+                    <select name="cid">
+                        <option value="1" selected>Java</option>
+                        <option value="2">Python</option>
+                        <option value="3">C#</option>
+                    </select>
+                </div>
+            </div>
+
             <div class="layui-form-item">
                 <label class="layui-form-label">考试名称</label>
                 <div class="layui-input-block">
@@ -14,22 +26,49 @@
             </div>
 
             <div class="layui-form-item">
-                <label class="layui-form-label">考试期限</label>
+                <label class="layui-form-label">考试时间</label>
                 <div class="layui-input-block">
                     <input type="text" name="time" id="time" lay-verify="required" autocomplete="off" class="layui-input">
                 </div>
             </div>
 
             <div class="layui-form-item">
-                <label class="layui-form-label">所属课程</label>
-                <div class="layui-input-block">
-                    <select name="cid">
-                        <option value="1" selected="">语文</option>
-                        <option value="2">数学</option>
-                        <option value="3">游戏</option>
-                    </select>
+                <div class="layui-inline">
+                    <label class="layui-form-label">单选题数量</label>
+                    <div class="layui-input-block">
+                        <input type="number" autocomplete="off" class="layui-input" value="10">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">分值/题</label>
+                    <div class="layui-input-block">
+                        <input type="number" autocomplete="off" class="layui-input" value="10">
+                    </div>
                 </div>
             </div>
+
+            <div class="layui-form-item">
+                <div class="layui-inline">
+                    <label class="layui-form-label">多选题数量</label>
+                    <div class="layui-input-block">
+                        <input type="number" autocomplete="off" class="layui-input" value="0">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">分值/题</label>
+                    <div class="layui-input-block">
+                        <input type="number" autocomplete="off" class="layui-input" value="10">
+                    </div>
+                </div>
+            </div>
+
+            <div class="layui-form-item layui-form-text">
+                <label class="layui-form-label">考试注意事项</label>
+                <div class="layui-input-block">
+                    <textarea placeholder="请输入内容" class="layui-textarea"></textarea>
+                </div>
+            </div>
+
 
             <div class="layui-form-item">
                 <button class="layui-btn" lay-submit="" lay-filter="release" type="submit">发布考试</button>

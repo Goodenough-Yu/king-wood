@@ -59,10 +59,13 @@ public class InformationControl {
         return adminDao.FindAdmBymid(mid);
     }
 
+    @ResponseBody
+    @RequestMapping("/getStuNumAll")
     public Map<String,Object> getStuNumAll() throws SQLException {
         List<StunumCourse> stunumCourses = viewCouStuNumDao.FindNumAll();
         Map<String,Object> map = new HashMap<String,Object>();
-        map.put("stunumCourse",stunumCourses);
+        map.put("data",stunumCourses);
+        map.put("code", 0);
         return map;
     }
 
