@@ -4,8 +4,9 @@
 
 <Workspace>
 	<Local Expanded="Yes">
-		<Model Expanded="Yes" ID="{38F2C260-309E-4E84-B2DB-183F276D399F}" Name="考试系统逻辑设计模型" Type="{5F45F978-C4F3-4E35-A3FC-AF3318663A0F}" URL="线上考试系统逻辑结构设计.ldm"/>
-		<Model Expanded="Yes" ID="{55ACF454-8C6E-4CFD-92F6-758FC5F6C0FB}" Name="考试系统物理设计模型" Type="{CDE44E21-9669-11D1-9914-006097355D9B}" URL="线上考试系统物理结构设计.pdm"/>
+		<Model Expanded="Yes" ID="{38F2C260-309E-4E84-B2DB-183F276D399F}" Loaded="No" Name="考试系统逻辑设计模型" Type="{5F45F978-C4F3-4E35-A3FC-AF3318663A0F}" URL="线上考试系统逻辑结构设计.ldm"/>
+		<Model Expanded="Yes" ID="{55ACF454-8C6E-4CFD-92F6-758FC5F6C0FB}" Loaded="No" Name="考试系统物理设计模型" Type="{CDE44E21-9669-11D1-9914-006097355D9B}" URL="线上考试系统物理结构设计.pdm"/>
+		<Model Expanded="Yes" ID="{70038067-BFC5-416E-BE1E-7F6B8B666DFB}" Name="考试系统概念设计模型" Selected="Yes" Type="{1E597170-9350-11D1-AB3C-0020AF71E433}" URL="考试系统概念设计模型.cdm"/>
 	</Local>
 	<BrowserModule Name="Repository"/>
 </Workspace>
