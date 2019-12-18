@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="191b1b55-66c5-4018-aeaa-8720c37b9f71" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/template/student/page/paper.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/template/student/page/paper.html" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1Us3OdEF2yMXIM4pyw5RtQrxbIZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="YunexamApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="yunexam" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yunexam.YunexamApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="191b1b55-66c5-4018-aeaa-8720c37b9f71" name="Default Changelist" comment="" />
+      <created>1576131444697</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1576131444697</updated>
+      <workItem from="1576131447767" duration="6870000" />
+      <workItem from="1576196281850" duration="61000" />
+      <workItem from="1576196490972" duration="2271000" />
+      <workItem from="1576199034038" duration="87000" />
+      <workItem from="1576199216916" duration="3360000" />
+      <workItem from="1576205061334" duration="116000" />
+      <workItem from="1576205342714" duration="882000" />
+      <workItem from="1576206559263" duration="301000" />
+      <workItem from="1576207185622" duration="1262000" />
+      <workItem from="1576208860117" duration="17000" />
+      <workItem from="1576209340238" duration="222000" />
+      <workItem from="1576210154852" duration="133000" />
+      <workItem from="1576231502483" duration="3841000" />
+      <workItem from="1576236578701" duration="81000" />
+      <workItem from="1576237104658" duration="1208000" />
+      <workItem from="1576298421784" duration="684000" />
+      <workItem from="1576390083317" duration="59000" />
+      <workItem from="1576391152956" duration="71000" />
+      <workItem from="1576399925201" duration="1134000" />
+      <workItem from="1576402710243" duration="2704000" />
+      <workItem from="1576474967394" duration="12000" />
+      <workItem from="1576478826435" duration="3252000" />
+      <workItem from="1576561551802" duration="901000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
