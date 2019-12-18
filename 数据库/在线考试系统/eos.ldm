@@ -1,0 +1,2898 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?PowerDesigner AppLocale="UTF16" ID="{38F2C260-309E-4E84-B2DB-183F276D399F}" Label="" LastModificationDate="1576632659" Name="eos" Objects="162" Symbols="26" Type="{5F45F978-C4F3-4E35-A3FC-AF3318663A0F}" signature="LDM_DATA_MODEL_XML" version="16.6.1.5066"?>
+<!--不要编辑此文件-->
+
+<Model xmlns:a="attribute" xmlns:c="collection" xmlns:o="object">
+
+<o:RootObject Id="o1">
+<c:Children>
+<o:Model Id="o2">
+<a:ObjectID>38F2C260-309E-4E84-B2DB-183F276D399F</a:ObjectID>
+<a:Name>eos</a:Name>
+<a:Code>eos</a:Code>
+<a:CreationDate>1572434543</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1576632659</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:PackageOptionsText>[FolderOptions]
+
+[FolderOptions\Common]
+GenerationCheckModel=Yes
+GenerationPath=
+GenerationOptions=
+GenerationTasks=
+GenerationTargets=
+GenerationSelections=</a:PackageOptionsText>
+<a:ModelOptionsText>[ModelOptions]
+
+[ModelOptions\Logical options]
+CaseSensitive=No
+DisplayName=Yes
+EnableTrans=No
+UseTerm=No
+EnableRequirements=No
+EnableFullShortcut=Yes
+SynchroCode=Yes
+Notation=4
+RlshUnique=Yes
+DefaultDttp=
+DomnCopyDttp=Yes
+DomnCopyChck=No
+DomnCopyRule=No
+DomnCopyExat=No
+DomnCopyMand=No
+DttpFullName=Yes
+RlshMigrateDomain=Yes
+RlshMigrateCheck=Yes
+RlshMigrateRule=Yes
+RlshMigrateExtd=Yes
+RlshAllowInhrDivr=No
+RlshAllowNN=No
+RlshGenNN=Yes
+FKNameTemplate=%.3:PARENT%_%ATTRIBUTE%
+FKNameTemplateUsage=No
+RlshAsstTmpl=Each %Entity1.Name%[CRLF].if %Entity1ToEntity2RoleMandatory%[CRLF] must[CRLF].else[CRLF] may[CRLF].endif[CRLF].if %Entity1ToEntity2Role%[CRLF] %.L:Entity1ToEntity2Role%[CRLF].else[CRLF] have[CRLF].endif[CRLF].if %Entity1ToEntity2RoleMaximumCardinality%==1[CRLF].if %Entity1ToEntity2RoleMandatory%[CRLF] one and only one[CRLF].else[CRLF] at most one[CRLF].endif[CRLF].else[CRLF] one or more[CRLF].endif[CRLF].if %Entity1%==%Entity2%[CRLF] other[CRLF].endif[CRLF] %Entity2.Name%.[CRLF]Each %Entity2.Name%[CRLF].if %Entity2ToEntity1RoleMandatory%[CRLF] must[CRLF].else[CRLF] may[CRLF].endif[CRLF].if %Entity2ToEntity1Role%[CRLF] %.L:Entity2ToEntity1Role%[CRLF].else[CRLF] have[CRLF].endif[CRLF].if %Entity2ToEntity1RoleMaximumCardinality%==1[CRLF].if %Entity2ToEntity1RoleMandatory%[CRLF] one and only one[CRLF].else[CRLF] at most one[CRLF].endif[CRLF].else[CRLF] one or more[CRLF].endif[CRLF].if %Entity1%==%Entity2%[CRLF] other[CRLF].endif[CRLF] %Entity1.Name%.
+RlshAsstExt=
+
+[ModelOptions\Logical options\NamingOptionsTemplates]
+
+[ModelOptions\Logical options\ClssNamingOptions]
+
+[ModelOptions\Logical options\ClssNamingOptions\FILO]
+
+[ModelOptions\Logical options\ClssNamingOptions\FILO\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Logical options\ClssNamingOptions\FILO\Code]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Logical options\ClssNamingOptions\FRMEOBJ]
+
+[ModelOptions\Logical options\ClssNamingOptions\FRMEOBJ\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Logical options\ClssNamingOptions\FRMEOBJ\Code]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Logical options\ClssNamingOptions\FRMELNK]
+
+[ModelOptions\Logical options\ClssNamingOptions\FRMELNK\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Logical options\ClssNamingOptions\FRMELNK\Code]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Logical options\ClssNamingOptions\DefaultClass]
+
+[ModelOptions\Logical options\ClssNamingOptions\DefaultClass\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Logical options\ClssNamingOptions\DefaultClass\Code]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMPCKG]
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMPCKG\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMPCKG\Code]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMDOMN]
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMDOMN\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMDOMN\Code]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMENTT]
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMENTT\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMENTT\Code]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMPROP]
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMPROP\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMPROP\Code]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMIDTF]
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMIDTF\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMIDTF\Code]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMRLSH]
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMRLSH\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMRLSH\Code]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMINHR]
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMINHR\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Logical options\ClssNamingOptions\LDMINHR\Code]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Generate]
+
+[ModelOptions\Generate\Cdm]
+CheckModel=Yes
+SaveLinks=Yes
+NameToCode=No
+
+[ModelOptions\Generate\Pdm]
+CheckModel=Yes
+SaveLinks=Yes
+NameToCode=No
+BuildTrgr=No
+TablePrefix=
+IndxPKName=%TABLE%_PK
+IndxAKName=%TABLE%_AK
+IndxFKName=%REFR%_FK
+IndxThreshold=</a:ModelOptionsText>
+<a:RepositoryFilename>E:\PD-WS\eos.ldm</a:RepositoryFilename>
+<c:LogicalDiagrams>
+<o:LogicalDiagram Id="o3">
+<a:ObjectID>C9A51D26-6BF1-47E3-AE10-4B08BFB3DED4</a:ObjectID>
+<a:Name>Diagram_1</a:Name>
+<a:Code>Diagram_1</a:Code>
+<a:CreationDate>1572434544</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572625582</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DisplayPreferences>[DisplayPreferences]
+
+[DisplayPreferences\LDM]
+
+[DisplayPreferences\General]
+Adjust to text=Yes
+Snap Grid=No
+Constrain Labels=Yes
+Display Grid=No
+Show Page Delimiter=No
+Show Links intersections=Yes
+Activate automatic link routing=Yes
+Grid size=800
+Graphic unit=2
+Window color=255 255 255
+Background image=
+Background mode=8
+Watermark image=
+Watermark mode=8
+Show watermark on screen=No
+Gradient mode=0
+Gradient end color=255 255 255
+Show Swimlane=No
+SwimlaneVert=Yes
+TreeVert=No
+CompDark=0
+
+[DisplayPreferences\Object]
+Show Icon=No
+Mode=2
+Trunc Length=40
+Word Length=40
+Word Text=!&quot;#$%&amp;&#39;)*+,-./:;=&gt;?@\]^_`|}~
+Shortcut IntIcon=Yes
+Shortcut IntLoct=Yes
+Shortcut IntFullPath=No
+Shortcut IntLastPackage=Yes
+Shortcut ExtIcon=Yes
+Shortcut ExtLoct=No
+Shortcut ExtFullPath=No
+Shortcut ExtLastPackage=Yes
+Shortcut ExtIncludeModl=Yes
+EObjShowStrn=Yes
+ExtendedObject.Comment=No
+ExtendedObject.IconPicture=No
+ExtendedObject.TextStyle=No
+ExtendedObject_SymbolLayout=&lt;Form&gt;[CRLF] &lt;StandardAttribute Name=&quot;Stereotype&quot; Attribute=&quot;Stereotype&quot; Prefix=&quot;&amp;lt;&amp;lt;&quot; Suffix=&quot;&amp;gt;&amp;gt;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF] &lt;StandardAttribute Name=&quot;Object Name&quot; Attribute=&quot;DisplayName&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;Yes&quot; /&gt;[CRLF] &lt;Separator Name=&quot;Separator&quot; /&gt;[CRLF] &lt;StandardAttribute Name=&quot;Comment&quot; Attribute=&quot;Comment&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;LEFT&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF] &lt;StandardAttribute Name=&quot;Icon&quot; Attribute=&quot;IconPicture&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;Yes&quot; /&gt;[CRLF] &lt;StandardAttribute Name=&quot;Force top align&quot; Attribute=&quot;TextStyle&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;Yes&quot; /&gt;[CRLF]&lt;/Form&gt;
+ELnkShowStrn=Yes
+ELnkShowName=Yes
+ExtendedLink_SymbolLayout=&lt;Form&gt;[CRLF] &lt;Form Name=&quot;Center&quot; &gt;[CRLF]  &lt;StandardAttribute Name=&quot;Stereotype&quot; Attribute=&quot;Stereotype&quot; Prefix=&quot;&amp;lt;&amp;lt;&quot; Suffix=&quot;&amp;gt;&amp;gt;&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF]  &lt;StandardAttribute Name=&quot;Name&quot; Attribute=&quot;DisplayName&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF] &lt;/Form&gt;[CRLF] &lt;Form Name=&quot;Source&quot; &gt;[CRLF] &lt;/Form&gt;[CRLF] &lt;Form Name=&quot;Destination&quot; &gt;[CRLF] &lt;/Form&gt;[CRLF]&lt;/Form&gt;
+ExtDpdShowStrn=Yes
+ExtendedDependency_SymbolLayout=&lt;Form&gt;[CRLF] &lt;Form Name=&quot;居中&quot; &gt;[CRLF]  &lt;StandardAttribute Name=&quot;Stereotype&quot; Attribute=&quot;Stereotype&quot; Prefix=&quot;&amp;lt;&amp;lt;&quot; Suffix=&quot;&amp;gt;&amp;gt;&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF] &lt;/Form&gt;[CRLF] &lt;Form Name=&quot;源&quot; &gt;[CRLF] &lt;/Form&gt;[CRLF] &lt;Form Name=&quot;Destination&quot; &gt;[CRLF] &lt;/Form&gt;[CRLF]&lt;/Form&gt;
+FileObject.Stereotype=No
+FileObject.DisplayName=Yes
+FileObject.LocationOrName=No
+FileObject.IconPicture=No
+FileObject.TextStyle=No
+FileObject.IconMode=Yes
+FileObject_SymbolLayout=&lt;Form&gt;[CRLF] &lt;StandardAttribute Name=&quot;Stereotype&quot; Attribute=&quot;Stereotype&quot; Prefix=&quot;&amp;lt;&amp;lt;&quot; Suffix=&quot;&amp;gt;&amp;gt;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF] &lt;ExclusiveChoice Name=&quot;Exclusive Choice&quot; Mandatory=&quot;Yes&quot; Display=&quot;HorizontalRadios&quot; &gt;[CRLF]  &lt;StandardAttribute Name=&quot;Name&quot; Attribute=&quot;DisplayName&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF]  &lt;StandardAttribute Name=&quot;Location&quot; Attribute=&quot;LocationOrName&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF] &lt;/ExclusiveChoice&gt;[CRLF] &lt;StandardAttribute Name=&quot;Icon&quot; Attribute=&quot;IconPicture&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;Yes&quot; /&gt;[CRLF] &lt;StandardAttribute Name=&quot;Force top align&quot; Attribute=&quot;TextStyle&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;Yes&quot; /&gt;[CRLF]&lt;/Form&gt;
+Package.Stereotype=Yes
+Package.Comment=No
+Package.IconPicture=No
+Package.TextStyle=No
+Package_SymbolLayout=&lt;Form&gt;[CRLF] &lt;StandardAttribute Name=&quot;Stereotype&quot; Attribute=&quot;Stereotype&quot; Prefix=&quot;&amp;lt;&amp;lt;&quot; Suffix=&quot;&amp;gt;&amp;gt;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF] &lt;StandardAttribute Name=&quot;Name&quot; Attribute=&quot;DisplayName&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;Yes&quot; /&gt;[CRLF] &lt;Separator Name=&quot;Separator&quot; /&gt;[CRLF] &lt;StandardAttribute Name=&quot;Comment&quot; Attribute=&quot;Comment&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;LEFT&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF] &lt;StandardAttribute Name=&quot;Icon&quot; Attribute=&quot;IconPicture&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;Yes&quot; /&gt;[CRLF] &lt;StandardAttribute Name=&quot;Force top align&quot; Attribute=&quot;TextStyle&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;Yes&quot; /&gt;[CRLF]&lt;/Form&gt;
+Display Model Version=Yes
+Entity.Stereotype=Yes
+Entity.Attributes=Yes
+Entity.Attributes._Filter=&quot;All attributes&quot; LDMPENTALL
+Entity.Attributes._Columns=Stereotype IdentifierIndicator DomainOrDataType NullIndicator
+Entity.Attributes._Limit=-5
+Entity.Identifiers=Yes
+Entity.Identifiers._Columns=Stereotype IdentifierIndicator
+Entity.Comment=No
+Entity.IconPicture=No
+Entity.TextStyle=No
+Entity.SubSymbols=Yes
+Entity_SymbolLayout=&lt;Form&gt;[CRLF] &lt;StandardAttribute Name=&quot;Stereotype&quot; Attribute=&quot;Stereotype&quot; Prefix=&quot;&amp;lt;&amp;lt;&quot; Suffix=&quot;&amp;gt;&amp;gt;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF] &lt;StandardAttribute Name=&quot;Name&quot; Attribute=&quot;DisplayName&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;Yes&quot; /&gt;[CRLF] &lt;Separator Name=&quot;Separator&quot; /&gt;[CRLF] &lt;StandardCollection Name=&quot;Attributes&quot; Collection=&quot;Attributes&quot; Columns=&quot;Stereotype No\r\nDisplayName Yes\r\nIdentifierIndicator No &amp;quot;Identifier indicators&amp;quot;\r\nDataType No\r\nDomainOrDataType No &amp;quot;Domain or Data type&amp;quot;\r\nDomain No\r\nNullIndicator No Mandatory&quot; Filters=&quot;&amp;quot;All attributes&amp;quot;  LDMPENTALL &amp;quot;&amp;quot;\r\n&amp;quot;Primary attributes&amp;quot;  LDMPENTPK &amp;quot;\&amp;quot;PIDTF \&amp;quot;TRUE\&amp;quot; TRUE\&amp;quot;&amp;quot;\r\n&amp;quot;Identifying attributes&amp;quot;  LDMPENTIDTF &amp;quot;\&amp;quot;AIDF \&amp;quot;TRUE\&amp;quot; TRUE\&amp;quot;&amp;quot;&quot; HasLimit=&quot;Yes&quot; HideEmpty=&quot;No&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF] &lt;StandardCollection Name=&quot;Identifiers&quot; Collection=&quot;Identifiers&quot; Columns=&quot;Stereotype No\r\nDisplayName Yes\r\nIdentifierIndicator No &amp;quot;Identifier indicators&amp;quot;&quot; HasLimit=&quot;No&quot; HideEmpty=&quot;No&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF] &lt;StandardAttribute Name=&quot;Comment&quot; Attribute=&quot;Comment&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;LEFT&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF] &lt;StandardAttribute Name=&quot;Icon&quot; Attribute=&quot;IconPicture&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;Yes&quot; /&gt;[CRLF] &lt;StandardAttribute Name=&quot;Force top align&quot; Attribute=&quot;TextStyle&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;Yes&quot; /&gt;[CRLF]&lt;/Form&gt;
+Relationship.Entity1ToEntity2Role=Yes
+Relationship.Entity2ToEntity1RoleCardinality=No
+Relationship.Entity1ToEntity2RoleDominant=Yes
+Relationship.Stereotype=Yes
+Relationship.DisplayName=Yes
+Relationship.JoinExpression=No
+Relationship.Entity2ToEntity1Role=Yes
+Relationship.Entity1ToEntity2RoleCardinality=No
+Relationship.Entity2ToEntity1RoleDominant=Yes
+Relationship_SymbolLayout=&lt;Form&gt;[CRLF] &lt;Form Name=&quot;Source&quot; &gt;[CRLF]  &lt;StandardAttribute Name=&quot;Role&quot; Attribute=&quot;Entity1ToEntity2Role&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Caption=&quot;Role&quot; Mandatory=&quot;No&quot; /&gt;[CRLF]  &lt;StandardAttribute Name=&quot;Cardinality&quot; Attribute=&quot;Entity2ToEntity1RoleCardinality&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Caption=&quot;Cardinality&quot; Mandatory=&quot;No&quot; /&gt;[CRLF]  &lt;StandardAttribute Name=&quot;Dominance&quot; Attribute=&quot;Entity1ToEntity2RoleDominant&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Caption=&quot;Dominance&quot; Mandatory=&quot;No&quot; /&gt;[CRLF] &lt;/Form&gt;[CRLF] &lt;Form Name=&quot;Center&quot; &gt;[CRLF]  &lt;StandardAttribute Name=&quot;Stereotype&quot; Attribute=&quot;Stereotype&quot; Prefix=&quot;&amp;lt;&amp;lt;&quot; Suffix=&quot;&amp;gt;&amp;gt;&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF]  &lt;ExclusiveChoice Name=&quot;Exclusive Choice&quot; Mandatory=&quot;No&quot; Display=&quot;HorizontalRadios&quot; &gt;[CRLF]   &lt;StandardAttribute Name=&quot;Name&quot; Attribute=&quot;DisplayName&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF]   &lt;StandardAttribute Name=&quot;Join&quot; Attribute=&quot;JoinExpression&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Caption=&quot;Join&quot; Mandatory=&quot;No&quot; /&gt;[CRLF]  &lt;/ExclusiveChoice&gt;[CRLF] &lt;/Form&gt;[CRLF] &lt;Form Name=&quot;Destination&quot; &gt;[CRLF]  &lt;StandardAttribute Name=&quot;Role&quot; Attribute=&quot;Entity2ToEntity1Role&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Caption=&quot;Role&quot; Mandatory=&quot;No&quot; /&gt;[CRLF]  &lt;StandardAttribute Name=&quot;Cardinality&quot; Attribute=&quot;Entity1ToEntity2RoleCardinality&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Caption=&quot;Cardinality&quot; Mandatory=&quot;No&quot; /&gt;[CRLF]  &lt;StandardAttribute Name=&quot;Dominance&quot; Attribute=&quot;Entity2ToEntity1RoleDominant&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Caption=&quot;Dominance&quot; Mandatory=&quot;No&quot; /&gt;[CRLF] &lt;/Form&gt;[CRLF]&lt;/Form&gt;
+Inheritance.Stereotype=Yes
+Inheritance.DisplayName=Yes
+Inheritance.IconPicture=No
+Inheritance.TextStyle=No
+Inheritance_SymbolLayout=&lt;Form&gt;[CRLF] &lt;StandardAttribute Name=&quot;Stereotype&quot; Attribute=&quot;Stereotype&quot; Prefix=&quot;&amp;lt;&amp;lt;&quot; Suffix=&quot;&amp;gt;&amp;gt;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF] &lt;StandardAttribute Name=&quot;Name&quot; Attribute=&quot;DisplayName&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF] &lt;Separator Name=&quot;Separator&quot; /&gt;[CRLF] &lt;StandardAttribute Name=&quot;Icon&quot; Attribute=&quot;IconPicture&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;Yes&quot; /&gt;[CRLF] &lt;StandardAttribute Name=&quot;Force top align&quot; Attribute=&quot;TextStyle&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;Yes&quot; /&gt;[CRLF]&lt;/Form&gt;
+
+[DisplayPreferences\Symbol]
+
+[DisplayPreferences\Symbol\FRMEOBJ]
+STRNFont=新宋体,8,N
+STRNFont color=0 0 0
+DISPNAMEFont=新宋体,8,N
+DISPNAMEFont color=0 0 0
+LABLFont=新宋体,8,N
+LABLFont color=0 0 0
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Width=6000
+Height=2000
+Brush color=255 255 255
+Fill Color=Yes
+Brush style=6
+Brush bitmap mode=12
+Brush gradient mode=64
+Brush gradient color=192 192 192
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 255 128 128
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\FRMELNK]
+CENTERFont=新宋体,8,N
+CENTERFont color=0 0 0
+Line style=1
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Brush color=255 255 255
+Fill Color=Yes
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 128 128 255
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\USRDEPD]
+CENTERFont=新宋体,8,N
+CENTERFont color=0, 0, 0
+Line style=1
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Brush color=255 255 255
+Fill Color=Yes
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=2 0 128 128 255
+Shadow color=192 192 192
+Shadow=0
+OBJXSTRFont=新宋体,8,N
+OBJXSTRFont color=0 0 0
+
+[DisplayPreferences\Symbol\FILO]
+OBJSTRNFont=新宋体,8,N
+OBJSTRNFont color=0 0 0
+DISPNAMEFont=新宋体,8,N
+DISPNAMEFont color=0 0 0
+LCNMFont=新宋体,8,N
+LCNMFont color=0 0 0
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Width=4800
+Height=3600
+Brush color=255 255 255
+Fill Color=Yes
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 0 0 255
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\LDMPCKG]
+STRNFont=新宋体,8,N
+STRNFont color=0 0 0
+DISPNAMEFont=新宋体,8,N
+DISPNAMEFont color=0 0 0
+LABLFont=新宋体,8,N
+LABLFont color=0 0 0
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Width=4800
+Height=4000
+Brush color=255 255 192
+Fill Color=Yes
+Brush style=6
+Brush bitmap mode=12
+Brush gradient mode=65
+Brush gradient color=255 255 255
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 178 178 178
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\LDMENTT]
+STRNFont=新宋体,8,N
+STRNFont color=0 0 0
+DISPNAMEFont=新宋体,8,N
+DISPNAMEFont color=0 0 0
+AttributesFont=新宋体,8,N
+AttributesFont color=0 0 0
+EntityPrimaryAttributeFont=新宋体,8,U
+EntityPrimaryAttributeFont color=0 0 0
+EntityForeignAttributeFont=新宋体,8,N
+EntityForeignAttributeFont color=0 0 0
+IdentifiersFont=新宋体,8,N
+IdentifiersFont color=0 0 0
+LABLFont=新宋体,8,N
+LABLFont color=0 0 0
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Width=4800
+Height=4000
+Brush color=176 186 255
+Fill Color=Yes
+Brush style=6
+Brush bitmap mode=12
+Brush gradient mode=65
+Brush gradient color=255 255 255
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 88 74 181
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\LDMRLSH]
+SOURCEFont=新宋体,8,N
+SOURCEFont color=0 0 0
+CENTERFont=新宋体,8,N
+CENTERFont color=0 0 0
+DESTINATIONFont=新宋体,8,N
+DESTINATIONFont color=0 0 0
+Line style=1
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Brush color=255 255 255
+Fill Color=Yes
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 88 74 181
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\LDMINHR]
+STRNFont=新宋体,8,N
+STRNFont color=0 0 0
+DISPNAMEFont=新宋体,8,N
+DISPNAMEFont color=0 0 0
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=Yes
+Width=1600
+Height=1000
+Brush color=176 186 255
+Fill Color=Yes
+Brush style=6
+Brush bitmap mode=12
+Brush gradient mode=65
+Brush gradient color=255 255 255
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 128 128 255
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\LDMLINH]
+CENTERFont=新宋体,8,N
+CENTERFont color=0 0 0
+Line style=1
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Brush color=255 255 255
+Fill Color=Yes
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 128 128 255
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\Free Symbol]
+Free TextFont=新宋体,8,N
+Free TextFont color=0 0 0
+Line style=0
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Brush color=255 255 255
+Fill Color=Yes
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 0 0 255
+Shadow color=192 192 192
+Shadow=0</a:DisplayPreferences>
+<a:PaperSize>(8268, 11693)</a:PaperSize>
+<a:PageMargins>((315,354), (433,354))</a:PageMargins>
+<a:PageOrientation>1</a:PageOrientation>
+<a:PaperSource>15</a:PaperSource>
+<c:Symbols>
+<o:RelationshipSymbol Id="o4">
+<a:CreationDate>1572594636</a:CreationDate>
+<a:ModificationDate>1572625946</a:ModificationDate>
+<a:Rect>((-5977,-11211), (3933,-454))</a:Rect>
+<a:ListOfPoints>((3533,-1425),(-4087,-1425),(-4087,-10811))</a:ListOfPoints>
+<a:CornerStyle>1</a:CornerStyle>
+<a:ArrowStyle>55</a:ArrowStyle>
+<a:LineColor>11881048</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>CENTER 0 新宋体,8,N
+DESTINATION 0 新宋体,8,N</a:FontList>
+<a:AutomaticRoutingState>2</a:AutomaticRoutingState>
+<c:SourceSymbol>
+<o:EntitySymbol Ref="o5"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:EntitySymbol Ref="o6"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Relationship Ref="o7"/>
+</c:Object>
+</o:RelationshipSymbol>
+<o:RelationshipSymbol Id="o8">
+<a:CreationDate>1572594640</a:CreationDate>
+<a:ModificationDate>1572625938</a:ModificationDate>
+<a:Rect>((7695,-13379), (11475,-925))</a:Rect>
+<a:ListOfPoints>((9578,-1325),(9578,-6286),(9593,-6286),(9593,-12979))</a:ListOfPoints>
+<a:CornerStyle>1</a:CornerStyle>
+<a:ArrowStyle>55</a:ArrowStyle>
+<a:LineColor>11881048</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>CENTER 0 新宋体,8,N
+DESTINATION 0 新宋体,8,N</a:FontList>
+<a:AutomaticRoutingState>4</a:AutomaticRoutingState>
+<c:SourceSymbol>
+<o:EntitySymbol Ref="o5"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:EntitySymbol Ref="o9"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Relationship Ref="o10"/>
+</c:Object>
+</o:RelationshipSymbol>
+<o:RelationshipSymbol Id="o11">
+<a:CreationDate>1572594872</a:CreationDate>
+<a:ModificationDate>1572623927</a:ModificationDate>
+<a:Rect>((9968,-1825), (13748,9342))</a:Rect>
+<a:ListOfPoints>((11828,-1425),(11828,4946),(11888,4946),(11888,7942))</a:ListOfPoints>
+<a:CornerStyle>1</a:CornerStyle>
+<a:ArrowStyle>55</a:ArrowStyle>
+<a:LineColor>11881048</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>CENTER 0 新宋体,8,N
+DESTINATION 0 新宋体,8,N</a:FontList>
+<c:SourceSymbol>
+<o:EntitySymbol Ref="o5"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:EntitySymbol Ref="o12"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Relationship Ref="o13"/>
+</c:Object>
+</o:RelationshipSymbol>
+<o:RelationshipSymbol Id="o14">
+<a:CreationDate>1572595075</a:CreationDate>
+<a:ModificationDate>1572625869</a:ModificationDate>
+<a:Rect>((17545,-32696), (21325,-4400))</a:Rect>
+<a:ListOfPoints>((19435,-4800),(19435,-32296))</a:ListOfPoints>
+<a:CornerStyle>1</a:CornerStyle>
+<a:ArrowStyle>55</a:ArrowStyle>
+<a:LineColor>11881048</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>CENTER 0 新宋体,8,N
+DESTINATION 0 新宋体,8,N</a:FontList>
+<c:SourceSymbol>
+<o:EntitySymbol Ref="o5"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:EntitySymbol Ref="o15"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Relationship Ref="o16"/>
+</c:Object>
+</o:RelationshipSymbol>
+<o:RelationshipSymbol Id="o17">
+<a:CreationDate>1572595077</a:CreationDate>
+<a:ModificationDate>1572625960</a:ModificationDate>
+<a:Rect>((11428,-12255), (38060,-454))</a:Rect>
+<a:ListOfPoints>((11828,-1425),(36170,-1425),(36170,-11855))</a:ListOfPoints>
+<a:CornerStyle>1</a:CornerStyle>
+<a:ArrowStyle>55</a:ArrowStyle>
+<a:LineColor>11881048</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>CENTER 0 新宋体,8,N
+DESTINATION 0 新宋体,8,N</a:FontList>
+<a:AutomaticRoutingState>2</a:AutomaticRoutingState>
+<c:SourceSymbol>
+<o:EntitySymbol Ref="o5"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:EntitySymbol Ref="o18"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Relationship Ref="o19"/>
+</c:Object>
+</o:RelationshipSymbol>
+<o:RelationshipSymbol Id="o20">
+<a:CreationDate>1572595184</a:CreationDate>
+<a:ModificationDate>1572625946</a:ModificationDate>
+<a:Rect>((-9824,-21915), (2185,-14156))</a:Rect>
+<a:ListOfPoints>((-8774,-14556),(-8774,-20715),(785,-20715))</a:ListOfPoints>
+<a:CornerStyle>1</a:CornerStyle>
+<a:ArrowStyle>55</a:ArrowStyle>
+<a:LineColor>11881048</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>CENTER 0 新宋体,8,N
+DESTINATION 0 新宋体,8,N</a:FontList>
+<c:SourceSymbol>
+<o:EntitySymbol Ref="o6"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:EntitySymbol Ref="o21"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Relationship Ref="o22"/>
+</c:Object>
+</o:RelationshipSymbol>
+<o:RelationshipSymbol Id="o23">
+<a:CreationDate>1572595184</a:CreationDate>
+<a:ModificationDate>1572625892</a:ModificationDate>
+<a:Rect>((4732,-21915), (37530,-13864))</a:Rect>
+<a:ListOfPoints>((5132,-20715),(36060,-20715),(36060,-14264))</a:ListOfPoints>
+<a:CornerStyle>1</a:CornerStyle>
+<a:ArrowStyle>14080</a:ArrowStyle>
+<a:LineColor>11881048</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>CENTER 0 新宋体,8,N
+DESTINATION 0 新宋体,8,N</a:FontList>
+<c:SourceSymbol>
+<o:EntitySymbol Ref="o21"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:EntitySymbol Ref="o18"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Relationship Ref="o24"/>
+</c:Object>
+</o:RelationshipSymbol>
+<o:RelationshipSymbol Id="o25">
+<a:CreationDate>1572595314</a:CreationDate>
+<a:ModificationDate>1572625884</a:ModificationDate>
+<a:Rect>((19035,-33496), (41850,-13643))</a:Rect>
+<a:ListOfPoints>((40800,-14043),(40800,-32296),(19435,-32296))</a:ListOfPoints>
+<a:CornerStyle>1</a:CornerStyle>
+<a:ArrowStyle>55</a:ArrowStyle>
+<a:LineColor>11881048</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>CENTER 0 新宋体,8,N
+DESTINATION 0 新宋体,8,N</a:FontList>
+<a:AutomaticRoutingState>3</a:AutomaticRoutingState>
+<c:SourceSymbol>
+<o:EntitySymbol Ref="o18"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:EntitySymbol Ref="o15"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Relationship Ref="o26"/>
+</c:Object>
+</o:RelationshipSymbol>
+<o:RelationshipSymbol Id="o27">
+<a:CreationDate>1572595606</a:CreationDate>
+<a:ModificationDate>1572623927</a:ModificationDate>
+<a:Rect>((10775,21217), (13175,27668))</a:Rect>
+<a:ListOfPoints>((11975,27268),(11975,21617))</a:ListOfPoints>
+<a:CornerStyle>1</a:CornerStyle>
+<a:ArrowStyle>55</a:ArrowStyle>
+<a:LineColor>11881048</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>CENTER 0 新宋体,8,N
+DESTINATION 0 新宋体,8,N</a:FontList>
+<c:SourceSymbol>
+<o:EntitySymbol Ref="o28"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:EntitySymbol Ref="o29"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Relationship Ref="o30"/>
+</c:Object>
+</o:RelationshipSymbol>
+<o:RelationshipSymbol Id="o31">
+<a:CreationDate>1572595606</a:CreationDate>
+<a:ModificationDate>1572623927</a:ModificationDate>
+<a:Rect>((10684,11423), (13084,21018))</a:Rect>
+<a:ListOfPoints>((11884,19618),(11884,11823))</a:ListOfPoints>
+<a:CornerStyle>1</a:CornerStyle>
+<a:ArrowStyle>14080</a:ArrowStyle>
+<a:LineColor>11881048</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>CENTER 0 新宋体,8,N
+DESTINATION 0 新宋体,8,N</a:FontList>
+<c:SourceSymbol>
+<o:EntitySymbol Ref="o29"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:EntitySymbol Ref="o12"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Relationship Ref="o32"/>
+</c:Object>
+</o:RelationshipSymbol>
+<o:RelationshipSymbol Id="o33">
+<a:CreationDate>1572595720</a:CreationDate>
+<a:ModificationDate>1572625982</a:ModificationDate>
+<a:Rect>((-8854,-11261), (5714,30903))</a:Rect>
+<a:ListOfPoints>((-7804,-10861),(-7804,29703),(5253,29703))</a:ListOfPoints>
+<a:CornerStyle>1</a:CornerStyle>
+<a:ArrowStyle>55</a:ArrowStyle>
+<a:LineColor>11881048</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>CENTER 0 新宋体,8,N
+DESTINATION 0 新宋体,8,N</a:FontList>
+<a:AutomaticRoutingState>3</a:AutomaticRoutingState>
+<c:SourceSymbol>
+<o:EntitySymbol Ref="o6"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:EntitySymbol Ref="o28"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Relationship Ref="o34"/>
+</c:Object>
+</o:RelationshipSymbol>
+<o:RelationshipSymbol Id="o35">
+<a:CreationDate>1572595776</a:CreationDate>
+<a:ModificationDate>1572625973</a:ModificationDate>
+<a:Rect>((16425,-12308), (42439,31878))</a:Rect>
+<a:ListOfPoints>((41389,-11908),(41389,30678),(16825,30678))</a:ListOfPoints>
+<a:CornerStyle>1</a:CornerStyle>
+<a:ArrowStyle>55</a:ArrowStyle>
+<a:LineColor>11881048</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>CENTER 0 新宋体,8,N
+DESTINATION 0 新宋体,8,N</a:FontList>
+<a:AutomaticRoutingState>4</a:AutomaticRoutingState>
+<c:SourceSymbol>
+<o:EntitySymbol Ref="o18"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:EntitySymbol Ref="o28"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Relationship Ref="o36"/>
+</c:Object>
+</o:RelationshipSymbol>
+<o:RelationshipSymbol Id="o37">
+<a:CreationDate>1572596140</a:CreationDate>
+<a:ModificationDate>1572625980</a:ModificationDate>
+<a:Rect>((-19508,11607), (5046,34254))</a:Rect>
+<a:ListOfPoints>((4646,33284),(-18308,33284),(-18308,12007))</a:ListOfPoints>
+<a:CornerStyle>1</a:CornerStyle>
+<a:ArrowStyle>55</a:ArrowStyle>
+<a:LineColor>11881048</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>CENTER 0 新宋体,8,N
+DESTINATION 0 新宋体,8,N</a:FontList>
+<a:AutomaticRoutingState>3</a:AutomaticRoutingState>
+<c:SourceSymbol>
+<o:EntitySymbol Ref="o28"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:EntitySymbol Ref="o38"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Relationship Ref="o39"/>
+</c:Object>
+</o:RelationshipSymbol>
+<o:RelationshipSymbol Id="o40">
+<a:CreationDate>1572596144</a:CreationDate>
+<a:ModificationDate>1572625952</a:ModificationDate>
+<a:Rect>((-20037,-11833), (-16864,13097))</a:Rect>
+<a:ListOfPoints>((-17264,-10861),(-18837,-10861),(-18837,12697))</a:ListOfPoints>
+<a:CornerStyle>1</a:CornerStyle>
+<a:ArrowStyle>55</a:ArrowStyle>
+<a:LineColor>11881048</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>CENTER 0 新宋体,8,N
+DESTINATION 0 新宋体,8,N</a:FontList>
+<a:AutomaticRoutingState>2</a:AutomaticRoutingState>
+<c:SourceSymbol>
+<o:EntitySymbol Ref="o6"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:EntitySymbol Ref="o38"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Relationship Ref="o41"/>
+</c:Object>
+</o:RelationshipSymbol>
+<o:RelationshipSymbol Id="o42">
+<a:CreationDate>1572596238</a:CreationDate>
+<a:ModificationDate>1572626002</a:ModificationDate>
+<a:Rect>((-22901,-33218), (-20501,8614))</a:Rect>
+<a:ListOfPoints>((-21701,8214),(-21701,-32818))</a:ListOfPoints>
+<a:CornerStyle>1</a:CornerStyle>
+<a:ArrowStyle>55</a:ArrowStyle>
+<a:LineColor>11881048</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>CENTER 0 新宋体,8,N
+DESTINATION 0 新宋体,8,N</a:FontList>
+<a:AutomaticRoutingState>2</a:AutomaticRoutingState>
+<c:SourceSymbol>
+<o:EntitySymbol Ref="o38"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:EntitySymbol Ref="o43"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Relationship Ref="o44"/>
+</c:Object>
+</o:RelationshipSymbol>
+<o:EntitySymbol Id="o6">
+<a:CreationDate>1572434559</a:CreationDate>
+<a:ModificationDate>1572625946</a:ModificationDate>
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((-17264,-14556), (-285,-7166))</a:Rect>
+<a:AutoAdjustToText>0</a:AutoAdjustToText>
+<a:LineColor>11881048</a:LineColor>
+<a:FillColor>16759472</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 新宋体,12,N
+DISPNAME 0 新宋体,8,N
+Attributes 0 新宋体,8,N
+EntityPrimaryAttribute 0 新宋体,8,U
+EntityForeignAttribute 0 新宋体,8,N
+Identifiers 0 新宋体,8,N
+LABL 0 新宋体,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<a:ManuallyResized>1</a:ManuallyResized>
+<c:Object>
+<o:Entity Ref="o45"/>
+</c:Object>
+</o:EntitySymbol>
+<o:EntitySymbol Id="o9">
+<a:CreationDate>1572434562</a:CreationDate>
+<a:ModificationDate>1572625938</a:ModificationDate>
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((1855,-16637), (17331,-9321))</a:Rect>
+<a:AutoAdjustToText>0</a:AutoAdjustToText>
+<a:LineColor>11881048</a:LineColor>
+<a:FillColor>16759472</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 新宋体,8,N
+DISPNAME 0 新宋体,8,N
+Attributes 0 新宋体,8,N
+EntityPrimaryAttribute 0 新宋体,8,U
+EntityForeignAttribute 0 新宋体,8,N
+Identifiers 0 新宋体,8,N
+LABL 0 新宋体,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<a:ManuallyResized>1</a:ManuallyResized>
+<c:Object>
+<o:Entity Ref="o46"/>
+</c:Object>
+</o:EntitySymbol>
+<o:EntitySymbol Id="o5">
+<a:CreationDate>1572499347</a:CreationDate>
+<a:ModificationDate>1572623927</a:ModificationDate>
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((3533,-4800), (20123,1950))</a:Rect>
+<a:AutoAdjustToText>0</a:AutoAdjustToText>
+<a:LineColor>11881048</a:LineColor>
+<a:FillColor>16759472</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 新宋体,8,N
+DISPNAME 0 新宋体,8,N
+Attributes 0 新宋体,8,N
+EntityPrimaryAttribute 0 新宋体,8,U
+EntityForeignAttribute 0 新宋体,8,N
+Identifiers 0 新宋体,8,N
+LABL 0 新宋体,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<a:ManuallyResized>1</a:ManuallyResized>
+<c:Object>
+<o:Entity Ref="o47"/>
+</c:Object>
+</o:EntitySymbol>
+<o:EntitySymbol Id="o12">
+<a:CreationDate>1572525460</a:CreationDate>
+<a:ModificationDate>1572625582</a:ModificationDate>
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((3301,7942), (20475,15704))</a:Rect>
+<a:AutoAdjustToText>0</a:AutoAdjustToText>
+<a:LineColor>11881048</a:LineColor>
+<a:FillColor>16759472</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 新宋体,8,N
+DISPNAME 0 新宋体,8,N
+Attributes 0 新宋体,8,N
+EntityPrimaryAttribute 0 新宋体,8,U
+EntityForeignAttribute 0 新宋体,8,N
+Identifiers 0 新宋体,8,N
+LABL 0 新宋体,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<a:ManuallyResized>1</a:ManuallyResized>
+<c:Object>
+<o:Entity Ref="o48"/>
+</c:Object>
+</o:EntitySymbol>
+<o:EntitySymbol Id="o28">
+<a:CreationDate>1572526107</a:CreationDate>
+<a:ModificationDate>1572623927</a:ModificationDate>
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((4314,27268), (19758,34618))</a:Rect>
+<a:AutoAdjustToText>0</a:AutoAdjustToText>
+<a:LineColor>11881048</a:LineColor>
+<a:FillColor>16759472</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 新宋体,8,N
+DISPNAME 0 新宋体,8,N
+Attributes 0 新宋体,8,N
+EntityPrimaryAttribute 0 新宋体,8,U
+EntityForeignAttribute 0 新宋体,8,N
+Identifiers 0 新宋体,8,N
+LABL 0 新宋体,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<a:ManuallyResized>1</a:ManuallyResized>
+<c:Object>
+<o:Entity Ref="o49"/>
+</c:Object>
+</o:EntitySymbol>
+<o:EntitySymbol Id="o38">
+<a:CreationDate>1572527155</a:CreationDate>
+<a:ModificationDate>1572625952</a:ModificationDate>
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((-26723,8214), (-9893,15801))</a:Rect>
+<a:AutoAdjustToText>0</a:AutoAdjustToText>
+<a:LineColor>11881048</a:LineColor>
+<a:FillColor>16759472</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 新宋体,8,N
+DISPNAME 0 新宋体,8,N
+Attributes 0 新宋体,8,N
+EntityPrimaryAttribute 0 新宋体,8,U
+EntityForeignAttribute 0 新宋体,8,N
+Identifiers 0 新宋体,8,N
+LABL 0 新宋体,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<a:ManuallyResized>1</a:ManuallyResized>
+<c:Object>
+<o:Entity Ref="o50"/>
+</c:Object>
+</o:EntitySymbol>
+<o:EntitySymbol Id="o43">
+<a:CreationDate>1572527476</a:CreationDate>
+<a:ModificationDate>1572625999</a:ModificationDate>
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((-27483,-36121), (-12157,-28852))</a:Rect>
+<a:AutoAdjustToText>0</a:AutoAdjustToText>
+<a:LineColor>11881048</a:LineColor>
+<a:FillColor>16759472</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 新宋体,8,N
+DISPNAME 0 新宋体,8,N
+Attributes 0 新宋体,8,N
+EntityPrimaryAttribute 0 新宋体,8,U
+EntityForeignAttribute 0 新宋体,8,N
+Identifiers 0 新宋体,8,N
+LABL 0 新宋体,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<a:ManuallyResized>1</a:ManuallyResized>
+<c:Object>
+<o:Entity Ref="o51"/>
+</c:Object>
+</o:EntitySymbol>
+<o:EntitySymbol Id="o15">
+<a:CreationDate>1572528103</a:CreationDate>
+<a:ModificationDate>1572625869</a:ModificationDate>
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((10454,-35389), (28416,-29203))</a:Rect>
+<a:AutoAdjustToText>0</a:AutoAdjustToText>
+<a:LineColor>11881048</a:LineColor>
+<a:FillColor>16759472</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 新宋体,8,N
+DISPNAME 0 新宋体,8,N
+Attributes 0 新宋体,8,N
+EntityPrimaryAttribute 0 新宋体,8,U
+EntityForeignAttribute 0 新宋体,8,N
+Identifiers 0 新宋体,8,N
+LABL 0 新宋体,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<a:ManuallyResized>1</a:ManuallyResized>
+<c:Object>
+<o:Entity Ref="o52"/>
+</c:Object>
+</o:EntitySymbol>
+<o:EntitySymbol Id="o18">
+<a:CreationDate>1572438380</a:CreationDate>
+<a:ModificationDate>1572625882</a:ModificationDate>
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((28881,-14264), (43239,-9446))</a:Rect>
+<a:AutoAdjustToText>0</a:AutoAdjustToText>
+<a:LineColor>11881048</a:LineColor>
+<a:FillColor>16759472</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 新宋体,8,N
+DISPNAME 0 新宋体,8,N
+Attributes 0 新宋体,8,N
+EntityPrimaryAttribute 0 新宋体,8,U
+EntityForeignAttribute 0 新宋体,8,N
+Identifiers 0 新宋体,8,N
+LABL 0 新宋体,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<a:ManuallyResized>1</a:ManuallyResized>
+<c:Object>
+<o:Entity Ref="o53"/>
+</c:Object>
+</o:EntitySymbol>
+<o:EntitySymbol Id="o21">
+<a:CreationDate>1572595184</a:CreationDate>
+<a:ModificationDate>1572625871</a:ModificationDate>
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((785,-22991), (9479,-18440))</a:Rect>
+<a:AutoAdjustToText>0</a:AutoAdjustToText>
+<a:LineColor>11881048</a:LineColor>
+<a:FillColor>16759472</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 新宋体,8,N
+DISPNAME 0 新宋体,8,N
+Attributes 0 新宋体,8,N
+EntityPrimaryAttribute 0 新宋体,8,U
+EntityForeignAttribute 0 新宋体,8,N
+Identifiers 0 新宋体,8,N
+LABL 0 新宋体,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<a:ManuallyResized>1</a:ManuallyResized>
+<c:Object>
+<o:Entity Ref="o54"/>
+</c:Object>
+</o:EntitySymbol>
+<o:EntitySymbol Id="o29">
+<a:CreationDate>1572595606</a:CreationDate>
+<a:ModificationDate>1572625582</a:ModificationDate>
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((7712,19618), (16240,23617))</a:Rect>
+<a:LineColor>11881048</a:LineColor>
+<a:FillColor>16759472</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 新宋体,8,N
+DISPNAME 0 新宋体,8,N
+Attributes 0 新宋体,8,N
+EntityPrimaryAttribute 0 新宋体,8,U
+EntityForeignAttribute 0 新宋体,8,N
+Identifiers 0 新宋体,8,N
+LABL 0 新宋体,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<c:Object>
+<o:Entity Ref="o55"/>
+</c:Object>
+</o:EntitySymbol>
+</c:Symbols>
+</o:LogicalDiagram>
+</c:LogicalDiagrams>
+<c:DefaultDiagram>
+<o:LogicalDiagram Ref="o3"/>
+</c:DefaultDiagram>
+<c:Entities>
+<o:Entity Id="o45">
+<a:ObjectID>FAB64808-769B-4D1C-88A4-869F8B52F885</a:ObjectID>
+<a:Name>学生</a:Name>
+<a:Code>student</a:Code>
+<a:CreationDate>1572434559</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572596213</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:Generated>0</a:Generated>
+<c:Identifiers>
+<o:Identifier Id="o56">
+<a:ObjectID>7C3921D8-11E9-4FE1-8A57-04336715B5E4</a:ObjectID>
+<a:Name>Identifier_1</a:Name>
+<a:Code>Identifier_1</a:Code>
+<a:CreationDate>1572434771</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572594590</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<c:Identifier.Attributes>
+<o:EntityAttribute Ref="o57"/>
+</c:Identifier.Attributes>
+</o:Identifier>
+</c:Identifiers>
+<c:PrimaryIdentifier>
+<o:Identifier Ref="o56"/>
+</c:PrimaryIdentifier>
+<c:Attributes>
+<o:EntityAttribute Id="o57">
+<a:ObjectID>70A70FC2-8DCB-46F9-8B86-91576C50274D</a:ObjectID>
+<a:Name>id</a:Name>
+<a:Code>id</a:Code>
+<a:CreationDate>1572594552</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572594590</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+<a:AutoMigrated>1</a:AutoMigrated>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o58">
+<a:ObjectID>4A697124-F13F-4FA9-8663-F53DAFCB3767</a:ObjectID>
+<a:Name>name</a:Name>
+<a:Code>name</a:Code>
+<a:CreationDate>1572434771</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572594621</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DataType>VA15</a:DataType>
+<a:Length>15</a:Length>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o59">
+<a:ObjectID>A4D2EBAF-7016-4C02-90B7-23660DB027B6</a:ObjectID>
+<a:Name>pwd</a:Name>
+<a:Code>pwd</a:Code>
+<a:CreationDate>1572434771</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572483098</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DataType>VA16</a:DataType>
+<a:Length>16</a:Length>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o60">
+<a:ObjectID>010412B5-1FA4-4F90-8F16-564F3DAB4CDF</a:ObjectID>
+<a:Name>subject</a:Name>
+<a:Code>subject</a:Code>
+<a:CreationDate>1572438167</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572483098</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DataType>VA15</a:DataType>
+<a:Length>15</a:Length>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o61">
+<a:ObjectID>F9F07EEC-427A-4194-B49E-E6ED22DD3A35</a:ObjectID>
+<a:Name>mobile</a:Name>
+<a:Code>mobile</a:Code>
+<a:CreationDate>1572437093</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572594574</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DataType>VA11</a:DataType>
+<a:Length>11</a:Length>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>
+<o:Entity Id="o46">
+<a:ObjectID>7D0998C0-6CEE-42E8-90B7-0373731219C3</a:ObjectID>
+<a:Name>教师</a:Name>
+<a:Code>teacher</a:Code>
+<a:CreationDate>1572434562</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572594701</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<c:Identifiers>
+<o:Identifier Id="o62">
+<a:ObjectID>1EFD743B-9FAB-4EAB-802F-5F13A0E0FC1C</a:ObjectID>
+<a:Name>Identifier_1</a:Name>
+<a:Code>Identifier_1</a:Code>
+<a:CreationDate>1572438065</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572526485</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<c:Identifier.Attributes>
+<o:EntityAttribute Ref="o63"/>
+</c:Identifier.Attributes>
+</o:Identifier>
+</c:Identifiers>
+<c:PrimaryIdentifier>
+<o:Identifier Ref="o62"/>
+</c:PrimaryIdentifier>
+<c:Attributes>
+<o:EntityAttribute Id="o63">
+<a:ObjectID>F4A45A49-D0EF-4989-8D01-86ACC70A92C5</a:ObjectID>
+<a:Name>id</a:Name>
+<a:Code>id</a:Code>
+<a:CreationDate>1572526470</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572526485</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+<a:AutoMigrated>1</a:AutoMigrated>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o64">
+<a:ObjectID>1C0E6566-2E1D-4088-8C23-15763C57DB18</a:ObjectID>
+<a:Name>name</a:Name>
+<a:Code>name</a:Code>
+<a:CreationDate>1572437736</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572499798</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DataType>VA15</a:DataType>
+<a:Length>15</a:Length>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o65">
+<a:ObjectID>BD8668A2-10A8-4C45-86F4-EAC2077C6335</a:ObjectID>
+<a:Name>pwd</a:Name>
+<a:Code>pwd</a:Code>
+<a:CreationDate>1572438065</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572499798</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DataType>VA16</a:DataType>
+<a:Length>16</a:Length>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o66">
+<a:ObjectID>BBCBAF2D-A50E-4920-ADC6-1C8A287AAA4B</a:ObjectID>
+<a:Name>role</a:Name>
+<a:Code>role</a:Code>
+<a:CreationDate>1572440465</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572482838</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DataType>Varchar</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o67">
+<a:ObjectID>25226435-60B1-4629-9AC8-3A4E6953B931</a:ObjectID>
+<a:Name>mobile</a:Name>
+<a:Code>mobile</a:Code>
+<a:CreationDate>1572438065</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572482838</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>
+<o:Entity Id="o68">
+<a:ObjectID>629504A7-9AC3-4EB5-8445-2E6FC8AACA70</a:ObjectID>
+<a:Name>Relationship_4</a:Name>
+<a:Code>Relationship_4</a:Code>
+<a:CreationDate>1572441372</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572526485</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<c:Identifiers>
+<o:Identifier Id="o69">
+<a:ObjectID>B86D2FBA-5641-4B9A-84CC-70276CA319CB</a:ObjectID>
+<a:Name>Identifier_1</a:Name>
+<a:Code>Identifier_1</a:Code>
+<a:CreationDate>1572441372</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572526485</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<c:Identifier.Attributes>
+<o:EntityAttribute Ref="o70"/>
+<o:EntityAttribute Ref="o71"/>
+</c:Identifier.Attributes>
+</o:Identifier>
+</c:Identifiers>
+<c:PrimaryIdentifier>
+<o:Identifier Ref="o69"/>
+</c:PrimaryIdentifier>
+<c:Attributes>
+<o:EntityAttribute Id="o70">
+<a:ObjectID>D44A36D3-CC01-4FF9-B0EA-1D41B4811571</a:ObjectID>
+<a:Name>教师_id</a:Name>
+<a:Code>tea_id</a:Code>
+<a:CreationDate>1572526470</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572526485</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+<a:AutoMigrated>1</a:AutoMigrated>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o71">
+<a:ObjectID>B4E87037-2EB7-485C-8FDF-84564E4938BC</a:ObjectID>
+<a:Name>id</a:Name>
+<a:Code>id</a:Code>
+<a:CreationDate>1572441372</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572441372</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+<a:AutoMigrated>1</a:AutoMigrated>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>
+<o:Entity Id="o47">
+<a:ObjectID>030CA76D-36E4-4678-8376-5402D178F81D</a:ObjectID>
+<a:Name>管理员</a:Name>
+<a:Code>manager</a:Code>
+<a:CreationDate>1572499347</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572595148</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<c:Identifiers>
+<o:Identifier Id="o72">
+<a:ObjectID>EEE87384-67AE-419A-A783-C72BBCF3D221</a:ObjectID>
+<a:Name>Identifier_1</a:Name>
+<a:Code>Identifier_1</a:Code>
+<a:CreationDate>1572499349</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572499641</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<c:Identifier.Attributes>
+<o:EntityAttribute Ref="o73"/>
+</c:Identifier.Attributes>
+</o:Identifier>
+</c:Identifiers>
+<c:PrimaryIdentifier>
+<o:Identifier Ref="o72"/>
+</c:PrimaryIdentifier>
+<c:Attributes>
+<o:EntityAttribute Id="o73">
+<a:ObjectID>8416CFBE-EB43-4CEF-B437-D6210AD3DEC9</a:ObjectID>
+<a:Name>id</a:Name>
+<a:Code>id</a:Code>
+<a:CreationDate>1572499349</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572499703</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o74">
+<a:ObjectID>6CFF9078-4BD4-4BD3-9FB5-EA9C3424A26E</a:ObjectID>
+<a:Name>name</a:Name>
+<a:Code>name</a:Code>
+<a:CreationDate>1572499349</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572499641</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DataType>VA15</a:DataType>
+<a:Length>15</a:Length>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o75">
+<a:ObjectID>534409D3-E845-4101-9A78-E84F224BE8AD</a:ObjectID>
+<a:Name>pwd</a:Name>
+<a:Code>pwd</a:Code>
+<a:CreationDate>1572499349</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572499641</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DataType>VA16</a:DataType>
+<a:Length>16</a:Length>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o76">
+<a:ObjectID>6CC8E8AB-18D4-42A7-8533-C6BB442D117B</a:ObjectID>
+<a:Name>mobile</a:Name>
+<a:Code>mobile</a:Code>
+<a:CreationDate>1572499349</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572594302</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DataType>VA11</a:DataType>
+<a:Length>11</a:Length>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>
+<o:Entity Id="o48">
+<a:ObjectID>DF96F0BF-7BA5-4107-A750-9FB336CBCA09</a:ObjectID>
+<a:Name>题库</a:Name>
+<a:Code>question_bank</a:Code>
+<a:CreationDate>1572525460</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572595676</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<c:Identifiers>
+<o:Identifier Id="o77">
+<a:ObjectID>A8E902B8-B6CA-446D-824A-5D5F17159B0D</a:ObjectID>
+<a:Name>Identifier_1</a:Name>
+<a:Code>Identifier_1</a:Code>
+<a:CreationDate>1572525463</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572525673</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<c:Identifier.Attributes>
+<o:EntityAttribute Ref="o78"/>
+</c:Identifier.Attributes>
+</o:Identifier>
+</c:Identifiers>
+<c:PrimaryIdentifier>
+<o:Identifier Ref="o77"/>
+</c:PrimaryIdentifier>
+<c:Attributes>
+<o:EntityAttribute Id="o78">
+<a:ObjectID>F35BC418-4874-483B-BEA1-2EFE4CF04920</a:ObjectID>
+<a:Name>id</a:Name>
+<a:Code>id</a:Code>
+<a:CreationDate>1572525463</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572625495</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+<a:AutoMigrated>1</a:AutoMigrated>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o79">
+<a:ObjectID>B1296459-FD47-4C02-8C8B-45CC3700BB49</a:ObjectID>
+<a:Name>question</a:Name>
+<a:Code>question</a:Code>
+<a:CreationDate>1572525463</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572594847</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DataType>TXT255</a:DataType>
+<a:Length>255</a:Length>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o80">
+<a:ObjectID>B496CDC0-451A-464A-9C49-EA8BA626F7A7</a:ObjectID>
+<a:Name>options</a:Name>
+<a:Code>options</a:Code>
+<a:CreationDate>1572525463</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572525673</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DataType>VA10</a:DataType>
+<a:Length>10</a:Length>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o81">
+<a:ObjectID>3CF59707-A9B8-409B-8A10-979C2EF06D23</a:ObjectID>
+<a:Name>answer</a:Name>
+<a:Code>answer</a:Code>
+<a:CreationDate>1572525463</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572594847</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DataType>TXT255</a:DataType>
+<a:Length>255</a:Length>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o82">
+<a:ObjectID>4FBF2DB4-9554-4C23-AF9F-42F67A793CAA</a:ObjectID>
+<a:Name>is_single</a:Name>
+<a:Code>is_single</a:Code>
+<a:CreationDate>1572525463</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572594847</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DataType>N1</a:DataType>
+<a:Length>1</a:Length>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o83">
+<a:ObjectID>32944840-476E-4054-95C6-79457DF015B1</a:ObjectID>
+<a:Name>degree</a:Name>
+<a:Code>degree</a:Code>
+<a:CreationDate>1572574340</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572574376</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DataType>N1</a:DataType>
+<a:Length>1</a:Length>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o84">
+<a:ObjectID>5D72B64A-EFF1-4E2B-A035-D3B385EDB36A</a:ObjectID>
+<a:Name>cou_id</a:Name>
+<a:Code>cou_id</a:Code>
+<a:CreationDate>1572525463</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572525673</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>
+<o:Entity Id="o49">
+<a:ObjectID>72187986-D4C4-465E-821A-2D571912CC20</a:ObjectID>
+<a:Name>试卷信息</a:Name>
+<a:Code>paper_information</a:Code>
+<a:CreationDate>1572526107</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572596199</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<c:Identifiers>
+<o:Identifier Id="o85">
+<a:ObjectID>3CD168A5-23C6-4D02-A6D5-F7C421D9CC52</a:ObjectID>
+<a:Name>Identifier_1</a:Name>
+<a:Code>Identifier_1</a:Code>
+<a:CreationDate>1572526109</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572595568</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<c:Identifier.Attributes>
+<o:EntityAttribute Ref="o86"/>
+</c:Identifier.Attributes>
+</o:Identifier>
+</c:Identifiers>
+<c:PrimaryIdentifier>
+<o:Identifier Ref="o85"/>
+</c:PrimaryIdentifier>
+<c:Attributes>
+<o:EntityAttribute Id="o86">
+<a:ObjectID>75CF8CDE-3542-4F7E-AEB0-3851C8C0B3EF</a:ObjectID>
+<a:Name>id</a:Name>
+<a:Code>id</a:Code>
+<a:CreationDate>1572595505</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572595568</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+<a:AutoMigrated>1</a:AutoMigrated>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o87">
+<a:ObjectID>B392B8C5-E7F2-4B51-A187-E59DAA1AB42C</a:ObjectID>
+<a:Name>name</a:Name>
+<a:Code>name</a:Code>
+<a:CreationDate>1572526109</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572595577</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DataType>VA15</a:DataType>
+<a:Length>15</a:Length>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o88">
+<a:ObjectID>C744EAF8-E78F-4B90-8544-9307FDE9A567</a:ObjectID>
+<a:Name>score</a:Name>
+<a:Code>score</a:Code>
+<a:CreationDate>1572526109</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572595568</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DataType>F4</a:DataType>
+<a:Length>4</a:Length>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o89">
+<a:ObjectID>353C0364-2EA7-4C0B-A1DA-BBDD35D72DE4</a:ObjectID>
+<a:Name>cou_id</a:Name>
+<a:Code>cou_id</a:Code>
+<a:CreationDate>1572526109</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572526226</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+<a:AutoMigrated>1</a:AutoMigrated>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o90">
+<a:ObjectID>9D934536-4C7C-4A30-8C93-AF051002DFBA</a:ObjectID>
+<a:Name>time</a:Name>
+<a:Code>time</a:Code>
+<a:CreationDate>1572575465</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572595568</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>
+<o:Entity Id="o50">
+<a:ObjectID>5A2827CA-CC21-4AB0-8BE2-BD7A60B80C19</a:ObjectID>
+<a:Name>成绩单</a:Name>
+<a:Code>grade</a:Code>
+<a:CreationDate>1572527155</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572596270</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<c:Identifiers>
+<o:Identifier Id="o91">
+<a:ObjectID>653DD340-C733-405F-8C30-49517DB0121B</a:ObjectID>
+<a:Name>Identifier_1</a:Name>
+<a:Code>Identifier_1</a:Code>
+<a:CreationDate>1572527157</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572527370</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<c:Identifier.Attributes>
+<o:EntityAttribute Ref="o92"/>
+</c:Identifier.Attributes>
+</o:Identifier>
+</c:Identifiers>
+<c:PrimaryIdentifier>
+<o:Identifier Ref="o91"/>
+</c:PrimaryIdentifier>
+<c:Attributes>
+<o:EntityAttribute Id="o92">
+<a:ObjectID>F4ED13C1-BF7E-46B4-8B0B-9454E962EA86</a:ObjectID>
+<a:Name>id</a:Name>
+<a:Code>id</a:Code>
+<a:CreationDate>1572527157</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572527370</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+<a:AutoMigrated>1</a:AutoMigrated>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o93">
+<a:ObjectID>152E1446-405A-4B40-9F25-2CD99BD2890B</a:ObjectID>
+<a:Name>score</a:Name>
+<a:Code>score</a:Code>
+<a:CreationDate>1572527157</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572596095</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DataType>F4</a:DataType>
+<a:Length>4</a:Length>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o94">
+<a:ObjectID>541F00E6-FE80-4947-9E76-41AFAB39A047</a:ObjectID>
+<a:Name>time</a:Name>
+<a:Code>time</a:Code>
+<a:CreationDate>1572527157</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572596095</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o95">
+<a:ObjectID>D8789552-829E-4D68-BC49-BD610D54BA26</a:ObjectID>
+<a:Name>stu_id</a:Name>
+<a:Code>stu_id</a:Code>
+<a:CreationDate>1572527157</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572527370</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+<a:AutoMigrated>1</a:AutoMigrated>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o96">
+<a:ObjectID>0159F954-02C8-4CE2-8666-8BE4BAB5A4AE</a:ObjectID>
+<a:Name>pi_id</a:Name>
+<a:Code>pi_id</a:Code>
+<a:CreationDate>1572527157</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572527370</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o97">
+<a:ObjectID>18B63D45-477D-44DD-882D-00174BF096BF</a:ObjectID>
+<a:Name>pi_name</a:Name>
+<a:Code>pi_name</a:Code>
+<a:CreationDate>1572527157</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572596115</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DataType>VA15</a:DataType>
+<a:Length>15</a:Length>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>
+<o:Entity Id="o51">
+<a:ObjectID>F6B9C93D-76B8-4A18-96EA-BCCF4F37055E</a:ObjectID>
+<a:Name>答题记录</a:Name>
+<a:Code>paper_solution</a:Code>
+<a:CreationDate>1572527476</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572596317</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<c:Identifiers>
+<o:Identifier Id="o98">
+<a:ObjectID>8790D3CA-5BF8-4E80-8065-768D6A87DA8C</a:ObjectID>
+<a:Name>Identifier_1</a:Name>
+<a:Code>Identifier_1</a:Code>
+<a:CreationDate>1572527741</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572596317</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<c:Identifier.Attributes>
+<o:EntityAttribute Ref="o99"/>
+</c:Identifier.Attributes>
+</o:Identifier>
+</c:Identifiers>
+<c:PrimaryIdentifier>
+<o:Identifier Ref="o98"/>
+</c:PrimaryIdentifier>
+<c:Attributes>
+<o:EntityAttribute Id="o99">
+<a:ObjectID>0E423373-A1D1-43EB-A1C3-B6B0F3099073</a:ObjectID>
+<a:Name>id</a:Name>
+<a:Code>id</a:Code>
+<a:CreationDate>1572596238</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572596317</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+<a:AutoMigrated>1</a:AutoMigrated>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o100">
+<a:ObjectID>639A5141-AA36-42B0-BCF4-ECBB9112A67D</a:ObjectID>
+<a:Name>solution</a:Name>
+<a:Code>solution</a:Code>
+<a:CreationDate>1572527741</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572596317</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DataType>TXT255</a:DataType>
+<a:Length>255</a:Length>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o101">
+<a:ObjectID>16499386-E5B3-4EAF-884C-D3A9CDA42AC8</a:ObjectID>
+<a:Name>score</a:Name>
+<a:Code>score</a:Code>
+<a:CreationDate>1572527741</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572596317</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DataType>F2</a:DataType>
+<a:Length>2</a:Length>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o102">
+<a:ObjectID>D838E43E-D986-4F6D-9593-FD458830F4EF</a:ObjectID>
+<a:Name>stu_id</a:Name>
+<a:Code>stu_id</a:Code>
+<a:CreationDate>1572527741</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572527910</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o103">
+<a:ObjectID>C0AA0FB3-8D89-4C90-AD01-913DF7464A78</a:ObjectID>
+<a:Name>pi_id</a:Name>
+<a:Code>pi_id</a:Code>
+<a:CreationDate>1572527741</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572527910</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o104">
+<a:ObjectID>830C942F-6F93-4F63-928C-DAEA7FD9F729</a:ObjectID>
+<a:Name>pg_id</a:Name>
+<a:Code>pg_id</a:Code>
+<a:CreationDate>1572596271</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572596317</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>
+<o:Entity Id="o52">
+<a:ObjectID>9A049605-FB99-41B6-AA59-590D9A58A43F</a:ObjectID>
+<a:Name>考试安排</a:Name>
+<a:Code>exam_information</a:Code>
+<a:CreationDate>1572528103</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572595358</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<c:Identifiers>
+<o:Identifier Id="o105">
+<a:ObjectID>4263621B-733F-4018-85C5-863890F0FC65</a:ObjectID>
+<a:Name>Identifier_1</a:Name>
+<a:Code>Identifier_1</a:Code>
+<a:CreationDate>1572528108</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572528209</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<c:Identifier.Attributes>
+<o:EntityAttribute Ref="o106"/>
+</c:Identifier.Attributes>
+</o:Identifier>
+</c:Identifiers>
+<c:PrimaryIdentifier>
+<o:Identifier Ref="o105"/>
+</c:PrimaryIdentifier>
+<c:Attributes>
+<o:EntityAttribute Id="o106">
+<a:ObjectID>C1F5B40F-18AC-4A4D-9EFE-F1453C69DEA7</a:ObjectID>
+<a:Name>id</a:Name>
+<a:Code>id</a:Code>
+<a:CreationDate>1572528108</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572528209</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+<a:AutoMigrated>1</a:AutoMigrated>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o107">
+<a:ObjectID>506AE4E6-1D14-4800-92E1-8DC1E9840843</a:ObjectID>
+<a:Name>课程_id</a:Name>
+<a:Code>cou_id</a:Code>
+<a:CreationDate>1572595314</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572595314</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DataType>I</a:DataType>
+<a:AutoMigrated>1</a:AutoMigrated>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o108">
+<a:ObjectID>52CBC6FE-F803-49CA-9D3A-2AD8A7FA4750</a:ObjectID>
+<a:Name>name</a:Name>
+<a:Code>name</a:Code>
+<a:CreationDate>1572528108</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572528209</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DataType>VA255</a:DataType>
+<a:Length>255</a:Length>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o109">
+<a:ObjectID>9EC3AC86-F204-4C49-BF15-D9D922AD7046</a:ObjectID>
+<a:Name>start_time</a:Name>
+<a:Code>start_time</a:Code>
+<a:CreationDate>1572528108</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572528209</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DataType>VA50</a:DataType>
+<a:Length>50</a:Length>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o110">
+<a:ObjectID>DE570868-3D83-4DE7-A267-238BFEA583D6</a:ObjectID>
+<a:Name>end_time</a:Name>
+<a:Code>end_time</a:Code>
+<a:CreationDate>1572528108</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572528209</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DataType>VA50</a:DataType>
+<a:Length>50</a:Length>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>
+<o:Entity Id="o53">
+<a:ObjectID>14506C34-43BB-4C77-85F6-F9011543947D</a:ObjectID>
+<a:Name>课程</a:Name>
+<a:Code>course</a:Code>
+<a:CreationDate>1572438380</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572596020</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<c:Identifiers>
+<o:Identifier Id="o111">
+<a:ObjectID>5AD333EA-2340-4E09-A7DD-B0081DBF0C34</a:ObjectID>
+<a:Name>Identifier_1</a:Name>
+<a:Code>Identifier_1</a:Code>
+<a:CreationDate>1572440991</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572441006</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<c:Identifier.Attributes>
+<o:EntityAttribute Ref="o112"/>
+</c:Identifier.Attributes>
+</o:Identifier>
+</c:Identifiers>
+<c:PrimaryIdentifier>
+<o:Identifier Ref="o111"/>
+</c:PrimaryIdentifier>
+<c:Attributes>
+<o:EntityAttribute Id="o112">
+<a:ObjectID>F91F3B49-6424-4A40-AF21-D3F55FA7AB32</a:ObjectID>
+<a:Name>id</a:Name>
+<a:Code>id</a:Code>
+<a:CreationDate>1572440933</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572441006</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+<a:AutoMigrated>1</a:AutoMigrated>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o113">
+<a:ObjectID>E3B7F342-59C0-4B33-A2F0-A52FE9D4A869</a:ObjectID>
+<a:Name>name</a:Name>
+<a:Code>name</a:Code>
+<a:CreationDate>1572440967</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572595038</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DataType>VA15</a:DataType>
+<a:Length>15</a:Length>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>
+<o:Entity Id="o54">
+<a:ObjectID>06927F84-4894-40C0-9BF6-1EE5CDEAABBE</a:ObjectID>
+<a:Name>学生_课程</a:Name>
+<a:Code>student_course</a:Code>
+<a:CreationDate>1572595184</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572595273</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<c:Identifiers>
+<o:Identifier Id="o114">
+<a:ObjectID>4CE6CC55-C74F-4BBB-9383-088838991346</a:ObjectID>
+<a:Name>Identifier_1</a:Name>
+<a:Code>Identifier_1</a:Code>
+<a:CreationDate>1572595184</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572595184</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<c:Identifier.Attributes>
+<o:EntityAttribute Ref="o115"/>
+<o:EntityAttribute Ref="o116"/>
+</c:Identifier.Attributes>
+</o:Identifier>
+</c:Identifiers>
+<c:PrimaryIdentifier>
+<o:Identifier Ref="o114"/>
+</c:PrimaryIdentifier>
+<c:Attributes>
+<o:EntityAttribute Id="o115">
+<a:ObjectID>2FCCA84C-398C-4F9B-AB4C-B1C7F569EDE2</a:ObjectID>
+<a:Name>课程_id</a:Name>
+<a:Code>cou_id</a:Code>
+<a:CreationDate>1572595184</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572595184</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+<a:AutoMigrated>1</a:AutoMigrated>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o116">
+<a:ObjectID>E447C59C-32FE-4A4F-A90D-314D3D7C00C5</a:ObjectID>
+<a:Name>学生_id</a:Name>
+<a:Code>学生_id</a:Code>
+<a:CreationDate>1572595184</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572595224</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+<a:AutoMigrated>1</a:AutoMigrated>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>
+<o:Entity Id="o55">
+<a:ObjectID>47723CD1-76E7-4455-B321-ABCE430DE7B6</a:ObjectID>
+<a:Name>试题</a:Name>
+<a:Code>试题</a:Code>
+<a:CreationDate>1572595606</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572595699</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<c:Identifiers>
+<o:Identifier Id="o117">
+<a:ObjectID>1C7B43C9-8EB6-4151-BAA8-A55997799F19</a:ObjectID>
+<a:Name>Identifier_1</a:Name>
+<a:Code>Identifier_1</a:Code>
+<a:CreationDate>1572595606</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572595606</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<c:Identifier.Attributes>
+<o:EntityAttribute Ref="o118"/>
+<o:EntityAttribute Ref="o119"/>
+</c:Identifier.Attributes>
+</o:Identifier>
+</c:Identifiers>
+<c:PrimaryIdentifier>
+<o:Identifier Ref="o117"/>
+</c:PrimaryIdentifier>
+<c:Attributes>
+<o:EntityAttribute Id="o118">
+<a:ObjectID>FC1BFF94-007E-4FD7-94A3-287B6DB1A267</a:ObjectID>
+<a:Name>id</a:Name>
+<a:Code>id</a:Code>
+<a:CreationDate>1572595606</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572625495</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+<a:AutoMigrated>1</a:AutoMigrated>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o119">
+<a:ObjectID>F1A530E0-138F-4ED3-A8C5-DD4FD065D497</a:ObjectID>
+<a:Name>试卷_id</a:Name>
+<a:Code>试卷_id</a:Code>
+<a:CreationDate>1572595606</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572595648</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DataType>I</a:DataType>
+<a:LogicalAttribute.Mandatory>1</a:LogicalAttribute.Mandatory>
+<a:AutoMigrated>1</a:AutoMigrated>
+</o:EntityAttribute>
+</c:Attributes>
+</o:Entity>
+</c:Entities>
+<c:Relationships>
+<o:Relationship Id="o120">
+<a:ObjectID>BE781C5A-B81B-4076-83EF-135E18B7A75F</a:ObjectID>
+<a:Name>Relationship_5</a:Name>
+<a:Code>Relationship_5</a:Code>
+<a:CreationDate>1572441372</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572441372</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DependentRole>B</a:DependentRole>
+<a:Entity1ToEntity2RoleCardinality>0,n</a:Entity1ToEntity2RoleCardinality>
+<a:Entity2ToEntity1RoleCardinality>1,1</a:Entity2ToEntity1RoleCardinality>
+<c:Object1>
+<o:Entity Ref="o68"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="o53"/>
+</c:Object2>
+<c:Joins>
+<o:RelationshipJoin Id="o121">
+<a:ObjectID>ED3C114B-1A25-4114-8D25-7027389A0951</a:ObjectID>
+<a:CreationDate>1572441372</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572441372</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<c:Object1>
+<o:EntityAttribute Ref="o112"/>
+</c:Object1>
+<c:Object2>
+<o:EntityAttribute Ref="o71"/>
+</c:Object2>
+</o:RelationshipJoin>
+</c:Joins>
+<c:ParentIdentifier>
+<o:Identifier Ref="o111"/>
+</c:ParentIdentifier>
+</o:Relationship>
+<o:Relationship Id="o122">
+<a:ObjectID>E0AC19F2-E35D-423D-9DB0-ACFE923FF9F8</a:ObjectID>
+<a:Name>Relationship_6</a:Name>
+<a:Code>Relationship_6</a:Code>
+<a:CreationDate>1572441372</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572526485</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DependentRole>A</a:DependentRole>
+<a:Entity1ToEntity2RoleCardinality>1,1</a:Entity1ToEntity2RoleCardinality>
+<a:Entity2ToEntity1RoleCardinality>0,n</a:Entity2ToEntity1RoleCardinality>
+<c:Object1>
+<o:Entity Ref="o46"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="o68"/>
+</c:Object2>
+<c:Joins>
+<o:RelationshipJoin Id="o123">
+<a:ObjectID>52BFF9F3-080B-4A47-B2F2-4766A88F6BEE</a:ObjectID>
+<a:CreationDate>1572526470</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572526485</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<c:Object1>
+<o:EntityAttribute Ref="o63"/>
+</c:Object1>
+<c:Object2>
+<o:EntityAttribute Ref="o70"/>
+</c:Object2>
+</o:RelationshipJoin>
+</c:Joins>
+<c:ParentIdentifier>
+<o:Identifier Ref="o62"/>
+</c:ParentIdentifier>
+</o:Relationship>
+<o:Relationship Id="o7">
+<a:ObjectID>7604CB82-4A1B-464B-8E65-5B6BF3E62C03</a:ObjectID>
+<a:Name>管理学生</a:Name>
+<a:Code>manage_student</a:Code>
+<a:CreationDate>1572594636</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572594686</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DependentRole>B</a:DependentRole>
+<a:Entity1ToEntity2RoleCardinality>0,n</a:Entity1ToEntity2RoleCardinality>
+<a:Entity2ToEntity1RoleCardinality>1,1</a:Entity2ToEntity1RoleCardinality>
+<c:Object1>
+<o:Entity Ref="o45"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="o47"/>
+</c:Object2>
+<c:Joins>
+<o:RelationshipJoin Id="o124">
+<a:ObjectID>29D06428-D21A-4D1B-80F2-32BF2B03D291</a:ObjectID>
+<a:CreationDate>1572594636</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572594636</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<c:Object1>
+<o:EntityAttribute Ref="o73"/>
+</c:Object1>
+<c:Object2>
+<o:EntityAttribute Ref="o57"/>
+</c:Object2>
+</o:RelationshipJoin>
+</c:Joins>
+<c:ParentIdentifier>
+<o:Identifier Ref="o72"/>
+</c:ParentIdentifier>
+</o:Relationship>
+<o:Relationship Id="o10">
+<a:ObjectID>9AE8B492-86EF-4288-AF80-BF1874C2D679</a:ObjectID>
+<a:Name>管理教师</a:Name>
+<a:Code>manage_teacher</a:Code>
+<a:CreationDate>1572594640</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572594701</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DependentRole>B</a:DependentRole>
+<a:Entity1ToEntity2RoleCardinality>0,n</a:Entity1ToEntity2RoleCardinality>
+<a:Entity2ToEntity1RoleCardinality>1,1</a:Entity2ToEntity1RoleCardinality>
+<c:Object1>
+<o:Entity Ref="o46"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="o47"/>
+</c:Object2>
+<c:Joins>
+<o:RelationshipJoin Id="o125">
+<a:ObjectID>5EDB0B68-13E8-4BE0-9E1C-54426F600B5A</a:ObjectID>
+<a:CreationDate>1572594640</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572594640</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<c:Object1>
+<o:EntityAttribute Ref="o73"/>
+</c:Object1>
+<c:Object2>
+<o:EntityAttribute Ref="o63"/>
+</c:Object2>
+</o:RelationshipJoin>
+</c:Joins>
+<c:ParentIdentifier>
+<o:Identifier Ref="o72"/>
+</c:ParentIdentifier>
+</o:Relationship>
+<o:Relationship Id="o13">
+<a:ObjectID>2D5B7C54-5680-4C47-B639-8A13C8333A2F</a:ObjectID>
+<a:Name>管理题库</a:Name>
+<a:Code>manage_qb</a:Code>
+<a:CreationDate>1572594872</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572594899</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DependentRole>B</a:DependentRole>
+<a:Entity1ToEntity2RoleCardinality>0,n</a:Entity1ToEntity2RoleCardinality>
+<a:Entity2ToEntity1RoleCardinality>1,1</a:Entity2ToEntity1RoleCardinality>
+<a:Description>{\rtf1\ansi\ansicpg936\deff0\nouicompat\deflang1033\deflangfe2052{\fonttbl{\f0\fnil\fcharset0 Microsoft Sans Serif;}}
+{\*\generator Riched20 10.0.18362}\viewkind4\uc1 
+\pard\f0\fs20\lang2052\par
+\par
+}
+</a:Description>
+<c:Object1>
+<o:Entity Ref="o48"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="o47"/>
+</c:Object2>
+<c:Joins>
+<o:RelationshipJoin Id="o126">
+<a:ObjectID>7418E9FB-5C72-4489-B2EB-EAE8A616BADC</a:ObjectID>
+<a:CreationDate>1572594872</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572594872</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<c:Object1>
+<o:EntityAttribute Ref="o73"/>
+</c:Object1>
+<c:Object2>
+<o:EntityAttribute Ref="o78"/>
+</c:Object2>
+</o:RelationshipJoin>
+</c:Joins>
+<c:ParentIdentifier>
+<o:Identifier Ref="o72"/>
+</c:ParentIdentifier>
+</o:Relationship>
+<o:Relationship Id="o16">
+<a:ObjectID>A7DC6843-76A4-4791-B007-2C61E4A721F4</a:ObjectID>
+<a:Name>管理考试</a:Name>
+<a:Code>manage_exam</a:Code>
+<a:CreationDate>1572595075</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572595148</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DependentRole>B</a:DependentRole>
+<a:Entity1ToEntity2RoleCardinality>0,n</a:Entity1ToEntity2RoleCardinality>
+<a:Entity2ToEntity1RoleCardinality>1,1</a:Entity2ToEntity1RoleCardinality>
+<c:Object1>
+<o:Entity Ref="o52"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="o47"/>
+</c:Object2>
+<c:Joins>
+<o:RelationshipJoin Id="o127">
+<a:ObjectID>6E13DDE7-7014-4926-80BD-94C63D9E14BE</a:ObjectID>
+<a:CreationDate>1572595075</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572595075</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<c:Object1>
+<o:EntityAttribute Ref="o73"/>
+</c:Object1>
+<c:Object2>
+<o:EntityAttribute Ref="o106"/>
+</c:Object2>
+</o:RelationshipJoin>
+</c:Joins>
+<c:ParentIdentifier>
+<o:Identifier Ref="o72"/>
+</c:ParentIdentifier>
+</o:Relationship>
+<o:Relationship Id="o19">
+<a:ObjectID>F3279403-F188-44F9-A32E-2583B8F7555D</a:ObjectID>
+<a:Name>管理课程</a:Name>
+<a:Code>manage_course</a:Code>
+<a:CreationDate>1572595077</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572595135</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DependentRole>B</a:DependentRole>
+<a:Entity1ToEntity2RoleCardinality>0,n</a:Entity1ToEntity2RoleCardinality>
+<a:Entity2ToEntity1RoleCardinality>1,1</a:Entity2ToEntity1RoleCardinality>
+<c:Object1>
+<o:Entity Ref="o53"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="o47"/>
+</c:Object2>
+<c:Joins>
+<o:RelationshipJoin Id="o128">
+<a:ObjectID>BF249F85-54DD-4D9B-B2D5-AB44C8DF639C</a:ObjectID>
+<a:CreationDate>1572595077</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572595077</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<c:Object1>
+<o:EntityAttribute Ref="o73"/>
+</c:Object1>
+<c:Object2>
+<o:EntityAttribute Ref="o112"/>
+</c:Object2>
+</o:RelationshipJoin>
+</c:Joins>
+<c:ParentIdentifier>
+<o:Identifier Ref="o72"/>
+</c:ParentIdentifier>
+</o:Relationship>
+<o:Relationship Id="o22">
+<a:ObjectID>217AA3BC-A6C6-402A-B8C1-302B29C57898</a:ObjectID>
+<a:Name>查看</a:Name>
+<a:Code>check</a:Code>
+<a:CreationDate>1572595184</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572595253</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DependentRole>B</a:DependentRole>
+<a:Entity1ToEntity2RoleCardinality>0,n</a:Entity1ToEntity2RoleCardinality>
+<a:Entity2ToEntity1RoleCardinality>1,1</a:Entity2ToEntity1RoleCardinality>
+<c:Object1>
+<o:Entity Ref="o54"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="o45"/>
+</c:Object2>
+<c:Joins>
+<o:RelationshipJoin Id="o129">
+<a:ObjectID>0D8DEF84-7E38-4895-92CF-C22F21D15FB5</a:ObjectID>
+<a:CreationDate>1572595184</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572595184</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<c:Object1>
+<o:EntityAttribute Ref="o57"/>
+</c:Object1>
+<c:Object2>
+<o:EntityAttribute Ref="o116"/>
+</c:Object2>
+</o:RelationshipJoin>
+</c:Joins>
+<c:ParentIdentifier>
+<o:Identifier Ref="o56"/>
+</c:ParentIdentifier>
+</o:Relationship>
+<o:Relationship Id="o24">
+<a:ObjectID>9DAC5BC8-583E-4147-A3B2-793F4122FF91</a:ObjectID>
+<a:Name>被选择</a:Name>
+<a:Code>selected</a:Code>
+<a:CreationDate>1572595184</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572595273</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DependentRole>A</a:DependentRole>
+<a:Entity1ToEntity2RoleCardinality>1,1</a:Entity1ToEntity2RoleCardinality>
+<a:Entity2ToEntity1RoleCardinality>0,n</a:Entity2ToEntity1RoleCardinality>
+<c:Object1>
+<o:Entity Ref="o53"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="o54"/>
+</c:Object2>
+<c:Joins>
+<o:RelationshipJoin Id="o130">
+<a:ObjectID>A5FFC66C-1601-4C4C-A9E0-D9C43F149C37</a:ObjectID>
+<a:CreationDate>1572595184</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572595184</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<c:Object1>
+<o:EntityAttribute Ref="o112"/>
+</c:Object1>
+<c:Object2>
+<o:EntityAttribute Ref="o115"/>
+</c:Object2>
+</o:RelationshipJoin>
+</c:Joins>
+<c:ParentIdentifier>
+<o:Identifier Ref="o111"/>
+</c:ParentIdentifier>
+</o:Relationship>
+<o:Relationship Id="o26">
+<a:ObjectID>03D5A840-E9FE-4E82-9943-D861CFB13141</a:ObjectID>
+<a:Name>布置</a:Name>
+<a:Code>arrange</a:Code>
+<a:CreationDate>1572595314</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572595358</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:Entity1ToEntity2RoleCardinality>0,n</a:Entity1ToEntity2RoleCardinality>
+<a:Entity2ToEntity1RoleCardinality>0,1</a:Entity2ToEntity1RoleCardinality>
+<c:Object1>
+<o:Entity Ref="o52"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="o53"/>
+</c:Object2>
+<c:Joins>
+<o:RelationshipJoin Id="o131">
+<a:ObjectID>5AA89F25-22C9-409F-BAC7-4ED8E983C95D</a:ObjectID>
+<a:CreationDate>1572595314</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572595314</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<c:Object1>
+<o:EntityAttribute Ref="o112"/>
+</c:Object1>
+<c:Object2>
+<o:EntityAttribute Ref="o107"/>
+</c:Object2>
+</o:RelationshipJoin>
+</c:Joins>
+<c:ParentIdentifier>
+<o:Identifier Ref="o111"/>
+</c:ParentIdentifier>
+</o:Relationship>
+<o:Relationship Id="o30">
+<a:ObjectID>B6312D7F-0EB1-4C68-8FF2-5B3C31ABF384</a:ObjectID>
+<a:Name>构成</a:Name>
+<a:Code>form</a:Code>
+<a:CreationDate>1572595606</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572595699</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DependentRole>B</a:DependentRole>
+<a:Entity1ToEntity2RoleCardinality>0,n</a:Entity1ToEntity2RoleCardinality>
+<a:Entity2ToEntity1RoleCardinality>1,1</a:Entity2ToEntity1RoleCardinality>
+<c:Object1>
+<o:Entity Ref="o55"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="o49"/>
+</c:Object2>
+<c:Joins>
+<o:RelationshipJoin Id="o132">
+<a:ObjectID>3DDAD821-FA08-4579-8C11-8427DF4793B3</a:ObjectID>
+<a:CreationDate>1572595606</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572595606</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<c:Object1>
+<o:EntityAttribute Ref="o86"/>
+</c:Object1>
+<c:Object2>
+<o:EntityAttribute Ref="o119"/>
+</c:Object2>
+</o:RelationshipJoin>
+</c:Joins>
+<c:ParentIdentifier>
+<o:Identifier Ref="o85"/>
+</c:ParentIdentifier>
+</o:Relationship>
+<o:Relationship Id="o32">
+<a:ObjectID>F5CDF36C-3443-4798-A314-5AA35E80F781</a:ObjectID>
+<a:Name>生成</a:Name>
+<a:Code>generate</a:Code>
+<a:CreationDate>1572595606</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572595676</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DependentRole>A</a:DependentRole>
+<a:Entity1ToEntity2RoleCardinality>1,1</a:Entity1ToEntity2RoleCardinality>
+<a:Entity2ToEntity1RoleCardinality>0,n</a:Entity2ToEntity1RoleCardinality>
+<c:Object1>
+<o:Entity Ref="o48"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="o55"/>
+</c:Object2>
+<c:Joins>
+<o:RelationshipJoin Id="o133">
+<a:ObjectID>B51C2667-ED42-40BB-81B9-314572D07ED6</a:ObjectID>
+<a:CreationDate>1572595606</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572595606</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<c:Object1>
+<o:EntityAttribute Ref="o78"/>
+</c:Object1>
+<c:Object2>
+<o:EntityAttribute Ref="o118"/>
+</c:Object2>
+</o:RelationshipJoin>
+</c:Joins>
+<c:ParentIdentifier>
+<o:Identifier Ref="o77"/>
+</c:ParentIdentifier>
+</o:Relationship>
+<o:Relationship Id="o34">
+<a:ObjectID>131B0DAC-E5CE-45C2-B4B7-925467B2B9BD</a:ObjectID>
+<a:Name>使用</a:Name>
+<a:Code>use</a:Code>
+<a:CreationDate>1572595720</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572595739</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DependentRole>B</a:DependentRole>
+<a:Entity1ToEntity2RoleCardinality>0,n</a:Entity1ToEntity2RoleCardinality>
+<a:Entity2ToEntity1RoleCardinality>1,1</a:Entity2ToEntity1RoleCardinality>
+<c:Object1>
+<o:Entity Ref="o49"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="o45"/>
+</c:Object2>
+<c:Joins>
+<o:RelationshipJoin Id="o134">
+<a:ObjectID>3A32DA27-D9F5-4767-9515-66099BE1AFDA</a:ObjectID>
+<a:CreationDate>1572595720</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572595720</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<c:Object1>
+<o:EntityAttribute Ref="o57"/>
+</c:Object1>
+<c:Object2>
+<o:EntityAttribute Ref="o86"/>
+</c:Object2>
+</o:RelationshipJoin>
+</c:Joins>
+<c:ParentIdentifier>
+<o:Identifier Ref="o56"/>
+</c:ParentIdentifier>
+</o:Relationship>
+<o:Relationship Id="o36">
+<a:ObjectID>2E6974FD-CF4F-4BD3-BDD9-F915C57E6853</a:ObjectID>
+<a:Name>拥有</a:Name>
+<a:Code>possess</a:Code>
+<a:CreationDate>1572595776</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572596020</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:Entity1ToEntity2RoleCardinality>0,n</a:Entity1ToEntity2RoleCardinality>
+<a:Entity2ToEntity1RoleCardinality>1,1</a:Entity2ToEntity1RoleCardinality>
+<c:Object1>
+<o:Entity Ref="o49"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="o53"/>
+</c:Object2>
+<c:Joins>
+<o:RelationshipJoin Id="o135">
+<a:ObjectID>8F0E332A-AF18-44AB-A5BA-C30B7D762FAB</a:ObjectID>
+<a:CreationDate>1572595776</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572595776</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<c:Object1>
+<o:EntityAttribute Ref="o112"/>
+</c:Object1>
+<c:Object2>
+<o:EntityAttribute Ref="o89"/>
+</c:Object2>
+</o:RelationshipJoin>
+</c:Joins>
+<c:ParentIdentifier>
+<o:Identifier Ref="o111"/>
+</c:ParentIdentifier>
+</o:Relationship>
+<o:Relationship Id="o39">
+<a:ObjectID>F20CF7E6-3BAA-493F-A245-071DFB03AD7E</a:ObjectID>
+<a:Name>生成</a:Name>
+<a:Code>generate_grade</a:Code>
+<a:CreationDate>1572596140</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572596199</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DependentRole>B</a:DependentRole>
+<a:Entity1ToEntity2RoleCardinality>0,n</a:Entity1ToEntity2RoleCardinality>
+<a:Entity2ToEntity1RoleCardinality>1,1</a:Entity2ToEntity1RoleCardinality>
+<c:Object1>
+<o:Entity Ref="o50"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="o49"/>
+</c:Object2>
+<c:Joins>
+<o:RelationshipJoin Id="o136">
+<a:ObjectID>15354CEC-6CD8-43A4-A968-96FE1EAC2526</a:ObjectID>
+<a:CreationDate>1572596140</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572596140</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<c:Object1>
+<o:EntityAttribute Ref="o86"/>
+</c:Object1>
+<c:Object2>
+<o:EntityAttribute Ref="o92"/>
+</c:Object2>
+</o:RelationshipJoin>
+</c:Joins>
+<c:ParentIdentifier>
+<o:Identifier Ref="o85"/>
+</c:ParentIdentifier>
+</o:Relationship>
+<o:Relationship Id="o41">
+<a:ObjectID>FAD09D00-9A73-4C17-A82F-C3FD6574CA81</a:ObjectID>
+<a:Name>拥有</a:Name>
+<a:Code>possess_grade</a:Code>
+<a:CreationDate>1572596144</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572596213</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:Entity1ToEntity2RoleCardinality>0,n</a:Entity1ToEntity2RoleCardinality>
+<a:Entity2ToEntity1RoleCardinality>1,1</a:Entity2ToEntity1RoleCardinality>
+<c:Object1>
+<o:Entity Ref="o50"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="o45"/>
+</c:Object2>
+<c:Joins>
+<o:RelationshipJoin Id="o137">
+<a:ObjectID>8CE74541-10B7-4B23-A124-E4F932D84DE1</a:ObjectID>
+<a:CreationDate>1572596144</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572596144</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<c:Object1>
+<o:EntityAttribute Ref="o57"/>
+</c:Object1>
+<c:Object2>
+<o:EntityAttribute Ref="o95"/>
+</c:Object2>
+</o:RelationshipJoin>
+</c:Joins>
+<c:ParentIdentifier>
+<o:Identifier Ref="o56"/>
+</c:ParentIdentifier>
+</o:Relationship>
+<o:Relationship Id="o44">
+<a:ObjectID>70075548-9E06-43BF-AE63-B733275A12FC</a:ObjectID>
+<a:Name>组成</a:Name>
+<a:Code>form_solution</a:Code>
+<a:CreationDate>1572596238</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572596317</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<a:DependentRole>B</a:DependentRole>
+<a:Entity1ToEntity2RoleCardinality>0,n</a:Entity1ToEntity2RoleCardinality>
+<a:Entity2ToEntity1RoleCardinality>1,1</a:Entity2ToEntity1RoleCardinality>
+<c:Object1>
+<o:Entity Ref="o51"/>
+</c:Object1>
+<c:Object2>
+<o:Entity Ref="o50"/>
+</c:Object2>
+<c:Joins>
+<o:RelationshipJoin Id="o138">
+<a:ObjectID>CA24352E-3F17-46C0-A5E0-B37894D02ACF</a:ObjectID>
+<a:CreationDate>1572596238</a:CreationDate>
+<a:Creator>DELL</a:Creator>
+<a:ModificationDate>1572596238</a:ModificationDate>
+<a:Modifier>DELL</a:Modifier>
+<c:Object1>
+<o:EntityAttribute Ref="o92"/>
+</c:Object1>
+<c:Object2>
+<o:EntityAttribute Ref="o99"/>
+</c:Object2>
+</o:RelationshipJoin>
+</c:Joins>
+<c:ParentIdentifier>
+<o:Identifier Ref="o91"/>
+</c:ParentIdentifier>
+</o:Relationship>
+</c:Relationships>
+</o:Model>
+</c:Children>
+</o:RootObject>
+
+</Model>

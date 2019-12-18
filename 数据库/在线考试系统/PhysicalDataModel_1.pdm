@@ -1,0 +1,6222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?PowerDesigner AppLocale="UTF16" ID="{E4BA0184-2EFB-4A5A-816B-466360CC1191}" Label="" LastModificationDate="1576419392" Name="PhysicalDataModel_1" Objects="183" Symbols="23" Target="Microsoft SQL Server 2016" Type="{CDE44E21-9669-11D1-9914-006097355D9B}" signature="PDM_DATA_MODEL_XML" version="16.6.1.5066"?>
+<!--不要编辑此文件-->
+
+<Model xmlns:a="attribute" xmlns:c="collection" xmlns:o="object">
+
+<o:RootObject Id="o1">
+<c:Children>
+<o:Model Id="o2">
+<a:ObjectID>E4BA0184-2EFB-4A5A-816B-466360CC1191</a:ObjectID>
+<a:Name>PhysicalDataModel_1</a:Name>
+<a:Code>PhysicalDataModel_1</a:Code>
+<a:CreationDate>1574751568</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1576419392</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:PackageOptionsText>[FolderOptions]
+
+[FolderOptions\Physical Objects]
+GenerationCheckModel=Yes
+GenerationPath=
+GenerationOptions=
+GenerationTasks=
+GenerationTargets=
+GenerationSelections=
+RevPkey=Yes
+RevFkey=Yes
+RevAkey=Yes
+RevCheck=Yes
+RevIndx=Yes
+RevOpts=Yes
+RevViewAsTabl=No
+RevViewOpts=Yes
+RevSystAsTabl=Yes
+RevTablPerm=No
+RevViewPerm=No
+RevProcPerm=No
+RevDbpkPerm=No
+RevSqncPerm=No
+RevAdtPerm=No
+RevUserPriv=No
+RevUserOpts=No
+RevGrpePriv=No
+RevRolePriv=No
+RevDtbsOpts=Yes
+RevDtbsPerm=No
+RevViewIndx=Yes
+RevJidxOpts=Yes
+RevStats=No
+RevTspcPerm=No
+RevCaseSensitive=No
+GenTrgrStdMsg=Yes
+GenTrgrMsgTab=
+GenTrgrMsgNo=
+GenTrgrMsgTxt=
+TrgrPreserve=No
+TrgrIns=Yes
+TrgrUpd=Yes
+TrgrDel=Yes
+TrgrC2Ins=Yes
+TrgrC2Upd=Yes
+TrgrC3=Yes
+TrgrC4=Yes
+TrgrC5=Yes
+TrgrC6=Yes
+TrgrC7=Yes
+TrgrC8=Yes
+TrgrC9=Yes
+TrgrC10=Yes
+TrgrC11=Yes
+TrgrC1=Yes
+TrgrC12Ins=Yes
+TrgrC12Upd=Yes
+TrgrC13=Yes
+UpdateTableStatistics=Yes
+UpdateColumnStatistics=Yes
+DeploymentMode=REP
+
+[FolderOptions\Physical Objects\Database Generation]
+GenScriptName=ExamOnlineOS.sql
+GenScriptName0=
+GenScriptName1=
+GenScriptName2=
+GenScriptName3=
+GenScriptName4=
+GenScriptName5=
+GenScriptName6=
+GenScriptName7=
+GenScriptName8=
+GenScriptName9=
+GenPathName=C:\Users\asus\Desktop\
+GenSingleFile=Yes
+GenODBC=No
+GenCheckModel=Yes
+GenScriptPrev=Yes
+GenArchiveModel=No
+GenUseSync=No
+GenSyncChoice=0
+GenSyncArch=
+GenSyncRmg=0
+
+[FolderOptions\Physical Objects\Database Generation\Format]
+GenScriptTitle=Yes
+GenScriptNamLabl=No
+GenScriptQDtbs=No
+GenScriptQOwnr=Yes
+GenScriptCase=0
+GenScriptEncoding=ANSI
+GenScriptNAcct=No
+IdentifierDelimiter=&quot;
+
+[FolderOptions\Physical Objects\Database Generation\Database]
+Create=Yes
+Open=Yes
+Close=Yes
+Drop=Yes
+Permission=No
+
+[FolderOptions\Physical Objects\Database Generation\Database\Create]
+Physical Options=Yes
+Header=Yes
+Footer=Yes
+
+[FolderOptions\Physical Objects\Database Generation\Tablespace]
+Create=Yes
+Drop=Yes
+Comment=Yes
+Permission=No
+
+[FolderOptions\Physical Objects\Database Generation\Tablespace\Create]
+Header=Yes
+Footer=Yes
+
+[FolderOptions\Physical Objects\Database Generation\Storage]
+Create=Yes
+Drop=Yes
+Comment=Yes
+
+[FolderOptions\Physical Objects\Database Generation\User]
+Create=Yes
+Drop=Yes
+Comment=Yes
+Privilege=No
+
+[FolderOptions\Physical Objects\Database Generation\User\Create]
+Physical Options=No
+
+[FolderOptions\Physical Objects\Database Generation\Group]
+Create=Yes
+Drop=Yes
+Comment=Yes
+Privilege=No
+
+[FolderOptions\Physical Objects\Database Generation\Role]
+Create=Yes
+Drop=Yes
+Privilege=No
+
+[FolderOptions\Physical Objects\Database Generation\UserDefinedDataType]
+Create=Yes
+Comment=Yes
+Drop=Yes
+
+[FolderOptions\Physical Objects\Database Generation\UserDefinedDataType\Create]
+Default value=Yes
+Check=Yes
+
+[FolderOptions\Physical Objects\Database Generation\AbstractDataType]
+Create=Yes
+Header=Yes
+Footer=Yes
+Drop=Yes
+Comment=Yes
+Install JAVA class=Yes
+Remove JAVA class=Yes
+Permission=No
+
+[FolderOptions\Physical Objects\Database Generation\Rule]
+Create=Yes
+Drop=Yes
+Comment=Yes
+
+[FolderOptions\Physical Objects\Database Generation\Default]
+Create=Yes
+Comment=Yes
+Drop=Yes
+
+[FolderOptions\Physical Objects\Database Generation\Sequence]
+Create=Yes
+Drop=Yes
+Comment=Yes
+Permission=No
+
+[FolderOptions\Physical Objects\Database Generation\Table&amp;&amp;Column]
+
+[FolderOptions\Physical Objects\Database Generation\Table&amp;&amp;Column\Table]
+Create=Yes
+Drop=Yes
+Comment=Yes
+Permission=No
+
+[FolderOptions\Physical Objects\Database Generation\Table&amp;&amp;Column\Table\Create]
+Check=Yes
+Physical Options=Yes
+Header=Yes
+Footer=Yes
+
+[FolderOptions\Physical Objects\Database Generation\Table&amp;&amp;Column\Table\Create\Check]
+Constraint declaration=No
+
+[FolderOptions\Physical Objects\Database Generation\Table&amp;&amp;Column\Column]
+User datatype=No
+Default value=Yes
+Check=Yes
+Physical Options=Yes
+Comment=Yes
+
+[FolderOptions\Physical Objects\Database Generation\Table&amp;&amp;Column\Column\Check]
+Constraint declaration=No
+
+[FolderOptions\Physical Objects\Database Generation\Table&amp;&amp;Column\Key]
+
+[FolderOptions\Physical Objects\Database Generation\Table&amp;&amp;Column\Key\Primary key]
+Create=Yes
+Drop=Yes
+Comment=Yes
+
+[FolderOptions\Physical Objects\Database Generation\Table&amp;&amp;Column\Key\Primary key\Create]
+Constraint declaration=No
+Physical Options=Yes
+
+[FolderOptions\Physical Objects\Database Generation\Table&amp;&amp;Column\Key\Alternate key]
+Create=Yes
+Drop=Yes
+Comment=Yes
+
+[FolderOptions\Physical Objects\Database Generation\Table&amp;&amp;Column\Key\Alternate key\Create]
+Constraint declaration=No
+Physical Options=Yes
+
+[FolderOptions\Physical Objects\Database Generation\Table&amp;&amp;Column\Foreign key]
+Create=Yes
+Drop=Yes
+Comment=Yes
+
+[FolderOptions\Physical Objects\Database Generation\Table&amp;&amp;Column\Foreign key\Create]
+Constraint declaration=Yes
+
+[FolderOptions\Physical Objects\Database Generation\Table&amp;&amp;Column\Index]
+Create=Yes
+Drop=Yes
+Comment=Yes
+
+[FolderOptions\Physical Objects\Database Generation\Table&amp;&amp;Column\Index\Create]
+Constraint declaration=Yes
+Physical Options=Yes
+
+[FolderOptions\Physical Objects\Database Generation\Table&amp;&amp;Column\Index\Filter]
+Primary key=No
+Foreign key=No
+Alternate key=No
+Cluster=Yes
+Other=Yes
+
+[FolderOptions\Physical Objects\Database Generation\Table&amp;&amp;Column\Trigger]
+Create=Yes
+Drop=Yes
+Comment=Yes
+
+[FolderOptions\Physical Objects\Database Generation\Table&amp;&amp;Column\Trigger\Filter]
+For insert=Yes
+For update=Yes
+For delete=Yes
+For other=Yes
+
+[FolderOptions\Physical Objects\Database Generation\View]
+Create=Yes
+Drop=Yes
+Comment=Yes
+Permission=No
+
+[FolderOptions\Physical Objects\Database Generation\View\Create]
+Force Column list=No
+Physical Options=Yes
+Header=Yes
+Footer=Yes
+
+[FolderOptions\Physical Objects\Database Generation\View\ViewColumn]
+Comment=Yes
+
+[FolderOptions\Physical Objects\Database Generation\View\ViewIndex]
+Create=Yes
+Drop=Yes
+Comment=Yes
+
+[FolderOptions\Physical Objects\Database Generation\View\ViewIndex\Create]
+Physical Options=Yes
+
+[FolderOptions\Physical Objects\Database Generation\View\ViewIndex\Filter]
+Cluster=Yes
+Other=Yes
+
+[FolderOptions\Physical Objects\Database Generation\View\Trigger]
+Create=Yes
+Drop=Yes
+Comment=Yes
+
+[FolderOptions\Physical Objects\Database Generation\View\Trigger\Filter]
+For insert=Yes
+For update=Yes
+For delete=Yes
+For other=Yes
+
+[FolderOptions\Physical Objects\Database Generation\DBMSTrigger]
+Create=Yes
+Drop=Yes
+Comment=Yes
+
+[FolderOptions\Physical Objects\Database Generation\Synonym]
+Create=Yes
+Drop=Yes
+
+[FolderOptions\Physical Objects\Database Generation\Synonym\Filter]
+Table=Yes
+View=Yes
+Proc=Yes
+Synonym=Yes
+Database Package=Yes
+Sequence=Yes
+
+[FolderOptions\Physical Objects\Database Generation\JoinIndex]
+Create=Yes
+Drop=Yes
+Comment=Yes
+
+[FolderOptions\Physical Objects\Database Generation\JoinIndex\Create]
+Physical Options=Yes
+Header=Yes
+Footer=Yes
+
+[FolderOptions\Physical Objects\Database Generation\Procedure]
+Create=Yes
+Drop=Yes
+Comment=Yes
+Permission=No
+
+[FolderOptions\Physical Objects\Database Generation\Procedure\Create]
+Header=Yes
+Footer=Yes
+
+[FolderOptions\Physical Objects\Database Generation\DatabasePackage]
+Create=Yes
+Drop=Yes
+Permission=No
+
+[FolderOptions\Physical Objects\Database Generation\WebService]
+Create=Yes
+Drop=Yes
+Comment=Yes
+
+[FolderOptions\Physical Objects\Database Generation\Dimension]
+Create=Yes
+Drop=Yes
+
+[FolderOptions\Physical Objects\Database Generation\Synchronization]
+GenBackupTabl=1
+GenKeepBackTabl=1
+GenTmpTablDrop=No
+GenKeepTablOpts=No
+
+[FolderOptions\Physical Objects\Test Data]
+GenDataPathName=
+GenDataSinglefile=Yes
+GenDataScriptName=testdata
+GenDataScriptName0=
+GenDataScriptName1=
+GenDataScriptName2=
+GenDataScriptName3=
+GenDataScriptName4=
+GenDataScriptName5=
+GenDataScriptName6=
+GenDataScriptName7=
+GenDataScriptName8=
+GenDataScriptName9=
+GenDataOdbc=0
+GenDataDelOld=No
+GenDataTitle=No
+GenDataDefNumRows=20
+GenDataCommit=0
+GenDataPacket=0
+GenDataOwner=No
+GenDataProfNumb=
+GenDataProfChar=
+GenDataProfDate=
+GenDataCSVSeparator=,
+GenDataFileFormat=CSV
+GenDataUseWizard=No
+
+[FolderOptions\Pdm]
+IndxIQName=%COLUMN%_%INDEXTYPE%
+IndxPK=Yes
+IndxFK=Yes
+IndxAK=Yes
+IndxPKName=%TABLE%_PK
+IndxFKName=%REFR%_FK
+IndxAKName=%AKEY%_AK
+IndxPreserve=No
+IndxThreshold=0
+IndxStats=No
+RefrPreserve=No
+JidxPreserve=No
+RbldMultiFact=Yes
+RbldMultiDim=Yes
+RbldMultiJidx=Yes
+CubePreserve=No
+TablStProcPreserve=No
+ProcDepPreserve=Yes
+TrgrDepPreserve=Yes
+CubeScriptPath=
+CubeScriptCase=0
+CubeScriptEncoding=ANSI
+CubeScriptNacct=No
+CubeScriptHeader=No
+CubeScriptExt=csv
+CubeScriptExt0=txt
+CubeScriptExt1=
+CubeScriptExt2=
+CubeScriptSep=,
+CubeScriptDeli=&quot;
+EstimationYears=0
+DfltDomnName=D_%.U:VALUE%
+DfltColnName=D_%.U:VALUE%
+DfltReuse=Yes
+DfltDrop=Yes
+
+[FolderOptions\CheckModel]
+
+[FolderOptions\CheckModel\包]
+
+[FolderOptions\CheckModel\包\CheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\包\CheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\包\DefaultCheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\包\DefaultCheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\包\NotApprovedTerms]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\包\CheckPackageMissTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\包\DefaultCheckPackageMissTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\包\CircularReference]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\包\ConstraintName]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\包\CnstMaxLen]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\包\CircularDependency]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\包\ShortcutUniqCode]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=No
+
+[FolderOptions\CheckModel\Table]
+
+[FolderOptions\CheckModel\Table\CheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table\CheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table\DefaultCheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table\DefaultCheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table\NotApprovedTerms]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table\UniqueName]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table\UniqueCode]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table\UniqIndex]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table\MaxLen - NAME]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table\MaxLen - CODE]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table\EmptyColl - COLNCOL]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table\EmptyColl - INDXCOL]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table\EmptyColl - KEYCOL]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table\SerialColumnNumber]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table\EmptyCollYesYes]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table\TableIndexes]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table\Mapping]
+CheckSeverity=No
+FixRequested=Yes
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table\MappingSFMap]
+CheckSeverity=No
+FixRequested=Yes
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table\EmptyColl - PERMCOL]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=No
+
+[FolderOptions\CheckModel\Table\CheckTablePartitionKey]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table\CheckTableStartDate]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table\CheckTableRefNoLifecycle]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table\CheckTableSourceMapping]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table\CheckTablePartialColumnMapping]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table\CheckTableKeyColumnMapping]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table\CheckTableNotOnLifecycleTablespace]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table\MSSQLSRV2016_Table_Table_Timestamp_Uniqueness]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table\MYSQL50_Table_Table_storage_type]
+CheckSeverity=No
+FixRequested=Yes
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Column]
+
+[FolderOptions\CheckModel\Table.Column\UniqueName]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Column\UniqueCode]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Column\CheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Column\CheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Column\DefaultCheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Column\DefaultCheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Column\NotApprovedTerms]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Column\MaxLen - CODE]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Column\DomainDivergence]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Column\ColumnMandatory]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Column\CheckNumParam]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Column\CheckPrecSupLng]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Column\CheckUndefDttp]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Column\FkeyDttpDivergence]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Column\FkeyCheckDivergence]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Column\ColnSqncNoKey]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Column\ColnSqncDttp]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Column\SerialColumnFK]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Column\ColumnCompExpr]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Column\CheckColumnOneToOneMapping]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Column\CheckColumnDataTypeMapping]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Column\CheckColumnNoMapping]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Column\CheckDttpIncompatibleFormat]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Column\MSSQLSRV2016_Column_Identity_Seed_and_Increment_validity]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Column\MYSQL50_Column_Auto_increment_key]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Column\MYSQL50_Column_Datatype_attributes]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Index]
+
+[FolderOptions\CheckModel\Table.Index\UniqueName]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Index\UniqueCode]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Index\CheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Index\CheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Index\DefaultCheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Index\DefaultCheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Index\NotApprovedTerms]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Index\MaxLen - CODE]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Index\EmptyColl - CIDXCOL]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Index\UndefIndexType]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Index\IndexColumnCount]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Index\IQIndxHNGUniq]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Index\CheckIncludeColl - Tabl]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Index\SYASA17_BaseIndex_Index_Bit_Index_Type]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Index\SYASA17_BaseIndex_TextIndex_DefaultConfiguration]
+CheckSeverity=No
+FixRequested=Yes
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Index\SYASA17_BaseIndex_Nulls_not_distinct]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Index\SYASA17_BaseIndex_Physical_options_check]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Index\MSSQLSRV2016_BaseIndex_XML_index_specific_checks]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Index\MYSQL50_Index_Fulltext_indexes_validity]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Key]
+
+[FolderOptions\CheckModel\Table.Key\UniqueName]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Key\UniqueCode]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Key\CheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Key\CheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Key\DefaultCheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Key\DefaultCheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Key\NotApprovedTerms]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Key\MaxLen - CODE]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Key\EmptyColl - COLNCOL]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Key\CheckIncludeColl - Tabl]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Key\MultiKeySqnc]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Trigger]
+
+[FolderOptions\CheckModel\Table.Trigger\UniqueName]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Trigger\UniqueCode]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Trigger\CheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Trigger\CheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Trigger\DefaultCheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Trigger\DefaultCheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Trigger\NotApprovedTerms]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table.Trigger\MaxLen - CODE]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Join Index]
+
+[FolderOptions\CheckModel\Join Index\CheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Join Index\CheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Join Index\DefaultCheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Join Index\DefaultCheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Join Index\NotApprovedTerms]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Join Index\UniqueName]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Join Index\UniqueCode]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\View]
+
+[FolderOptions\CheckModel\View\CheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\View\CheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\View\DefaultCheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\View\DefaultCheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\View\NotApprovedTerms]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\View\UniqueName]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\View\UniqueCode]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\View\MaxLen - CODE]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\View\EmptyColl - PERMCOL]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=No
+
+[FolderOptions\CheckModel\View.View Index]
+
+[FolderOptions\CheckModel\View.View Index\UniqueName]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\View.View Index\UniqueCode]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\View.View Index\CheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\View.View Index\CheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\View.View Index\DefaultCheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\View.View Index\DefaultCheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\View.View Index\NotApprovedTerms]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\View.View Index\MaxLen - CODE]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\View.View Index\EmptyColl - CIDXCOL]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\View.View Index\IndexColumnCount]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\View.View Index\CheckIncludeColl - Tabl]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\View.View Index\SYASA17_BaseIndex_Index_Bit_Index_Type]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\View.View Index\SYASA17_BaseIndex_TextIndex_DefaultConfiguration]
+CheckSeverity=No
+FixRequested=Yes
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\View.View Index\SYASA17_BaseIndex_Nulls_not_distinct]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\View.View Index\SYASA17_BaseIndex_Physical_options_check]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\View.View Index\MSSQLSRV2016_BaseIndex_XML_index_specific_checks]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Reference]
+
+[FolderOptions\CheckModel\Reference\CheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Reference\CheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Reference\DefaultCheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Reference\DefaultCheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Reference\NotApprovedTerms]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Reference\UniqueName]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Reference\UniqueCode]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Reference\Reflexive]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Reference\EmptyColl - RFJNCOL]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Reference\MaxLen - CODE]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Reference\IncompleteJoin]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Reference\JoinOrder]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\View Reference]
+
+[FolderOptions\CheckModel\View Reference\CheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\View Reference\CheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\View Reference\DefaultCheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\View Reference\DefaultCheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\View Reference\NotApprovedTerms]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\View Reference\UniqueName]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\View Reference\UniqueCode]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\View Reference\EmptyColl - VRFJNCOL]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Domain]
+
+[FolderOptions\CheckModel\Domain\CheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Domain\CheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Domain\DefaultCheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Domain\DefaultCheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Domain\NotApprovedTerms]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Domain\UniqueName]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Domain\UniqueCode]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Domain\MaxLen - CODE]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Domain\CheckNumParam]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Domain\CheckPrecSupLng]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Domain\CheckUndefDttp]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Domain\CheckDttpIncompatibleFormat]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Domain\SYASA17_PhysicalDomain_RowDomain_Row_domain_without_attribute]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Domain\MSSQLSRV2016_PhysicalDomain_Domain_missing_default_object]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Default]
+
+[FolderOptions\CheckModel\Default\CheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Default\CheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Default\DefaultCheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Default\DefaultCheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Default\NotApprovedTerms]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Default\UniqueName]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Default\UniqueCode]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Default\MaxLen - CODE]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Default\DfltValeEmpty]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Default\DfltSameVale]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\User]
+
+[FolderOptions\CheckModel\User\CheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\User\CheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\User\DefaultCheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\User\DefaultCheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\User\NotApprovedTerms]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\User\UniqueName]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\User\UniqueCode]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\User\MaxLen - CODE]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\User\UniquePassword]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=No
+
+[FolderOptions\CheckModel\Group]
+
+[FolderOptions\CheckModel\Group\CheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Group\CheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Group\DefaultCheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Group\DefaultCheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Group\NotApprovedTerms]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Group\UniqueName]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Group\UniqueCode]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Group\MaxLen - CODE]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Group\EmptyColl - USERCOL]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Group\UniquePassword]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=No
+
+[FolderOptions\CheckModel\Role]
+
+[FolderOptions\CheckModel\Role\CheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Role\CheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Role\DefaultCheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Role\DefaultCheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Role\NotApprovedTerms]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Role\UniqueName]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Role\UniqueCode]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Role\MaxLen - CODE]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Role\EmptyColl - USERCOL]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Procedure]
+
+[FolderOptions\CheckModel\Procedure\CheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Procedure\CheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Procedure\DefaultCheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Procedure\DefaultCheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Procedure\NotApprovedTerms]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Procedure\UniqueName]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Procedure\UniqueCode]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Procedure\MaxLen - CODE]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Procedure\ProcBodyEmpty]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Procedure\EmptyColl - PERMCOL]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=No
+
+[FolderOptions\CheckModel\DBMS Trigger]
+
+[FolderOptions\CheckModel\DBMS Trigger\CheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\DBMS Trigger\CheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\DBMS Trigger\DefaultCheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\DBMS Trigger\DefaultCheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\DBMS Trigger\NotApprovedTerms]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\DBMS Trigger\UniqueName]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\DBMS Trigger\UniqueCode]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\DBMS Trigger\MaxLen - CODE]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\DBMS Trigger\DbmsTriggerEvent]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\DBMS Trigger\MSSQLSRV2016_DBMSTrigger_Logon_must_be_unique_trigger_event]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Data Source]
+
+[FolderOptions\CheckModel\Data Source\CheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Data Source\CheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Data Source\DefaultCheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Data Source\DefaultCheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Data Source\NotApprovedTerms]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Data Source\UniqueName]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Data Source\UniqueCode]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Data Source\EmptyColl - MODLSRC]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Data Source\DtscTargets]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Data Source\CheckDataSourceModels]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Horizontal Partitioning]
+
+[FolderOptions\CheckModel\Horizontal Partitioning\UniqueName]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Horizontal Partitioning\UniqueCode]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Horizontal Partitioning\EmptyColl - PARTCOL]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Horizontal Partitioning\TargetTables]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Vertical Partitioning]
+
+[FolderOptions\CheckModel\Vertical Partitioning\UniqueName]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Vertical Partitioning\UniqueCode]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Vertical Partitioning\EmptyColl - PARTCOL]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Vertical Partitioning\TargetTables]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table Collapsing]
+
+[FolderOptions\CheckModel\Table Collapsing\UniqueName]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table Collapsing\UniqueCode]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table Collapsing\EmptyColl - TargetTable]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Table Collapsing\TargetTables]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Fact]
+
+[FolderOptions\CheckModel\Fact\CheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Fact\CheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Fact\DefaultCheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Fact\DefaultCheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Fact\NotApprovedTerms]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Fact\UniqueName]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Fact\UniqueCode]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Fact\EmptyColl - MEASCOL]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Fact\Mapping]
+CheckSeverity=No
+FixRequested=Yes
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Fact\MappingSFMap]
+CheckSeverity=No
+FixRequested=Yes
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Fact\EmptyColl - ALLOLINKCOL]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Fact\CubeDupAssociation]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Dimension]
+
+[FolderOptions\CheckModel\Dimension\CheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Dimension\CheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Dimension\DefaultCheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Dimension\DefaultCheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Dimension\NotApprovedTerms]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Dimension\UniqueName]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Dimension\UniqueCode]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Dimension\EmptyColl - DATTRCOL]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Dimension\EmptyColl - HIERCOL]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Dimension\DimnDupHierarchy]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Dimension\DimnDefHierarchy]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Dimension\Mapping]
+CheckSeverity=No
+FixRequested=Yes
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Dimension\MappingSFMap]
+CheckSeverity=No
+FixRequested=Yes
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Dimension\SerialColumnNumber]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Association]
+
+[FolderOptions\CheckModel\Association\CheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Association\CheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Association\DefaultCheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Association\DefaultCheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Association\NotApprovedTerms]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Association\EmptyColl - Hierarchy]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Dimension.Attribute]
+
+[FolderOptions\CheckModel\Dimension.Attribute\UniqueName]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Dimension.Attribute\UniqueCode]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Dimension.Attribute\CheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Dimension.Attribute\CheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Dimension.Attribute\DefaultCheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Dimension.Attribute\DefaultCheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Dimension.Attribute\NotApprovedTerms]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Fact.Measure]
+
+[FolderOptions\CheckModel\Fact.Measure\UniqueName]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Fact.Measure\UniqueCode]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Fact.Measure\CheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Fact.Measure\CheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Fact.Measure\DefaultCheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Fact.Measure\DefaultCheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Fact.Measure\NotApprovedTerms]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Fact.Fact Attribute]
+
+[FolderOptions\CheckModel\Fact.Fact Attribute\UniqueName]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Fact.Fact Attribute\UniqueCode]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Fact.Fact Attribute\CheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Fact.Fact Attribute\CheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Fact.Fact Attribute\DefaultCheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Fact.Fact Attribute\DefaultCheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Fact.Fact Attribute\NotApprovedTerms]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Dimension.Hierarchy]
+
+[FolderOptions\CheckModel\Dimension.Hierarchy\UniqueName]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Dimension.Hierarchy\UniqueCode]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Dimension.Hierarchy\CheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Dimension.Hierarchy\CheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Dimension.Hierarchy\DefaultCheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Dimension.Hierarchy\DefaultCheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Dimension.Hierarchy\NotApprovedTerms]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Dimension.Hierarchy\EmptyColl - DATTRCOL]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Synonym]
+
+[FolderOptions\CheckModel\Synonym\CheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Synonym\CheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Synonym\DefaultCheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Synonym\DefaultCheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Synonym\NotApprovedTerms]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Synonym\UniqueName]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Synonym\UniqueCode]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Synonym\MaxLen - NAME]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Synonym\MaxLen - CODE]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Synonym\EmptyColl - BASEOBJ]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Abstract Data Type]
+
+[FolderOptions\CheckModel\Abstract Data Type\CheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Abstract Data Type\CheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Abstract Data Type\DefaultCheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Abstract Data Type\DefaultCheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Abstract Data Type\NotApprovedTerms]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Abstract Data Type\UniqueName]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Abstract Data Type\UniqueCode]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Abstract Data Type\MaxLen - CODE]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Abstract Data Type\AdtInstantiable]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Abstract Data Type\AdtAbstractUsed]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Abstract Data Type.Abstract Data Type Procedure]
+
+[FolderOptions\CheckModel\Abstract Data Type.Abstract Data Type Procedure\UniqueName]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Abstract Data Type.Abstract Data Type Procedure\UniqueCode]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Abstract Data Type.Abstract Data Type Procedure\CheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Abstract Data Type.Abstract Data Type Procedure\CheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Abstract Data Type.Abstract Data Type Procedure\DefaultCheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Abstract Data Type.Abstract Data Type Procedure\DefaultCheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Abstract Data Type.Abstract Data Type Procedure\NotApprovedTerms]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Abstract Data Type.Abstract Data Type Procedure\MaxLen - CODE]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Abstract Data Type.Abstract Data Type Procedure\AdtProcUniqName]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Abstract Data Type.Abstract Data Type Procedure\UniqueDefinition]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Abstract Data Type.Abstract Data Type Procedure\ReturnDataType]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Database Package]
+
+[FolderOptions\CheckModel\Database Package\CheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Database Package\CheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Database Package\DefaultCheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Database Package\DefaultCheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Database Package\NotApprovedTerms]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Database Package\UniqueName]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Database Package\UniqueCode]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Database Package\MaxLen - NAME]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Database Package\MaxLen - CODE]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Database Package\EmptyColl - PROCOL]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Database Package\EmptyColl - CURCOL]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=No
+
+[FolderOptions\CheckModel\Database Package\EmptyColl - VARCOL]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=No
+
+[FolderOptions\CheckModel\Database Package\EmptyColl - TYPCOL]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=No
+
+[FolderOptions\CheckModel\Database Package\EmptyColl - EXCCOL]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=No
+
+[FolderOptions\CheckModel\Database Package.Database Package Procedure]
+
+[FolderOptions\CheckModel\Database Package.Database Package Procedure\UniqueName]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Database Package.Database Package Procedure\UniqueCode]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Database Package.Database Package Procedure\CheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Database Package.Database Package Procedure\CheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Database Package.Database Package Procedure\DefaultCheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Database Package.Database Package Procedure\DefaultCheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Database Package.Database Package Procedure\NotApprovedTerms]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Database Package.Database Package Procedure\UniqueDefinition]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Database Package.Database Package Procedure\EmptyColl - PARM]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=No
+
+[FolderOptions\CheckModel\Database Package.Database Package Procedure\ReturnDataType]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Sequence]
+
+[FolderOptions\CheckModel\Sequence\CheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Sequence\CheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Sequence\DefaultCheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Sequence\DefaultCheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Sequence\NotApprovedTerms]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Sequence\UniqueName]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Sequence\UniqueCode]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Sequence\MaxLen - CODE]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Database Package.Database Package Cursor]
+
+[FolderOptions\CheckModel\Database Package.Database Package Cursor\UniqueName]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Database Package.Database Package Cursor\UniqueCode]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Database Package.Database Package Cursor\CheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Database Package.Database Package Cursor\CheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Database Package.Database Package Cursor\DefaultCheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Database Package.Database Package Cursor\DefaultCheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Database Package.Database Package Cursor\NotApprovedTerms]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Database Package.Database Package Cursor\UniqueDefinition]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Database Package.Database Package Cursor\ReturnDataType]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Database Package.Database Package Cursor\EmptyColl - PARM]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=No
+
+[FolderOptions\CheckModel\Database Package.Database Package Variable]
+
+[FolderOptions\CheckModel\Database Package.Database Package Variable\UniqueName]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Database Package.Database Package Variable\UniqueCode]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Database Package.Database Package Variable\CheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Database Package.Database Package Variable\CheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Database Package.Database Package Variable\DefaultCheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Database Package.Database Package Variable\DefaultCheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Database Package.Database Package Variable\NotApprovedTerms]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Database Package.Database Package Variable\CheckUndefDttp]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Database Package.Database Package Type]
+
+[FolderOptions\CheckModel\Database Package.Database Package Type\UniqueName]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Database Package.Database Package Type\UniqueCode]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Database Package.Database Package Type\CheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Database Package.Database Package Type\CheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Database Package.Database Package Type\DefaultCheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Database Package.Database Package Type\DefaultCheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Database Package.Database Package Type\NotApprovedTerms]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Database Package.Database Package Type\UniqueDefinition]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Database Package.Database Package Exception]
+
+[FolderOptions\CheckModel\Database Package.Database Package Exception\UniqueName]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Database Package.Database Package Exception\UniqueCode]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Database Package.Database Package Exception\CheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Database Package.Database Package Exception\CheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Database Package.Database Package Exception\DefaultCheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Database Package.Database Package Exception\DefaultCheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Database Package.Database Package Exception\NotApprovedTerms]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Tablespace]
+
+[FolderOptions\CheckModel\Tablespace\CheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Tablespace\CheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Tablespace\DefaultCheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Tablespace\DefaultCheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Tablespace\NotApprovedTerms]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Tablespace\UniqueName]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Tablespace\UniqueCode]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Tablespace\MaxLen - CODE]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Tablespace\IsObjectUsed]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Storage]
+
+[FolderOptions\CheckModel\Storage\CheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Storage\CheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Storage\DefaultCheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Storage\DefaultCheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Storage\NotApprovedTerms]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Storage\UniqueName]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Storage\UniqueCode]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Storage\MaxLen - CODE]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Storage\IsObjectUsed]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Database]
+
+[FolderOptions\CheckModel\Database\CheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Database\CheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Database\DefaultCheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Database\DefaultCheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Database\NotApprovedTerms]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Database\UniqueName]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Database\UniqueCode]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Database\MaxLen - CODE]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Database\IsObjectUsed]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Web Service]
+
+[FolderOptions\CheckModel\Web Service\CheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Web Service\CheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Web Service\DefaultCheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Web Service\DefaultCheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Web Service\NotApprovedTerms]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Web Service\UniqueName]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Web Service\UniqueCode]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Web Service\MaxLen - CODE]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Web Service.Web Operation]
+
+[FolderOptions\CheckModel\Web Service.Web Operation\UniqueName]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Web Service.Web Operation\UniqueCode]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Web Service.Web Operation\CheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Web Service.Web Operation\CheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Web Service.Web Operation\DefaultCheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Web Service.Web Operation\DefaultCheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Web Service.Web Operation\NotApprovedTerms]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Web Service.Web Operation\MaxLen - CODE]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Web Service.Web Operation\SYASA17_WebOperation_Existence_of_user_when_authorization_is_disabled]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Lifecycle]
+
+[FolderOptions\CheckModel\Lifecycle\CheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Lifecycle\CheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Lifecycle\DefaultCheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Lifecycle\DefaultCheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Lifecycle\NotApprovedTerms]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Lifecycle\UniqueName]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Lifecycle\UniqueCode]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Lifecycle\CheckLifecyclePhase]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Lifecycle\CheckLifecycleRetention]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Lifecycle\CheckPartitionRange]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Lifecycle.Phase]
+
+[FolderOptions\CheckModel\Lifecycle.Phase\UniqueName]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Lifecycle.Phase\UniqueCode]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Lifecycle.Phase\CheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Lifecycle.Phase\CheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Lifecycle.Phase\DefaultCheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Lifecycle.Phase\DefaultCheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Lifecycle.Phase\NotApprovedTerms]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Lifecycle.Phase\CheckPhaseTbspace]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Lifecycle.Phase\CheckPhaseIQTbspace]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Lifecycle.Phase\CheckPhaseDuplicateTbspace]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Lifecycle.Phase\CheckPhaseTbspaceCurrency]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Lifecycle.Phase\CheckPhaseRetention]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Lifecycle.Phase\CheckPhaseIdlePeriod]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Lifecycle.Phase\CheckPhaseDataSource]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Lifecycle.Phase\CheckPhaseExternalOnFirst]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Replication]
+
+[FolderOptions\CheckModel\Replication\PartialReplication]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Business Rule]
+
+[FolderOptions\CheckModel\Business Rule\CheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Business Rule\CheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Business Rule\DefaultCheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Business Rule\DefaultCheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Business Rule\NotApprovedTerms]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Business Rule\UniqueName]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Business Rule\UniqueCode]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Business Rule\EmptyColl - OBJCOL]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Extended Object]
+
+[FolderOptions\CheckModel\Extended Object\CheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Extended Object\CheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Extended Object\DefaultCheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Extended Object\DefaultCheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Extended Object\NotApprovedTerms]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Extended Object\UniqueName]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Extended Object\UniqueCode]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Extended Object\SYASA17_ExtendedObject_TextConfiguration_MinAndMaxTermLength]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Extended Object\MSSQLSRV2016_ExtendedObject_Queue_Valid_maximum_number_of_readers_]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Extended Link]
+
+[FolderOptions\CheckModel\Extended Link\CheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Extended Link\CheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Extended Link\DefaultCheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Extended Link\DefaultCheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Extended Link\NotApprovedTerms]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Extended Link\UniqueName]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Extended Link\UniqueCode]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\File]
+
+[FolderOptions\CheckModel\File\CheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\File\CheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\File\DefaultCheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\File\DefaultCheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\File\NotApprovedTerms]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\File\UniqueName]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\File\CheckPathExists]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Data Format]
+
+[FolderOptions\CheckModel\Data Format\CheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Data Format\CheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Data Format\DefaultCheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Data Format\DefaultCheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Data Format\NotApprovedTerms]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Data Format\UniqueName]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Data Format\UniqueCode]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\Data Format\CheckDataFormatNullExpression]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\物理数据模型]
+
+[FolderOptions\CheckModel\物理数据模型\CheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\物理数据模型\CheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\物理数据模型\DefaultCheckUseOnlyTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\物理数据模型\DefaultCheckUseTermBySynonym]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\物理数据模型\NotApprovedTerms]
+CheckSeverity=Yes
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\物理数据模型\CheckPackageMissTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\物理数据模型\DefaultCheckPackageMissTerms]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\物理数据模型\UniqueName]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\物理数据模型\UniqueCode]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes
+
+[FolderOptions\CheckModel\物理数据模型\MSSQLSRV2016_Model_Storage_requires_a_database_]
+CheckSeverity=No
+FixRequested=No
+CheckRequested=Yes</a:PackageOptionsText>
+<a:ModelOptionsText>[ModelOptions]
+
+[ModelOptions\Physical Objects]
+CaseSensitive=No
+DisplayName=Yes
+EnableTrans=No
+UseTerm=No
+EnableRequirements=No
+EnableFullShortcut=Yes
+SynchroCode=Yes
+DefaultDttp=
+IgnoreOwner=No
+RebuildTrigger=Yes
+RefrUnique=No
+RefrAutoMigrate=Yes
+RefrMigrateReuse=Yes
+RefrMigrateDomain=Yes
+RefrMigrateCheck=Yes
+RefrMigrateRule=Yes
+RefrMigrateExtd=No
+RefrMigrDefaultLink=No
+RefrDfltImpl=D
+RefrPrgtColn=No
+RefrMigrateToEnd=No
+RebuildTriggerDep=No
+ColnFKName=%.3:PARENT%_%COLUMN%
+ColnFKNameUse=No
+DomnCopyDttp=Yes
+DomnCopyChck=No
+DomnCopyRule=No
+DomnCopyMand=No
+DomnCopyExtd=No
+DomnCopyProf=No
+Notation=0
+DomnDefaultMandatory=No
+ColnDefaultMandatory=No
+TablDefaultOwner=
+ViewDefaultOwner=
+TrgrDefaultOwnerTabl=
+TrgrDefaultOwnerView=
+IdxDefaultOwnerTabl=
+IdxDefaultOwnerView=
+JdxDefaultOwner=
+DBPackDefaultOwner=
+SeqDefaultOwner=
+ProcDefaultOwner=
+DBMSTrgrDefaultOwner=
+Currency=USD
+RefrDeleteConstraint=0
+RefrUpdateConstraint=0
+RefrParentMandatory=No
+RefrParentChangeAllow=Yes
+RefrCheckOnCommit=No
+
+[ModelOptions\Physical Objects\NamingOptionsTemplates]
+
+[ModelOptions\Physical Objects\ClssNamingOptions]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\PDMPCKG]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\PDMPCKG\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Physical Objects\ClssNamingOptions\PDMPCKG\Code]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Physical Objects\ClssNamingOptions\PDMDOMN]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\PDMDOMN\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Physical Objects\ClssNamingOptions\PDMDOMN\Code]
+Template=
+MaxLen=30
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Physical Objects\ClssNamingOptions\TABL]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\TABL\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Physical Objects\ClssNamingOptions\TABL\Code]
+Template=
+MaxLen=128
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Physical Objects\ClssNamingOptions\COLN]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\COLN\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Physical Objects\ClssNamingOptions\COLN\Code]
+Template=
+MaxLen=128
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Physical Objects\ClssNamingOptions\INDX]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\INDX\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Physical Objects\ClssNamingOptions\INDX\Code]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Physical Objects\ClssNamingOptions\REFR]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\REFR\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Physical Objects\ClssNamingOptions\REFR\Code]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Physical Objects\ClssNamingOptions\VREF]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\VREF\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Physical Objects\ClssNamingOptions\VREF\Code]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Physical Objects\ClssNamingOptions\VIEW]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\VIEW\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Physical Objects\ClssNamingOptions\VIEW\Code]
+Template=
+MaxLen=128
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Physical Objects\ClssNamingOptions\VIEWC]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\VIEWC\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Physical Objects\ClssNamingOptions\VIEWC\Code]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Physical Objects\ClssNamingOptions\WEBSERV]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\WEBSERV\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Physical Objects\ClssNamingOptions\WEBSERV\Code]
+Template=
+MaxLen=128
+Case=M
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;/-_.!~*&#39;()&quot;
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Physical Objects\ClssNamingOptions\WEBOP]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\WEBOP\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Physical Objects\ClssNamingOptions\WEBOP\Code]
+Template=
+MaxLen=128
+Case=M
+ValidChar=&#39;a&#39;-&#39;z&#39;,&#39;A&#39;-&#39;Z&#39;,&#39;0&#39;-&#39;9&#39;,&quot;/-_.!~*&#39;()&quot;
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Physical Objects\ClssNamingOptions\WPARAM]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\WPARAM\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Physical Objects\ClssNamingOptions\WPARAM\Code]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Physical Objects\ClssNamingOptions\FACT]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\FACT\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Physical Objects\ClssNamingOptions\FACT\Code]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Physical Objects\ClssNamingOptions\DIMN]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\DIMN\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Physical Objects\ClssNamingOptions\DIMN\Code]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Physical Objects\ClssNamingOptions\MEAS]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\MEAS\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Physical Objects\ClssNamingOptions\MEAS\Code]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Physical Objects\ClssNamingOptions\DATTR]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\DATTR\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Physical Objects\ClssNamingOptions\DATTR\Code]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Physical Objects\ClssNamingOptions\FILO]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\FILO\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Physical Objects\ClssNamingOptions\FILO\Code]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Physical Objects\ClssNamingOptions\FRMEOBJ]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\FRMEOBJ\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Physical Objects\ClssNamingOptions\FRMEOBJ\Code]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Physical Objects\ClssNamingOptions\FRMELNK]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\FRMELNK\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Physical Objects\ClssNamingOptions\FRMELNK\Code]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Physical Objects\ClssNamingOptions\DefaultClass]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\DefaultClass\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Physical Objects\ClssNamingOptions\DefaultClass\Code]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=Yes
+NoAccent=No
+DefaultChar=
+Script=
+ConvTable=
+ConvTablePath=%_HOME%\Resource Files\Conversion Tables
+
+[ModelOptions\Connection]
+
+[ModelOptions\Pdm]
+
+[ModelOptions\Generate]
+
+[ModelOptions\Generate\Xsm]
+GenRootElement=Yes
+GenComplexType=No
+GenAttribute=Yes
+CheckModel=Yes
+SaveLinks=Yes
+ORMapping=No
+NameToCode=No
+
+[ModelOptions\Generate\Pdm]
+RRMapping=No
+
+[ModelOptions\Generate\Cdm]
+CheckModel=Yes
+SaveLinks=Yes
+NameToCode=No
+Notation=2
+
+[ModelOptions\Generate\Oom]
+CheckModel=Yes
+SaveLinks=Yes
+ORMapping=No
+NameToCode=Yes
+ClassPrefix=
+
+[ModelOptions\Generate\Ldm]
+CheckModel=Yes
+SaveLinks=Yes
+NameToCode=No
+
+[ModelOptions\Default Opts]
+
+[ModelOptions\Default Opts\TABL]
+PhysOpts=
+
+[ModelOptions\Default Opts\COLN]
+PhysOpts=
+
+[ModelOptions\Default Opts\INDX]
+PhysOpts=
+
+[ModelOptions\Default Opts\AKEY]
+PhysOpts=
+
+[ModelOptions\Default Opts\PKEY]
+PhysOpts=
+
+[ModelOptions\Default Opts\STOR]
+PhysOpts=
+
+[ModelOptions\Default Opts\TSPC]
+PhysOpts=
+
+[ModelOptions\Default Opts\SQNC]
+PhysOpts=
+
+[ModelOptions\Default Opts\DTBS]
+PhysOpts=
+
+[ModelOptions\Default Opts\USER]
+PhysOpts=
+
+[ModelOptions\Default Opts\JIDX]
+PhysOpts=
+
+[ModelOptions\Default Opts\FRMEOBJ&lt;&lt;ResourcePool&gt;&gt;]
+PhysOpts=
+
+[ModelOptions\Default Opts\FRMEOBJ&lt;&lt;WorkloadGroup&gt;&gt;]
+PhysOpts=
+
+[ModelOptions\Default Opts\FRMESOB&lt;&lt;ResourcePool&gt;&gt;]
+PhysOpts=
+
+[ModelOptions\Default Opts\FRMESOB&lt;&lt;WorkloadGroup&gt;&gt;]
+PhysOpts=</a:ModelOptionsText>
+<a:RepositoryFilename>E:\PD-WS\PhysicalDataModel_1.pdm</a:RepositoryFilename>
+<a:ExtendedAttributesText>{C3190EE4-ACE0-49A9-9E8D-1BB97CADEAD5},SYASA17,75={C6E0B27F-F765-4DDD-87DA-84EB4CD5A1BC},AutoFixMaterializedViewDone,4=true
+
+</a:ExtendedAttributesText>
+<c:DBMS>
+<o:Shortcut Id="o3">
+<a:ObjectID>1FF0E403-B64A-4441-B938-7A564708EB88</a:ObjectID>
+<a:Name>Microsoft SQL Server 2016</a:Name>
+<a:Code>MSSQLSRV2016</a:Code>
+<a:CreationDate>1576419392</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1576419392</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:TargetStereotype/>
+<a:TargetID>9AA965AB-581D-4C13-8165-852F9A00B38F</a:TargetID>
+<a:TargetClassID>4BA9F647-DAB1-11D1-9944-006097355D9B</a:TargetClassID>
+</o:Shortcut>
+</c:DBMS>
+<c:PhysicalDiagrams>
+<o:PhysicalDiagram Id="o4">
+<a:ObjectID>9E362141-4921-4666-BB9D-E2784CF0A05B</a:ObjectID>
+<a:Name>PhysicalDataModel_1</a:Name>
+<a:Code>PhysicalDataModel_1</a:Code>
+<a:CreationDate>1574751568</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1575525566</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:DisplayPreferences>[DisplayPreferences]
+
+[DisplayPreferences\PDM]
+
+[DisplayPreferences\General]
+Adjust to text=Yes
+Snap Grid=No
+Constrain Labels=Yes
+Display Grid=No
+Show Page Delimiter=No
+Show Links intersections=Yes
+Activate automatic link routing=Yes
+Grid size=800
+Graphic unit=2
+Window color=255 255 255
+Background image=
+Background mode=8
+Watermark image=
+Watermark mode=8
+Show watermark on screen=No
+Gradient mode=0
+Gradient end color=255 255 255
+Show Swimlane=No
+SwimlaneVert=Yes
+TreeVert=No
+CompDark=0
+
+[DisplayPreferences\Object]
+Show Icon=No
+Mode=0
+Trunc Length=80
+Word Length=80
+Word Text=!&quot;&quot;#$%&amp;&#39;()*+,-./:;&lt;=&gt;?@[\]^_`{|}~
+Shortcut IntIcon=Yes
+Shortcut IntLoct=Yes
+Shortcut IntFullPath=No
+Shortcut IntLastPackage=Yes
+Shortcut ExtIcon=Yes
+Shortcut ExtLoct=No
+Shortcut ExtFullPath=No
+Shortcut ExtLastPackage=Yes
+Shortcut ExtIncludeModl=Yes
+EObjShowStrn=Yes
+ExtendedObject.Comment=No
+ExtendedObject.IconPicture=No
+ExtendedObject.TextStyle=No
+ExtendedObject_SymbolLayout=
+ELnkShowStrn=Yes
+ELnkShowName=Yes
+ExtendedLink_SymbolLayout=
+ExtDpdShowStrn=Yes
+ExtendedDependency_SymbolLayout=&lt;Form&gt;[CRLF] &lt;Form Name=&quot;居中&quot; &gt;[CRLF]  &lt;StandardAttribute Name=&quot;Stereotype&quot; Attribute=&quot;Stereotype&quot; Prefix=&quot;&amp;lt;&amp;lt;&quot; Suffix=&quot;&amp;gt;&amp;gt;&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF] &lt;/Form&gt;[CRLF] &lt;Form Name=&quot;源&quot; &gt;[CRLF] &lt;/Form&gt;[CRLF] &lt;Form Name=&quot;Destination&quot; &gt;[CRLF] &lt;/Form&gt;[CRLF]&lt;/Form&gt;
+FileObject.Stereotype=No
+FileObject.DisplayName=Yes
+FileObject.LocationOrName=No
+FileObject.IconPicture=No
+FileObject.TextStyle=No
+FileObject.IconMode=Yes
+FileObject_SymbolLayout=
+Package.Stereotype=No
+Package.Comment=No
+Package.IconPicture=No
+Package.TextStyle=No
+Package_SymbolLayout=
+Display Model Version=Yes
+Table.Stereotype=Yes
+Table.DisplayName=Yes
+Table.OwnerDisplayName=No
+Table.Columns=Yes
+Table.Columns._Filter=所有列 PDMCOLNALL
+Table.Columns._Columns=Stereotype DataType KeyIndicator
+Table.Columns._Limit=-5
+Table.Keys=No
+Table.Keys._Columns=Stereotype Indicator
+Table.Indexes=No
+Table.Indexes._Columns=Stereotype
+Table.Triggers=No
+Table.Triggers._Columns=Stereotype
+Table.Comment=No
+Table.IconPicture=No
+Table.TextStyle=No
+Table_SymbolLayout=&lt;Form&gt;[CRLF] &lt;StandardAttribute Name=&quot;构造型&quot; Attribute=&quot;Stereotype&quot; Prefix=&quot;&amp;lt;&amp;lt;&quot; Suffix=&quot;&amp;gt;&amp;gt;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF] &lt;ExclusiveChoice Name=&quot;Exclusive Choice&quot; Mandatory=&quot;Yes&quot; Display=&quot;HorizontalRadios&quot; &gt;[CRLF]  &lt;StandardAttribute Name=&quot;名称&quot; Attribute=&quot;DisplayName&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF]  &lt;StandardAttribute Name=&quot;Owner and Name&quot; Attribute=&quot;OwnerDisplayName&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF] &lt;/ExclusiveChoice&gt;[CRLF] &lt;Separator Name=&quot;Separator&quot; /&gt;[CRLF] &lt;StandardCollection Name=&quot;Columns&quot; Collection=&quot;Columns&quot; Columns=&quot;Stereotype No\r\nDisplayName Yes\r\nDataType No\r\nSymbolDataType No 域或数据类型\r\nDomain No\r\nKeyIndicator No\r\nIndexIndicator No\r\nNullStatus No&quot; Filters=&quot;所有列  PDMCOLNALL &amp;quot;&amp;quot;\r\n主键列  PDMCOLNPK &amp;quot;\&amp;quot;PRIM \&amp;quot;TRUE\&amp;quot; TRUE\&amp;quot;&amp;quot;\r\n键列  PDMCOLNKEY &amp;quot;\&amp;quot;KEYS \&amp;quot;TRUE\&amp;quot; TRUE\&amp;quot;&amp;quot;&quot; HasLimit=&quot;Yes&quot; HideEmpty=&quot;No&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF] &lt;StandardCollection Name=&quot;Keys&quot; Collection=&quot;Keys&quot; Columns=&quot;Stereotype No\r\nDisplayName Yes\r\nIndicator No&quot; HasLimit=&quot;No&quot; HideEmpty=&quot;No&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF] &lt;StandardCollection Name=&quot;Indexes&quot; Collection=&quot;Indexes&quot; Columns=&quot;Stereotype No\r\nDisplayName Yes\r\nIndicator No&quot; HasLimit=&quot;No&quot; HideEmpty=&quot;No&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF] &lt;StandardCollection Name=&quot;Triggers&quot; Collection=&quot;Triggers&quot; Columns=&quot;Stereotype No\r\nDisplayName Yes&quot; HasLimit=&quot;No&quot; HideEmpty=&quot;No&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF] &lt;StandardAttribute Name=&quot;Comment&quot; Attribute=&quot;Comment&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;LEFT&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF] &lt;StandardAttribute Name=&quot;Icon&quot; Attribute=&quot;IconPicture&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;Yes&quot; /&gt;[CRLF] &lt;StandardAttribute Name=&quot;强制顶部对齐&quot; Attribute=&quot;TextStyle&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;Yes&quot; /&gt;[CRLF]&lt;/Form&gt;
+View.Stereotype=Yes
+View.DisplayName=Yes
+View.OwnerDisplayName=No
+View.Columns=Yes
+View.Columns._Columns=DisplayName
+View.Columns._Limit=-5
+View.TemporaryVTables=Yes
+View.Indexes=No
+View.Comment=No
+View.IconPicture=No
+View.TextStyle=No
+View_SymbolLayout=&lt;Form&gt;[CRLF] &lt;StandardAttribute Name=&quot;构造型&quot; Attribute=&quot;Stereotype&quot; Prefix=&quot;&amp;lt;&amp;lt;&quot; Suffix=&quot;&amp;gt;&amp;gt;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF] &lt;ExclusiveChoice Name=&quot;Exclusive Choice&quot; Mandatory=&quot;Yes&quot; Display=&quot;HorizontalRadios&quot; &gt;[CRLF]  &lt;StandardAttribute Name=&quot;名称&quot; Attribute=&quot;DisplayName&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF]  &lt;StandardAttribute Name=&quot;Owner and Name&quot; Attribute=&quot;OwnerDisplayName&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF] &lt;/ExclusiveChoice&gt;[CRLF] &lt;Separator Name=&quot;Separator&quot; /&gt;[CRLF] &lt;StandardCollection Name=&quot;Columns&quot; Collection=&quot;Columns&quot; Columns=&quot;DisplayName No\r\nExpression No\r\nDataType No\r\nSymbolDataType No 域或数据类型\r\nIndexIndicator No&quot; HasLimit=&quot;Yes&quot; HideEmpty=&quot;No&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF] &lt;StandardCollection Name=&quot;Tables&quot; Collection=&quot;TemporaryVTables&quot; Columns=&quot;Name Yes&quot; HasLimit=&quot;No&quot; HideEmpty=&quot;No&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF] &lt;StandardCollection Name=&quot;Indexes&quot; Collection=&quot;Indexes&quot; Columns=&quot;DisplayName Yes&quot; HasLimit=&quot;No&quot; HideEmpty=&quot;No&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF] &lt;StandardAttribute Name=&quot;Comment&quot; Attribute=&quot;Comment&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;LEFT&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF] &lt;StandardAttribute Name=&quot;Icon&quot; Attribute=&quot;IconPicture&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;Yes&quot; /&gt;[CRLF] &lt;StandardAttribute Name=&quot;强制顶部对齐&quot; Attribute=&quot;TextStyle&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;Yes&quot; /&gt;[CRLF]&lt;/Form&gt;
+Procedure.Stereotype=No
+Procedure.DisplayName=Yes
+Procedure.OwnerDisplayName=No
+Procedure.Comment=No
+Procedure.IconPicture=No
+Procedure.TextStyle=No
+Procedure_SymbolLayout=&lt;Form&gt;[CRLF] &lt;StandardAttribute Name=&quot;构造型&quot; Attribute=&quot;Stereotype&quot; Prefix=&quot;&amp;lt;&amp;lt;&quot; Suffix=&quot;&amp;gt;&amp;gt;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF] &lt;ExclusiveChoice Name=&quot;Exclusive Choice&quot; Mandatory=&quot;Yes&quot; Display=&quot;HorizontalRadios&quot; &gt;[CRLF]  &lt;StandardAttribute Name=&quot;名称&quot; Attribute=&quot;DisplayName&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF]  &lt;StandardAttribute Name=&quot;Owner and Name&quot; Attribute=&quot;OwnerDisplayName&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF] &lt;/ExclusiveChoice&gt;[CRLF] &lt;Separator Name=&quot;Separator&quot; /&gt;[CRLF] &lt;StandardAttribute Name=&quot;Comment&quot; Attribute=&quot;Comment&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;LEFT&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF] &lt;StandardAttribute Name=&quot;Icon&quot; Attribute=&quot;IconPicture&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;Yes&quot; /&gt;[CRLF] &lt;StandardAttribute Name=&quot;强制顶部对齐&quot; Attribute=&quot;TextStyle&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Alignment=&quot;CNTR&quot; Caption=&quot;&quot; Mandatory=&quot;Yes&quot; /&gt;[CRLF]&lt;/Form&gt;
+Reference.Cardinality=No
+Reference.ImplementationType=No
+Reference.ChildRole=Yes
+Reference.Stereotype=Yes
+Reference.DisplayName=No
+Reference.ForeignKeyConstraintName=Yes
+Reference.JoinExpression=No
+Reference.Integrity=No
+Reference.ParentRole=Yes
+Reference_SymbolLayout=&lt;Form&gt;[CRLF] &lt;Form Name=&quot;源&quot; &gt;[CRLF]  &lt;StandardAttribute Name=&quot;Cardinality&quot; Attribute=&quot;Cardinality&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF]  &lt;StandardAttribute Name=&quot;Implementation&quot; Attribute=&quot;ImplementationType&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF]  &lt;StandardAttribute Name=&quot;Child Role&quot; Attribute=&quot;ChildRole&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF] &lt;/Form&gt;[CRLF] &lt;Form Name=&quot;居中&quot; &gt;[CRLF]  &lt;StandardAttribute Name=&quot;构造型&quot; Attribute=&quot;Stereotype&quot; Prefix=&quot;&amp;lt;&amp;lt;&quot; Suffix=&quot;&amp;gt;&amp;gt;&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF]  &lt;ExclusiveChoice Name=&quot;Exclusive Choice&quot; Mandatory=&quot;No&quot; Display=&quot;HorizontalRadios&quot; &gt;[CRLF]   &lt;StandardAttribute Name=&quot;名称&quot; Attribute=&quot;DisplayName&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF]   &lt;StandardAttribute Name=&quot;约束名称(&amp;amp;T)&quot; Attribute=&quot;ForeignKeyConstraintName&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Caption=&quot;约束名称(&amp;amp;T)&quot; Mandatory=&quot;No&quot; /&gt;[CRLF]   &lt;StandardAttribute Name=&quot;连接&quot; Attribute=&quot;JoinExpression&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Caption=&quot;连接&quot; Mandatory=&quot;No&quot; /&gt;[CRLF]  &lt;/ExclusiveChoice&gt;[CRLF]  &lt;StandardAttribute Name=&quot;参照完整性&quot; Attribute=&quot;Integrity&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Caption=&quot;参照完整性&quot; Mandatory=&quot;No&quot; /&gt;[CRLF] &lt;/Form&gt;[CRLF] &lt;Form Name=&quot;Destination&quot; &gt;[CRLF]  &lt;StandardAttribute Name=&quot;Parent Role&quot; Attribute=&quot;ParentRole&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF] &lt;/Form&gt;[CRLF]&lt;/Form&gt;
+ViewReference.ChildRole=Yes
+ViewReference.Stereotype=Yes
+ViewReference.DisplayName=No
+ViewReference.JoinExpression=No
+ViewReference.ParentRole=Yes
+ViewReference_SymbolLayout=&lt;Form&gt;[CRLF] &lt;Form Name=&quot;源&quot; &gt;[CRLF]  &lt;StandardAttribute Name=&quot;Child Role&quot; Attribute=&quot;ChildRole&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF] &lt;/Form&gt;[CRLF] &lt;Form Name=&quot;居中&quot; &gt;[CRLF]  &lt;StandardAttribute Name=&quot;构造型&quot; Attribute=&quot;Stereotype&quot; Prefix=&quot;&amp;lt;&amp;lt;&quot; Suffix=&quot;&amp;gt;&amp;gt;&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF]  &lt;ExclusiveChoice Name=&quot;Exclusive Choice&quot; Mandatory=&quot;No&quot; Display=&quot;HorizontalRadios&quot; &gt;[CRLF]   &lt;StandardAttribute Name=&quot;名称&quot; Attribute=&quot;DisplayName&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF]   &lt;StandardAttribute Name=&quot;Join Expression&quot; Attribute=&quot;JoinExpression&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF]  &lt;/ExclusiveChoice&gt;[CRLF] &lt;/Form&gt;[CRLF] &lt;Form Name=&quot;Destination&quot; &gt;[CRLF]  &lt;StandardAttribute Name=&quot;Parent Role&quot; Attribute=&quot;ParentRole&quot; Prefix=&quot;&quot; Suffix=&quot;&quot; Caption=&quot;&quot; Mandatory=&quot;No&quot; /&gt;[CRLF] &lt;/Form&gt;[CRLF]&lt;/Form&gt;
+
+[DisplayPreferences\Symbol]
+
+[DisplayPreferences\Symbol\FRMEOBJ]
+STRNFont=Arial,8,N
+STRNFont color=0 0 0
+DISPNAMEFont=Arial,8,N
+DISPNAMEFont color=0 0 0
+LABLFont=Arial,8,N
+LABLFont color=0 0 0
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Width=6000
+Height=2000
+Brush color=255 255 255
+Fill Color=Yes
+Brush style=6
+Brush bitmap mode=12
+Brush gradient mode=64
+Brush gradient color=192 192 192
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 255 128 128
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\FRMELNK]
+CENTERFont=Arial,8,N
+CENTERFont color=0 0 0
+Line style=2
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Brush color=255 255 255
+Fill Color=Yes
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 128 128 255
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\USRDEPD]
+CENTERFont=新宋体,8,N
+CENTERFont color=0 0 0
+Line style=0
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Brush color=255 255 255
+Fill Color=Yes
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=2 0 128 0 64
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\FILO]
+OBJSTRNFont=新宋体,8,N
+OBJSTRNFont color=0 0 0
+DISPNAMEFont=新宋体,8,N
+DISPNAMEFont color=0 0 0
+LCNMFont=新宋体,8,N
+LCNMFont color=0 0 0
+AutoAdjustToText=Yes
+Keep aspect=Yes
+Keep center=Yes
+Keep size=No
+Width=2400
+Height=2400
+Brush color=255 255 255
+Fill Color=No
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 0 0 255
+Shadow color=192 192 192
+Shadow=-1
+
+[DisplayPreferences\Symbol\PDMPCKG]
+STRNFont=Arial,8,N
+STRNFont color=0 0 0
+DISPNAMEFont=Arial,8,N
+DISPNAMEFont color=0 0 0
+LABLFont=Arial,8,N
+LABLFont color=0 0 0
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Width=4800
+Height=3600
+Brush color=255 255 192
+Fill Color=Yes
+Brush style=6
+Brush bitmap mode=12
+Brush gradient mode=65
+Brush gradient color=255 255 255
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 178 178 178
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\TABL]
+STRNFont=Arial,8,N
+STRNFont color=0 0 0
+DISPNAMEFont=Arial,8,N
+DISPNAMEFont color=0 0 0
+OWNRDISPNAMEFont=新宋体,8,N
+OWNRDISPNAMEFont color=0 0 0
+ColumnsFont=Arial,8,N
+ColumnsFont color=0 0 0
+TablePkColumnsFont=Arial,8,U
+TablePkColumnsFont color=0 0 0
+TableFkColumnsFont=Arial,8,N
+TableFkColumnsFont color=0 0 0
+KeysFont=Arial,8,N
+KeysFont color=0 0 0
+IndexesFont=Arial,8,N
+IndexesFont color=0 0 0
+TriggersFont=Arial,8,N
+TriggersFont color=0 0 0
+LABLFont=Arial,8,N
+LABLFont color=0 0 0
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Width=4800
+Height=4000
+Brush color=210 137 2
+Fill Color=Yes
+Brush style=6
+Brush bitmap mode=12
+Brush gradient mode=65
+Brush gradient color=255 255 255
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 128 64 0
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\VIEW]
+STRNFont=Arial,8,N
+STRNFont color=0 0 0
+DISPNAMEFont=Arial,8,N
+DISPNAMEFont color=0 0 0
+OWNRDISPNAMEFont=新宋体,8,N
+OWNRDISPNAMEFont color=0 0 0
+ColumnsFont=Arial,8,N
+ColumnsFont color=0 0 0
+TablePkColumnsFont=新宋体,8,U
+TablePkColumnsFont color=0 0 0
+TableFkColumnsFont=新宋体,8,N
+TableFkColumnsFont color=0 0 0
+TemporaryVTablesFont=Arial,8,N
+TemporaryVTablesFont color=0 0 0
+IndexesFont=Arial,8,N
+IndexesFont color=0 0 0
+LABLFont=Arial,8,N
+LABLFont color=0 0 0
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Width=4800
+Height=4000
+Brush color=233 202 131
+Fill Color=Yes
+Brush style=6
+Brush bitmap mode=12
+Brush gradient mode=65
+Brush gradient color=255 255 255
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 128 128 128
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\PROC]
+STRNFont=Arial,8,N
+STRNFont color=0 0 0
+DISPNAMEFont=Arial,8,N
+DISPNAMEFont color=0 0 0
+OWNRDISPNAMEFont=新宋体,8,N
+OWNRDISPNAMEFont color=0 0 0
+LABLFont=Arial,8,N
+LABLFont color=0 0 0
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Width=4000
+Height=1000
+Brush color=255 255 192
+Fill Color=Yes
+Brush style=6
+Brush bitmap mode=12
+Brush gradient mode=65
+Brush gradient color=255 255 255
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 128 108 0
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\REFR]
+SOURCEFont=新宋体,8,N
+SOURCEFont color=0 0 0
+CENTERFont=新宋体,8,N
+CENTERFont color=0 0 0
+DESTINATIONFont=新宋体,8,N
+DESTINATIONFont color=0 0 0
+Line style=2
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Brush color=255 255 255
+Fill Color=Yes
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 128 0 64
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\VREF]
+SOURCEFont=新宋体,8,N
+SOURCEFont color=0 0 0
+CENTERFont=新宋体,8,N
+CENTERFont color=0 0 0
+DESTINATIONFont=新宋体,8,N
+DESTINATIONFont color=0 0 0
+Line style=2
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Brush color=255 255 255
+Fill Color=Yes
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 128 0 64
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\Free Symbol]
+Free TextFont=Arial,8,N
+Free TextFont color=0 0 0
+Line style=2
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Brush color=255 255 255
+Fill Color=Yes
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 128 64 0
+Shadow color=192 192 192
+Shadow=0</a:DisplayPreferences>
+<a:PaperSize>(8268, 11693)</a:PaperSize>
+<a:PageMargins>((315,354), (433,354))</a:PageMargins>
+<a:PageOrientation>1</a:PageOrientation>
+<a:PaperSource>15</a:PaperSource>
+<c:Symbols>
+<o:ReferenceSymbol Id="o5">
+<a:CreationDate>1574753404</a:CreationDate>
+<a:ModificationDate>1574753419</a:ModificationDate>
+<a:Rect>((-16489,10564), (-3889,12160))</a:Rect>
+<a:ListOfPoints>((-7258,11189),(-13841,11189))</a:ListOfPoints>
+<a:CornerStyle>2</a:CornerStyle>
+<a:ArrowStyle>1</a:ArrowStyle>
+<a:LineColor>4194432</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>CENTER 0 新宋体,8,N
+SOURCE 0 新宋体,8,N
+DESTINATION 0 新宋体,8,N</a:FontList>
+<a:AutomaticRoutingState>3</a:AutomaticRoutingState>
+<c:SourceSymbol>
+<o:TableSymbol Ref="o6"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:TableSymbol Ref="o7"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Reference Ref="o8"/>
+</c:Object>
+</o:ReferenceSymbol>
+<o:ReferenceSymbol Id="o9">
+<a:CreationDate>1574753409</a:CreationDate>
+<a:ModificationDate>1574753409</a:ModificationDate>
+<a:Rect>((-4478,11464), (7702,13060))</a:Rect>
+<a:ListOfPoints>((-1320,12089),(4545,12089))</a:ListOfPoints>
+<a:CornerStyle>2</a:CornerStyle>
+<a:ArrowStyle>1</a:ArrowStyle>
+<a:LineColor>4194432</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>CENTER 0 新宋体,8,N
+SOURCE 0 新宋体,8,N
+DESTINATION 0 新宋体,8,N</a:FontList>
+<c:SourceSymbol>
+<o:TableSymbol Ref="o6"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:TableSymbol Ref="o10"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Reference Ref="o11"/>
+</c:Object>
+</o:ReferenceSymbol>
+<o:ReferenceSymbol Id="o12">
+<a:CreationDate>1574753882</a:CreationDate>
+<a:ModificationDate>1575253010</a:ModificationDate>
+<a:Rect>((13236,11464), (25416,13060))</a:Rect>
+<a:ListOfPoints>((24180,12089),(14473,12089))</a:ListOfPoints>
+<a:CornerStyle>2</a:CornerStyle>
+<a:ArrowStyle>1</a:ArrowStyle>
+<a:LineColor>4194432</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>CENTER 0 新宋体,8,N
+SOURCE 0 新宋体,8,N
+DESTINATION 0 新宋体,8,N</a:FontList>
+<c:SourceSymbol>
+<o:TableSymbol Ref="o13"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:TableSymbol Ref="o10"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Reference Ref="o14"/>
+</c:Object>
+</o:ReferenceSymbol>
+<o:ReferenceSymbol Id="o15">
+<a:CreationDate>1574754346</a:CreationDate>
+<a:ModificationDate>1575532585</a:ModificationDate>
+<a:Rect>((12555,-9981), (25575,-8385))</a:Rect>
+<a:ListOfPoints>((23687,-9356),(14443,-9356))</a:ListOfPoints>
+<a:CornerStyle>2</a:CornerStyle>
+<a:ArrowStyle>1</a:ArrowStyle>
+<a:LineColor>4194432</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>CENTER 0 新宋体,8,N
+SOURCE 0 新宋体,8,N
+DESTINATION 0 新宋体,8,N</a:FontList>
+<a:AutomaticRoutingState>3</a:AutomaticRoutingState>
+<c:SourceSymbol>
+<o:TableSymbol Ref="o16"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:TableSymbol Ref="o17"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Reference Ref="o18"/>
+</c:Object>
+</o:ReferenceSymbol>
+<o:ReferenceSymbol Id="o19">
+<a:CreationDate>1574754360</a:CreationDate>
+<a:ModificationDate>1575529419</a:ModificationDate>
+<a:Rect>((20712,-8728), (33732,6070))</a:Rect>
+<a:ListOfPoints>((27235,-8328),(27235,-2969),(27209,-2969),(27209,5670))</a:ListOfPoints>
+<a:CornerStyle>2</a:CornerStyle>
+<a:ArrowStyle>1</a:ArrowStyle>
+<a:LineColor>4194432</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>CENTER 0 新宋体,8,N
+SOURCE 0 新宋体,8,N
+DESTINATION 0 新宋体,8,N</a:FontList>
+<a:AutomaticRoutingState>3</a:AutomaticRoutingState>
+<c:SourceSymbol>
+<o:TableSymbol Ref="o16"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:TableSymbol Ref="o13"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Reference Ref="o20"/>
+</c:Object>
+</o:ReferenceSymbol>
+<o:ReferenceSymbol Id="o21">
+<a:CreationDate>1574754501</a:CreationDate>
+<a:ModificationDate>1575252235</a:ModificationDate>
+<a:Rect>((-19391,-7091), (-8051,8410))</a:Rect>
+<a:ListOfPoints>((-13721,-6691),(-13721,8010))</a:ListOfPoints>
+<a:CornerStyle>2</a:CornerStyle>
+<a:ArrowStyle>1</a:ArrowStyle>
+<a:LineColor>4194432</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>CENTER 0 新宋体,8,N
+SOURCE 0 新宋体,8,N
+DESTINATION 0 新宋体,8,N</a:FontList>
+<c:SourceSymbol>
+<o:TableSymbol Ref="o22"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:TableSymbol Ref="o7"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Reference Ref="o23"/>
+</c:Object>
+</o:ReferenceSymbol>
+<o:ReferenceSymbol Id="o24">
+<a:CreationDate>1574754504</a:CreationDate>
+<a:ModificationDate>1575532579</a:ModificationDate>
+<a:Rect>((-8944,-9865), (4977,-8269))</a:Rect>
+<a:ListOfPoints>((-8544,-9240),(4577,-9240))</a:ListOfPoints>
+<a:CornerStyle>2</a:CornerStyle>
+<a:ArrowStyle>1</a:ArrowStyle>
+<a:LineColor>4194432</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>CENTER 0 新宋体,8,N
+SOURCE 0 新宋体,8,N
+DESTINATION 0 新宋体,8,N</a:FontList>
+<a:AutomaticRoutingState>3</a:AutomaticRoutingState>
+<c:SourceSymbol>
+<o:TableSymbol Ref="o22"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:TableSymbol Ref="o17"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Reference Ref="o25"/>
+</c:Object>
+</o:ReferenceSymbol>
+<o:ReferenceSymbol Id="o26">
+<a:CreationDate>1575252294</a:CreationDate>
+<a:ModificationDate>1575530115</a:ModificationDate>
+<a:Rect>((2758,-6671), (15778,-709))</a:Rect>
+<a:ListOfPoints>((9268,-6271),(9268,-1109))</a:ListOfPoints>
+<a:CornerStyle>2</a:CornerStyle>
+<a:ArrowStyle>1</a:ArrowStyle>
+<a:LineColor>4194432</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>CENTER 0 新宋体,8,N
+SOURCE 0 新宋体,8,N
+DESTINATION 0 新宋体,8,N</a:FontList>
+<c:SourceSymbol>
+<o:TableSymbol Ref="o17"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:TableSymbol Ref="o27"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Reference Ref="o28"/>
+</c:Object>
+</o:ReferenceSymbol>
+<o:ReferenceSymbol Id="o29">
+<a:CreationDate>1575252347</a:CreationDate>
+<a:ModificationDate>1575530115</a:ModificationDate>
+<a:Rect>((3419,4849), (15599,10490))</a:Rect>
+<a:ListOfPoints>((9509,5249),(9509,10090))</a:ListOfPoints>
+<a:CornerStyle>2</a:CornerStyle>
+<a:ArrowStyle>1</a:ArrowStyle>
+<a:LineColor>4194432</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>CENTER 0 新宋体,8,N
+SOURCE 0 新宋体,8,N
+DESTINATION 0 新宋体,8,N</a:FontList>
+<c:SourceSymbol>
+<o:TableSymbol Ref="o27"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:TableSymbol Ref="o10"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Reference Ref="o30"/>
+</c:Object>
+</o:ReferenceSymbol>
+<o:ReferenceSymbol Id="o31">
+<a:CreationDate>1575525545</a:CreationDate>
+<a:ModificationDate>1575525755</a:ModificationDate>
+<a:Rect>((-26610,-21192), (-8257,9940))</a:Rect>
+<a:ListOfPoints>((-8657,-20220),(-20310,-20220),(-20310,9540))</a:ListOfPoints>
+<a:CornerStyle>2</a:CornerStyle>
+<a:ArrowStyle>1</a:ArrowStyle>
+<a:LineColor>4194432</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>CENTER 0 新宋体,8,N
+SOURCE 0 新宋体,8,N
+DESTINATION 0 新宋体,8,N</a:FontList>
+<a:AutomaticRoutingState>4</a:AutomaticRoutingState>
+<c:SourceSymbol>
+<o:TableSymbol Ref="o32"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:TableSymbol Ref="o7"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Reference Ref="o33"/>
+</c:Object>
+</o:ReferenceSymbol>
+<o:ReferenceSymbol Id="o34">
+<a:CreationDate>1575525560</a:CreationDate>
+<a:ModificationDate>1575525755</a:ModificationDate>
+<a:Rect>((-791,-19843), (15808,-8925))</a:Rect>
+<a:ListOfPoints>((-391,-18871),(9298,-18871),(9298,-9325))</a:ListOfPoints>
+<a:CornerStyle>2</a:CornerStyle>
+<a:ArrowStyle>1</a:ArrowStyle>
+<a:LineColor>4194432</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>CENTER 0 新宋体,8,N
+SOURCE 0 新宋体,8,N
+DESTINATION 0 新宋体,8,N</a:FontList>
+<a:AutomaticRoutingState>3</a:AutomaticRoutingState>
+<c:SourceSymbol>
+<o:TableSymbol Ref="o32"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:TableSymbol Ref="o17"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Reference Ref="o35"/>
+</c:Object>
+</o:ReferenceSymbol>
+<o:ReferenceSymbol Id="o36">
+<a:CreationDate>1575525566</a:CreationDate>
+<a:ModificationDate>1575525755</a:ModificationDate>
+<a:Rect>((-1060,-22782), (40626,6190))</a:Rect>
+<a:ListOfPoints>((-660,-21810),(34116,-21810),(34116,5790))</a:ListOfPoints>
+<a:CornerStyle>2</a:CornerStyle>
+<a:ArrowStyle>1</a:ArrowStyle>
+<a:LineColor>4194432</a:LineColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>CENTER 0 新宋体,8,N
+SOURCE 0 新宋体,8,N
+DESTINATION 0 新宋体,8,N</a:FontList>
+<a:AutomaticRoutingState>3</a:AutomaticRoutingState>
+<c:SourceSymbol>
+<o:TableSymbol Ref="o32"/>
+</c:SourceSymbol>
+<c:DestinationSymbol>
+<o:TableSymbol Ref="o13"/>
+</c:DestinationSymbol>
+<c:Object>
+<o:Reference Ref="o37"/>
+</c:Object>
+</o:ReferenceSymbol>
+<o:TableSymbol Id="o7">
+<a:CreationDate>1574751782</a:CreationDate>
+<a:ModificationDate>1576419392</a:ModificationDate>
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((-23419,8010), (-13121,14368))</a:Rect>
+<a:LineColor>16512</a:LineColor>
+<a:FillColor>166354</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+OWNRDISPNAME 0 新宋体,8,N
+Columns 0 Arial,8,N
+TablePkColumns 0 Arial,8,U
+TableFkColumns 0 Arial,8,N
+Keys 0 Arial,8,N
+Indexes 0 Arial,8,N
+Triggers 0 Arial,8,N
+LABL 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<c:Object>
+<o:Table Ref="o38"/>
+</c:Object>
+</o:TableSymbol>
+<o:TableSymbol Id="o39">
+<a:CreationDate>1574751789</a:CreationDate>
+<a:ModificationDate>1576419392</a:ModificationDate>
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((-52218,7890), (-42042,13288))</a:Rect>
+<a:LineColor>16512</a:LineColor>
+<a:FillColor>166354</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+OWNRDISPNAME 0 新宋体,8,N
+Columns 0 Arial,8,N
+TablePkColumns 0 Arial,8,U
+TableFkColumns 0 Arial,8,N
+Keys 0 Arial,8,N
+Indexes 0 Arial,8,N
+Triggers 0 Arial,8,N
+LABL 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<c:Object>
+<o:Table Ref="o40"/>
+</c:Object>
+</o:TableSymbol>
+<o:TableSymbol Id="o41">
+<a:CreationDate>1574751790</a:CreationDate>
+<a:ModificationDate>1576419392</a:ModificationDate>
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((-38482,7830), (-28060,13228))</a:Rect>
+<a:LineColor>16512</a:LineColor>
+<a:FillColor>166354</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+OWNRDISPNAME 0 新宋体,8,N
+Columns 0 Arial,8,N
+TablePkColumns 0 Arial,8,U
+TableFkColumns 0 Arial,8,N
+Keys 0 Arial,8,N
+Indexes 0 Arial,8,N
+Triggers 0 Arial,8,N
+LABL 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<c:Object>
+<o:Table Ref="o42"/>
+</c:Object>
+</o:TableSymbol>
+<o:TableSymbol Id="o10">
+<a:CreationDate>1574751791</a:CreationDate>
+<a:ModificationDate>1576419392</a:ModificationDate>
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((4545,10090), (14473,14089))</a:Rect>
+<a:LineColor>16512</a:LineColor>
+<a:FillColor>166354</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+OWNRDISPNAME 0 新宋体,8,N
+Columns 0 Arial,8,N
+TablePkColumns 0 Arial,8,U
+TableFkColumns 0 Arial,8,N
+Keys 0 Arial,8,N
+Indexes 0 Arial,8,N
+Triggers 0 Arial,8,N
+LABL 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<c:Object>
+<o:Table Ref="o43"/>
+</c:Object>
+</o:TableSymbol>
+<o:TableSymbol Id="o6">
+<a:CreationDate>1574751792</a:CreationDate>
+<a:ModificationDate>1576419392</a:ModificationDate>
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((-7258,9370), (-1320,13369))</a:Rect>
+<a:LineColor>16512</a:LineColor>
+<a:FillColor>166354</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+OWNRDISPNAME 0 新宋体,8,N
+Columns 0 Arial,8,N
+TablePkColumns 0 Arial,8,U
+TableFkColumns 0 Arial,8,N
+Keys 0 Arial,8,N
+Indexes 0 Arial,8,N
+Triggers 0 Arial,8,N
+LABL 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<c:Object>
+<o:Table Ref="o44"/>
+</c:Object>
+</o:TableSymbol>
+<o:TableSymbol Id="o13">
+<a:CreationDate>1574751793</a:CreationDate>
+<a:ModificationDate>1576419392</a:ModificationDate>
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((24180,4950), (35158,18988))</a:Rect>
+<a:LineColor>16512</a:LineColor>
+<a:FillColor>166354</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+OWNRDISPNAME 0 新宋体,8,N
+Columns 0 Arial,8,N
+TablePkColumns 0 Arial,8,U
+TableFkColumns 0 Arial,8,N
+Keys 0 Arial,8,N
+Indexes 0 Arial,8,N
+Triggers 0 Arial,8,N
+LABL 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<c:Object>
+<o:Table Ref="o45"/>
+</c:Object>
+</o:TableSymbol>
+<o:TableSymbol Id="o17">
+<a:CreationDate>1574751794</a:CreationDate>
+<a:ModificationDate>1576419392</a:ModificationDate>
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((4577,-11669), (14443,-6271))</a:Rect>
+<a:LineColor>16512</a:LineColor>
+<a:FillColor>166354</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+OWNRDISPNAME 0 新宋体,8,N
+Columns 0 Arial,8,N
+TablePkColumns 0 Arial,8,U
+TableFkColumns 0 Arial,8,N
+Keys 0 Arial,8,N
+Indexes 0 Arial,8,N
+Triggers 0 Arial,8,N
+LABL 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<c:Object>
+<o:Table Ref="o46"/>
+</c:Object>
+</o:TableSymbol>
+<o:TableSymbol Id="o16">
+<a:CreationDate>1574751795</a:CreationDate>
+<a:ModificationDate>1576419392</a:ModificationDate>
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((23687,-11906), (33369,-7468))</a:Rect>
+<a:LineColor>16512</a:LineColor>
+<a:FillColor>166354</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+OWNRDISPNAME 0 新宋体,8,N
+Columns 0 Arial,8,N
+TablePkColumns 0 Arial,8,U
+TableFkColumns 0 Arial,8,N
+Keys 0 Arial,8,N
+Indexes 0 Arial,8,N
+Triggers 0 Arial,8,N
+LABL 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<c:Object>
+<o:Table Ref="o47"/>
+</c:Object>
+</o:TableSymbol>
+<o:TableSymbol Id="o22">
+<a:CreationDate>1574751796</a:CreationDate>
+<a:ModificationDate>1576419392</a:ModificationDate>
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((-17676,-13049), (-8304,-6691))</a:Rect>
+<a:LineColor>16512</a:LineColor>
+<a:FillColor>166354</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+OWNRDISPNAME 0 新宋体,8,N
+Columns 0 Arial,8,N
+TablePkColumns 0 Arial,8,U
+TableFkColumns 0 Arial,8,N
+Keys 0 Arial,8,N
+Indexes 0 Arial,8,N
+Triggers 0 Arial,8,N
+LABL 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<c:Object>
+<o:Table Ref="o48"/>
+</c:Object>
+</o:TableSymbol>
+<o:TableSymbol Id="o32">
+<a:CreationDate>1574751797</a:CreationDate>
+<a:ModificationDate>1576419392</a:ModificationDate>
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((-11462,-23489), (-360,-17131))</a:Rect>
+<a:LineColor>16512</a:LineColor>
+<a:FillColor>166354</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+OWNRDISPNAME 0 新宋体,8,N
+Columns 0 Arial,8,N
+TablePkColumns 0 Arial,8,U
+TableFkColumns 0 Arial,8,N
+Keys 0 Arial,8,N
+Indexes 0 Arial,8,N
+Triggers 0 Arial,8,N
+LABL 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<c:Object>
+<o:Table Ref="o49"/>
+</c:Object>
+</o:TableSymbol>
+<o:TableSymbol Id="o27">
+<a:CreationDate>1574751798</a:CreationDate>
+<a:ModificationDate>1576419392</a:ModificationDate>
+<a:IconMode>-1</a:IconMode>
+<a:Rect>((3627,-1109), (14913,5249))</a:Rect>
+<a:LineColor>16512</a:LineColor>
+<a:FillColor>166354</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>STRN 0 Arial,8,N
+DISPNAME 0 Arial,8,N
+OWNRDISPNAME 0 新宋体,8,N
+Columns 0 Arial,8,N
+TablePkColumns 0 Arial,8,U
+TableFkColumns 0 Arial,8,N
+Keys 0 Arial,8,N
+Indexes 0 Arial,8,N
+Triggers 0 Arial,8,N
+LABL 0 Arial,8,N</a:FontList>
+<a:BrushStyle>6</a:BrushStyle>
+<a:GradientFillMode>65</a:GradientFillMode>
+<a:GradientEndColor>16777215</a:GradientEndColor>
+<c:Object>
+<o:Table Ref="o50"/>
+</c:Object>
+</o:TableSymbol>
+</c:Symbols>
+</o:PhysicalDiagram>
+</c:PhysicalDiagrams>
+<c:DefaultDiagram>
+<o:PhysicalDiagram Ref="o4"/>
+</c:DefaultDiagram>
+<c:Tables>
+<o:Table Id="o38">
+<a:ObjectID>D2C2842F-A647-43B5-BB6D-8FADCA66B47E</a:ObjectID>
+<a:Name>student</a:Name>
+<a:Code>student</a:Code>
+<a:CreationDate>1574751782</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1576419392</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:TotalSavingCurrency/>
+<a:ExtendedAttributesText>{9AA965AB-581D-4C13-8165-852F9A00B38F},MSSQLSRV2016,109={135F25FA-9210-4C87-9BE2-F5E9E40058FD},PctFree,0=
+{676E9DFC-E071-48B9-935F-A0926111A967},TemporaryTable,0=
+
+</a:ExtendedAttributesText>
+<c:Columns>
+<o:Column Id="o51">
+<a:ObjectID>B268FD69-ADBE-453D-8702-21EF55EB3458</a:ObjectID>
+<a:Name>Sid</a:Name>
+<a:Code>Sid</a:Code>
+<a:CreationDate>1574751948</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1574768890</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:DataType>int</a:DataType>
+<a:Column.Mandatory>1</a:Column.Mandatory>
+</o:Column>
+<o:Column Id="o52">
+<a:ObjectID>B6AA8C50-D143-4392-AEE9-034914B642E9</a:ObjectID>
+<a:Name>Sname</a:Name>
+<a:Code>Sname</a:Code>
+<a:CreationDate>1574751948</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1574752365</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:DataType>varchar(15)</a:DataType>
+<a:Length>15</a:Length>
+<a:Column.Mandatory>1</a:Column.Mandatory>
+</o:Column>
+<o:Column Id="o53">
+<a:ObjectID>82554E1D-3376-4B36-A007-E8252EBF54DF</a:ObjectID>
+<a:Name>Spwd</a:Name>
+<a:Code>Spwd</a:Code>
+<a:CreationDate>1574751948</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1574752365</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:DataType>varchar(16)</a:DataType>
+<a:Length>16</a:Length>
+<a:Column.Mandatory>1</a:Column.Mandatory>
+</o:Column>
+<o:Column Id="o54">
+<a:ObjectID>9AFDE607-D954-4B91-A022-B9507AF6C20C</a:ObjectID>
+<a:Name>subject</a:Name>
+<a:Code>subject</a:Code>
+<a:CreationDate>1574751948</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1574752365</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:DataType>varchar(15)</a:DataType>
+<a:Length>15</a:Length>
+<a:Column.Mandatory>1</a:Column.Mandatory>
+</o:Column>
+<o:Column Id="o55">
+<a:ObjectID>9C553709-B955-4003-8414-B1CBF82EDE92</a:ObjectID>
+<a:Name>Smobile</a:Name>
+<a:Code>Smobile</a:Code>
+<a:CreationDate>1574751948</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1574752577</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:DataType>varchar(11)</a:DataType>
+<a:Length>11</a:Length>
+<a:Column.Mandatory>1</a:Column.Mandatory>
+</o:Column>
+</c:Columns>
+<c:Keys>
+<o:Key Id="o56">
+<a:ObjectID>823F3A77-8BD5-4EFE-89F3-D2D5E114A946</a:ObjectID>
+<a:Name>Key_1</a:Name>
+<a:Code>Key_1</a:Code>
+<a:CreationDate>1574751948</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1574752365</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<c:Key.Columns>
+<o:Column Ref="o51"/>
+</c:Key.Columns>
+</o:Key>
+</c:Keys>
+<c:PrimaryKey>
+<o:Key Ref="o56"/>
+</c:PrimaryKey>
+<c:ClusterObject>
+<o:Key Ref="o56"/>
+</c:ClusterObject>
+</o:Table>
+<o:Table Id="o40">
+<a:ObjectID>162A5D99-DD78-459D-BD8A-167B64C42CF5</a:ObjectID>
+<a:Name>teacher</a:Name>
+<a:Code>teacher</a:Code>
+<a:CreationDate>1574751789</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1576419392</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:TotalSavingCurrency/>
+<c:Columns>
+<o:Column Id="o57">
+<a:ObjectID>6187BA8E-0558-43D9-8A2A-01F217877D1B</a:ObjectID>
+<a:Name>Tid</a:Name>
+<a:Code>Tid</a:Code>
+<a:CreationDate>1574752452</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1574768890</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:DataType>int</a:DataType>
+<a:Column.Mandatory>1</a:Column.Mandatory>
+</o:Column>
+<o:Column Id="o58">
+<a:ObjectID>914CD130-7637-4270-8A41-5CD26D22CE62</a:ObjectID>
+<a:Name>Tname</a:Name>
+<a:Code>Tname</a:Code>
+<a:CreationDate>1574752452</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1574752694</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:DataType>varchar(15)</a:DataType>
+<a:Length>15</a:Length>
+<a:Column.Mandatory>1</a:Column.Mandatory>
+</o:Column>
+<o:Column Id="o59">
+<a:ObjectID>8AF15B84-2442-41E7-9C73-F104BC0134B6</a:ObjectID>
+<a:Name>Tpwd</a:Name>
+<a:Code>Tpwd</a:Code>
+<a:CreationDate>1574752452</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1574752694</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:DataType>varchar(16)</a:DataType>
+<a:Length>16</a:Length>
+<a:Column.Mandatory>1</a:Column.Mandatory>
+</o:Column>
+<o:Column Id="o60">
+<a:ObjectID>1AAFFC1D-10E6-41F6-9EEA-DBD64E60E4D0</a:ObjectID>
+<a:Name>Tmobile</a:Name>
+<a:Code>Tmobile</a:Code>
+<a:CreationDate>1574752452</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1574752694</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:DataType>varchar(11)</a:DataType>
+<a:Length>11</a:Length>
+<a:Column.Mandatory>1</a:Column.Mandatory>
+</o:Column>
+</c:Columns>
+<c:Keys>
+<o:Key Id="o61">
+<a:ObjectID>8D4CDA83-6461-427A-9585-690FB3B53AF2</a:ObjectID>
+<a:Name>Key_1</a:Name>
+<a:Code>Key_1</a:Code>
+<a:CreationDate>1574752452</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1574752567</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<c:Key.Columns>
+<o:Column Ref="o57"/>
+</c:Key.Columns>
+</o:Key>
+</c:Keys>
+<c:PrimaryKey>
+<o:Key Ref="o61"/>
+</c:PrimaryKey>
+<c:ClusterObject>
+<o:Key Ref="o61"/>
+</c:ClusterObject>
+</o:Table>
+<o:Table Id="o42">
+<a:ObjectID>2E5DA547-F210-4EA3-9C73-557BD32155B2</a:ObjectID>
+<a:Name>admin</a:Name>
+<a:Code>admin</a:Code>
+<a:CreationDate>1574751790</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1576419392</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:TotalSavingCurrency/>
+<c:Columns>
+<o:Column Id="o62">
+<a:ObjectID>B17E70D1-9EE3-4A3F-8531-CFC03CADA04B</a:ObjectID>
+<a:Name>Mid</a:Name>
+<a:Code>Mid</a:Code>
+<a:CreationDate>1574752583</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1574768890</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:DataType>int</a:DataType>
+<a:Column.Mandatory>1</a:Column.Mandatory>
+</o:Column>
+<o:Column Id="o63">
+<a:ObjectID>9A979D93-F7BD-4F9B-8F2F-A818B5CA09D2</a:ObjectID>
+<a:Name>Mpwd</a:Name>
+<a:Code>Mpwd</a:Code>
+<a:CreationDate>1574752583</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1574752681</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:DataType>varchar(16)</a:DataType>
+<a:Length>16</a:Length>
+<a:Column.Mandatory>1</a:Column.Mandatory>
+</o:Column>
+<o:Column Id="o64">
+<a:ObjectID>7AF93227-1FB9-4D23-86D4-9D46E9C26C50</a:ObjectID>
+<a:Name>Mname</a:Name>
+<a:Code>Mname</a:Code>
+<a:CreationDate>1574752583</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1574752681</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:DataType>varchar(15)</a:DataType>
+<a:Length>15</a:Length>
+<a:Column.Mandatory>1</a:Column.Mandatory>
+</o:Column>
+<o:Column Id="o65">
+<a:ObjectID>B7F56979-6D91-4945-86C3-365834F8735B</a:ObjectID>
+<a:Name>Mmobile</a:Name>
+<a:Code>Mmobile</a:Code>
+<a:CreationDate>1574752583</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1574752681</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:DataType>varchar(11)</a:DataType>
+<a:Length>11</a:Length>
+<a:Column.Mandatory>1</a:Column.Mandatory>
+</o:Column>
+</c:Columns>
+<c:Keys>
+<o:Key Id="o66">
+<a:ObjectID>1838BE53-54E0-47FE-AC27-F78EA29DC2F7</a:ObjectID>
+<a:Name>Key_1</a:Name>
+<a:Code>Key_1</a:Code>
+<a:CreationDate>1574752583</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1574752681</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<c:Key.Columns>
+<o:Column Ref="o62"/>
+</c:Key.Columns>
+</o:Key>
+</c:Keys>
+<c:PrimaryKey>
+<o:Key Ref="o66"/>
+</c:PrimaryKey>
+<c:ClusterObject>
+<o:Key Ref="o66"/>
+</c:ClusterObject>
+</o:Table>
+<o:Table Id="o43">
+<a:ObjectID>A55B9540-AA80-4CFB-8C82-CFDA2B47B10D</a:ObjectID>
+<a:Name>course</a:Name>
+<a:Code>course</a:Code>
+<a:CreationDate>1574751791</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1576419392</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:TotalSavingCurrency/>
+<c:Columns>
+<o:Column Id="o67">
+<a:ObjectID>47EE811E-9793-4C2A-892E-4AC0CB63CC59</a:ObjectID>
+<a:Name>Cid</a:Name>
+<a:Code>Cid</a:Code>
+<a:CreationDate>1574752700</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1574768890</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:DataType>int</a:DataType>
+<a:Column.Mandatory>1</a:Column.Mandatory>
+</o:Column>
+<o:Column Id="o68">
+<a:ObjectID>F0AD0FC4-9B4F-4783-8AFD-21F2B3A2F53A</a:ObjectID>
+<a:Name>Cname</a:Name>
+<a:Code>Cname</a:Code>
+<a:CreationDate>1574752700</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1574752771</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:DataType>varchar(15)</a:DataType>
+<a:Length>15</a:Length>
+<a:Column.Mandatory>1</a:Column.Mandatory>
+</o:Column>
+</c:Columns>
+<c:Keys>
+<o:Key Id="o69">
+<a:ObjectID>325C0778-3A0E-4A51-A6A4-F85C08E89506</a:ObjectID>
+<a:Name>Key_1</a:Name>
+<a:Code>Key_1</a:Code>
+<a:CreationDate>1574752700</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1574752771</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<c:Key.Columns>
+<o:Column Ref="o67"/>
+</c:Key.Columns>
+</o:Key>
+</c:Keys>
+<c:PrimaryKey>
+<o:Key Ref="o69"/>
+</c:PrimaryKey>
+<c:ClusterObject>
+<o:Key Ref="o69"/>
+</c:ClusterObject>
+</o:Table>
+<o:Table Id="o44">
+<a:ObjectID>2C4283F3-20C9-4AFA-B944-5DB720599E24</a:ObjectID>
+<a:Name>student_course</a:Name>
+<a:Code>student_course</a:Code>
+<a:CreationDate>1574751792</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1574752832</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:TotalSavingCurrency/>
+<c:Columns>
+<o:Column Id="o70">
+<a:ObjectID>5AF3C2FB-4E9A-468B-B8BD-F62C5AD0CD29</a:ObjectID>
+<a:Name>Sid</a:Name>
+<a:Code>Sid</a:Code>
+<a:CreationDate>1574752785</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1574768890</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o71">
+<a:ObjectID>48E0F702-2B3A-4812-9EBC-ACF116913F1E</a:ObjectID>
+<a:Name>Cid</a:Name>
+<a:Code>Cid</a:Code>
+<a:CreationDate>1574752785</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1574768890</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+</c:Columns>
+</o:Table>
+<o:Table Id="o45">
+<a:ObjectID>279A2474-BD72-4C4C-A686-14C51A235867</a:ObjectID>
+<a:Name>question_bank</a:Name>
+<a:Code>question_bank</a:Code>
+<a:CreationDate>1574751793</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1576419392</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:TotalSavingCurrency/>
+<c:Columns>
+<o:Column Id="o72">
+<a:ObjectID>0FB3A7C4-9940-47F5-98E7-F02B1B235BA0</a:ObjectID>
+<a:Name>QBid</a:Name>
+<a:Code>QBid</a:Code>
+<a:CreationDate>1574753484</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1575531284</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:DataType>int</a:DataType>
+<a:Identity>1</a:Identity>
+<a:Column.Mandatory>1</a:Column.Mandatory>
+</o:Column>
+<o:Column Id="o73">
+<a:ObjectID>4B0E56F3-8987-498D-A592-5203CBC36CB8</a:ObjectID>
+<a:Name>question</a:Name>
+<a:Code>question</a:Code>
+<a:CreationDate>1574753484</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1575527570</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:DataType>varchar(255)</a:DataType>
+<a:Length>255</a:Length>
+<a:Column.Mandatory>1</a:Column.Mandatory>
+</o:Column>
+<o:Column Id="o74">
+<a:ObjectID>D7822FC8-AF33-4ED3-9C15-25F5A350F5D6</a:ObjectID>
+<a:Name>answer</a:Name>
+<a:Code>answer</a:Code>
+<a:CreationDate>1574753484</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1575527570</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:DataType>varchar(255)</a:DataType>
+<a:Length>255</a:Length>
+<a:Column.Mandatory>1</a:Column.Mandatory>
+</o:Column>
+<o:Column Id="o75">
+<a:ObjectID>BCDF3B22-A0D4-4E06-B77A-3220E611A6B0</a:ObjectID>
+<a:Name>Cid</a:Name>
+<a:Code>Cid</a:Code>
+<a:CreationDate>1574753484</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1574768890</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:DataType>int</a:DataType>
+<a:Column.Mandatory>1</a:Column.Mandatory>
+</o:Column>
+<o:Column Id="o76">
+<a:ObjectID>C52AE3E0-BA4F-4CE4-96E4-014EE06B8754</a:ObjectID>
+<a:Name>is_single</a:Name>
+<a:Code>is_single</a:Code>
+<a:CreationDate>1574753915</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1574768890</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:DataType>int</a:DataType>
+<a:Column.Mandatory>1</a:Column.Mandatory>
+</o:Column>
+<o:Column Id="o77">
+<a:ObjectID>83F9A8ED-6A8E-44B9-821C-A5694601DD95</a:ObjectID>
+<a:Name>degree</a:Name>
+<a:Code>degree</a:Code>
+<a:CreationDate>1574753915</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1574768890</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:DataType>int</a:DataType>
+<a:Column.Mandatory>1</a:Column.Mandatory>
+</o:Column>
+<o:Column Id="o78">
+<a:ObjectID>CE34C4F3-731E-47DA-9180-687218CF773D</a:ObjectID>
+<a:Name>A</a:Name>
+<a:Code>A</a:Code>
+<a:CreationDate>1575252863</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1575252881</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:DataType>varchar(255)</a:DataType>
+<a:Length>255</a:Length>
+</o:Column>
+<o:Column Id="o79">
+<a:ObjectID>B8E145E0-AE8D-4F4F-A9F0-DAADD64FFACF</a:ObjectID>
+<a:Name>B</a:Name>
+<a:Code>B</a:Code>
+<a:CreationDate>1575252863</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1575252881</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:DataType>varchar(255)</a:DataType>
+<a:Length>255</a:Length>
+</o:Column>
+<o:Column Id="o80">
+<a:ObjectID>8C465342-FC5D-47B8-9554-0AD4D37C41B6</a:ObjectID>
+<a:Name>C</a:Name>
+<a:Code>C</a:Code>
+<a:CreationDate>1575252863</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1575252881</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:DataType>varchar(255)</a:DataType>
+<a:Length>255</a:Length>
+</o:Column>
+<o:Column Id="o81">
+<a:ObjectID>EF1366A4-0D5E-47E6-8598-8188266711F9</a:ObjectID>
+<a:Name>D</a:Name>
+<a:Code>D</a:Code>
+<a:CreationDate>1575252863</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1575252881</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:DataType>varchar(255)</a:DataType>
+<a:Length>255</a:Length>
+</o:Column>
+<o:Column Id="o82">
+<a:ObjectID>FC8726F7-A10B-4DB7-9E8D-14484D1B57BB</a:ObjectID>
+<a:Name>E</a:Name>
+<a:Code>E</a:Code>
+<a:CreationDate>1575252863</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1575252881</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:DataType>varchar(255)</a:DataType>
+<a:Length>255</a:Length>
+</o:Column>
+<o:Column Id="o83">
+<a:ObjectID>72D37B54-137B-4D0A-8EBB-71EF7C469D20</a:ObjectID>
+<a:Name>F</a:Name>
+<a:Code>F</a:Code>
+<a:CreationDate>1575252863</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1575252881</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:DataType>varchar(255)</a:DataType>
+<a:Length>255</a:Length>
+</o:Column>
+<o:Column Id="o84">
+<a:ObjectID>2F75BB03-3D97-4192-BFFA-47D67FED25EB</a:ObjectID>
+<a:Name>G</a:Name>
+<a:Code>G</a:Code>
+<a:CreationDate>1575252863</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1575252881</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:DataType>varchar(255)</a:DataType>
+<a:Length>255</a:Length>
+</o:Column>
+</c:Columns>
+<c:Keys>
+<o:Key Id="o85">
+<a:ObjectID>7C17E78E-648D-427E-9D06-8E2D22E6E609</a:ObjectID>
+<a:Name>Key_1</a:Name>
+<a:Code>Key_1</a:Code>
+<a:CreationDate>1574753484</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1574753847</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<c:Key.Columns>
+<o:Column Ref="o72"/>
+</c:Key.Columns>
+</o:Key>
+</c:Keys>
+<c:PrimaryKey>
+<o:Key Ref="o85"/>
+</c:PrimaryKey>
+<c:ClusterObject>
+<o:Key Ref="o85"/>
+</c:ClusterObject>
+</o:Table>
+<o:Table Id="o46">
+<a:ObjectID>828C3DB1-F96A-44B0-878A-8030619B3CCA</a:ObjectID>
+<a:Name>paper_information</a:Name>
+<a:Code>paper_information</a:Code>
+<a:CreationDate>1574751794</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1576419392</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:TotalSavingCurrency/>
+<c:Columns>
+<o:Column Id="o86">
+<a:ObjectID>B7CF03AE-6323-406B-8C84-787494157594</a:ObjectID>
+<a:Name>PIid</a:Name>
+<a:Code>PIid</a:Code>
+<a:CreationDate>1574753977</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1576419392</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:DataType>int</a:DataType>
+<a:Identity>1</a:Identity>
+<a:Column.Mandatory>1</a:Column.Mandatory>
+<a:ExtendedAttributesText>{9AA965AB-581D-4C13-8165-852F9A00B38F},MSSQLSRV2016,102={9480E6AA-83DD-4AA7-9C91-E48F709C29D9},CharSet,0=
+{B314652C-DD43-4F81-8524-6F97A1BAACBA},Collate,0=
+
+</a:ExtendedAttributesText>
+</o:Column>
+<o:Column Id="o87">
+<a:ObjectID>54E66C5B-E9F9-4080-9DC3-0E5AF613B9F5</a:ObjectID>
+<a:Name>EIid</a:Name>
+<a:Code>EIid</a:Code>
+<a:CreationDate>1575252294</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1575252295</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:DataType>int</a:DataType>
+<a:AutoMigrated>1</a:AutoMigrated>
+</o:Column>
+<o:Column Id="o88">
+<a:ObjectID>7F2795FD-0B4C-4717-A6F2-E4B32A9DF279</a:ObjectID>
+<a:Name>total_score</a:Name>
+<a:Code>total_score</a:Code>
+<a:CreationDate>1574753977</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1574754148</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:DataType>float(4)</a:DataType>
+<a:Length>4</a:Length>
+<a:Column.Mandatory>1</a:Column.Mandatory>
+</o:Column>
+<o:Column Id="o89">
+<a:ObjectID>B554A9DA-B31E-4F0D-B25F-B7401066CAD6</a:ObjectID>
+<a:Name>total_time</a:Name>
+<a:Code>total_time</a:Code>
+<a:CreationDate>1574754150</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1574768890</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:DataType>int</a:DataType>
+<a:Column.Mandatory>1</a:Column.Mandatory>
+</o:Column>
+</c:Columns>
+<c:Keys>
+<o:Key Id="o90">
+<a:ObjectID>C039D957-00CB-49BF-B56C-9A13E71AAC6D</a:ObjectID>
+<a:Name>Key_1</a:Name>
+<a:Code>Key_1</a:Code>
+<a:CreationDate>1574753977</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1574754148</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<c:Key.Columns>
+<o:Column Ref="o86"/>
+</c:Key.Columns>
+</o:Key>
+</c:Keys>
+<c:PrimaryKey>
+<o:Key Ref="o90"/>
+</c:PrimaryKey>
+<c:ClusterObject>
+<o:Key Ref="o90"/>
+</c:ClusterObject>
+</o:Table>
+<o:Table Id="o47">
+<a:ObjectID>2A994954-B032-43A6-88E4-EFED212E84D8</a:ObjectID>
+<a:Name>paper_question</a:Name>
+<a:Code>paper_question</a:Code>
+<a:CreationDate>1574751795</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1575527994</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:TotalSavingCurrency/>
+<c:Columns>
+<o:Column Id="o91">
+<a:ObjectID>4497A6DF-0F09-435D-BA9A-F97BDCC674E5</a:ObjectID>
+<a:Name>PIid</a:Name>
+<a:Code>PIid</a:Code>
+<a:CreationDate>1574754234</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1574768890</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o92">
+<a:ObjectID>BA029D1E-A6B9-4B07-AB9F-707716C07035</a:ObjectID>
+<a:Name>QBid</a:Name>
+<a:Code>QBid</a:Code>
+<a:CreationDate>1574754234</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1574768890</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o93">
+<a:ObjectID>8E2B0D1C-125D-41FA-BD3C-C6E6B7AF436F</a:ObjectID>
+<a:Name>PQ_score</a:Name>
+<a:Code>PQ_score</a:Code>
+<a:CreationDate>1575527954</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1575527994</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:DataType>float(4)</a:DataType>
+<a:Length>4</a:Length>
+</o:Column>
+</c:Columns>
+</o:Table>
+<o:Table Id="o48">
+<a:ObjectID>1B4DDDDA-2725-473D-90EF-52BABD21AE96</a:ObjectID>
+<a:Name>grade</a:Name>
+<a:Code>grade</a:Code>
+<a:CreationDate>1574751796</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1576419392</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:TotalSavingCurrency/>
+<c:Columns>
+<o:Column Id="o94">
+<a:ObjectID>FDB4668D-B732-47DE-9F57-B457ED188BC1</a:ObjectID>
+<a:Name>Gid</a:Name>
+<a:Code>Gid</a:Code>
+<a:CreationDate>1574754374</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1575531307</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:DataType>int</a:DataType>
+<a:Identity>1</a:Identity>
+<a:Column.Mandatory>1</a:Column.Mandatory>
+</o:Column>
+<o:Column Id="o95">
+<a:ObjectID>C8B03F98-8493-48CA-A405-D78117AF4B84</a:ObjectID>
+<a:Name>Sid</a:Name>
+<a:Code>Sid</a:Code>
+<a:CreationDate>1574754374</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1574768890</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:DataType>int</a:DataType>
+<a:Column.Mandatory>1</a:Column.Mandatory>
+</o:Column>
+<o:Column Id="o96">
+<a:ObjectID>B74671DE-C62B-4670-8213-4F643D34AFB2</a:ObjectID>
+<a:Name>PIid</a:Name>
+<a:Code>PIid</a:Code>
+<a:CreationDate>1574754374</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1574768890</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:DataType>int</a:DataType>
+<a:Column.Mandatory>1</a:Column.Mandatory>
+</o:Column>
+<o:Column Id="o97">
+<a:ObjectID>8D76BDE6-1585-45F4-9F53-F7447FBDAA93</a:ObjectID>
+<a:Name>score</a:Name>
+<a:Code>score</a:Code>
+<a:CreationDate>1574754374</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1574754472</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:DataType>float(4)</a:DataType>
+<a:Length>4</a:Length>
+<a:Column.Mandatory>1</a:Column.Mandatory>
+</o:Column>
+<o:Column Id="o98">
+<a:ObjectID>A9D5D674-7052-4A3C-AD2D-5F3434BFF1B9</a:ObjectID>
+<a:Name>use_time</a:Name>
+<a:Code>use_time</a:Code>
+<a:CreationDate>1574754374</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1574768890</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:DataType>int</a:DataType>
+<a:Column.Mandatory>1</a:Column.Mandatory>
+</o:Column>
+</c:Columns>
+<c:Keys>
+<o:Key Id="o99">
+<a:ObjectID>D647EFF0-E257-43EF-A150-68BB41E7C855</a:ObjectID>
+<a:Name>Key_1</a:Name>
+<a:Code>Key_1</a:Code>
+<a:CreationDate>1574754374</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1574754472</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<c:Key.Columns>
+<o:Column Ref="o94"/>
+</c:Key.Columns>
+</o:Key>
+</c:Keys>
+<c:PrimaryKey>
+<o:Key Ref="o99"/>
+</c:PrimaryKey>
+<c:ClusterObject>
+<o:Key Ref="o99"/>
+</c:ClusterObject>
+</o:Table>
+<o:Table Id="o49">
+<a:ObjectID>95212D13-A501-414E-95DA-A7D2C386B22B</a:ObjectID>
+<a:Name>paper_solution</a:Name>
+<a:Code>paper_solution</a:Code>
+<a:CreationDate>1574751797</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1575526663</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:TotalSavingCurrency/>
+<c:Columns>
+<o:Column Id="o100">
+<a:ObjectID>CCFCFF2B-0CF2-4944-BA09-4C4FBB3663F3</a:ObjectID>
+<a:Name>Sid</a:Name>
+<a:Code>Sid</a:Code>
+<a:CreationDate>1574754698</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1574768890</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:DataType>int</a:DataType>
+<a:Column.Mandatory>1</a:Column.Mandatory>
+</o:Column>
+<o:Column Id="o101">
+<a:ObjectID>498B7F28-8EEC-404B-8142-D82E2AA40DD7</a:ObjectID>
+<a:Name>PIid</a:Name>
+<a:Code>PIid</a:Code>
+<a:CreationDate>1574754698</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1574768890</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:DataType>int</a:DataType>
+<a:Column.Mandatory>1</a:Column.Mandatory>
+</o:Column>
+<o:Column Id="o102">
+<a:ObjectID>19A52B2E-17F6-4069-B881-7E49153B8AAD</a:ObjectID>
+<a:Name>solution</a:Name>
+<a:Code>solution</a:Code>
+<a:CreationDate>1574754698</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1575253691</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:DataType>varchar(255)</a:DataType>
+<a:Length>255</a:Length>
+<a:Column.Mandatory>1</a:Column.Mandatory>
+</o:Column>
+<o:Column Id="o103">
+<a:ObjectID>EA8817FE-C988-4ABF-A0F8-ECC6E80B2497</a:ObjectID>
+<a:Name>PSscore</a:Name>
+<a:Code>PSscore</a:Code>
+<a:CreationDate>1574754698</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1574754862</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:DataType>float(4)</a:DataType>
+<a:Length>4</a:Length>
+<a:Column.Mandatory>1</a:Column.Mandatory>
+</o:Column>
+<o:Column Id="o104">
+<a:ObjectID>4E6DDA06-8963-4425-8198-FB64C6FFA015</a:ObjectID>
+<a:Name>QBid</a:Name>
+<a:Code>QBid</a:Code>
+<a:CreationDate>1575525379</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1575525512</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:DataType>int</a:DataType>
+<a:Column.Mandatory>1</a:Column.Mandatory>
+</o:Column>
+</c:Columns>
+</o:Table>
+<o:Table Id="o50">
+<a:ObjectID>4AF625D5-4BF1-4EA4-BA60-3A557A0E876D</a:ObjectID>
+<a:Name>exam_information</a:Name>
+<a:Code>exam_information</a:Code>
+<a:CreationDate>1574751798</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1576419392</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:TotalSavingCurrency/>
+<c:Columns>
+<o:Column Id="o105">
+<a:ObjectID>B57802BF-5D49-4627-962D-05B3BD23BCB3</a:ObjectID>
+<a:Name>EIid</a:Name>
+<a:Code>EIid</a:Code>
+<a:CreationDate>1574755091</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1575531264</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:DataType>int</a:DataType>
+<a:Identity>1</a:Identity>
+<a:Column.Mandatory>1</a:Column.Mandatory>
+</o:Column>
+<o:Column Id="o106">
+<a:ObjectID>E2F8956B-9239-4695-A1C7-45FE473CDC99</a:ObjectID>
+<a:Name>EIname</a:Name>
+<a:Code>EIname</a:Code>
+<a:CreationDate>1574755091</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1574755181</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:DataType>varchar(15)</a:DataType>
+<a:Length>15</a:Length>
+<a:Column.Mandatory>1</a:Column.Mandatory>
+</o:Column>
+<o:Column Id="o107">
+<a:ObjectID>E6B03F5D-D11D-494D-9126-BA51F376D229</a:ObjectID>
+<a:Name>start_time</a:Name>
+<a:Code>start_time</a:Code>
+<a:CreationDate>1574755091</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1574768985</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:DataType>datetime</a:DataType>
+<a:Column.Mandatory>1</a:Column.Mandatory>
+</o:Column>
+<o:Column Id="o108">
+<a:ObjectID>2DDB5F58-243C-435B-B9BC-C2946D24C490</a:ObjectID>
+<a:Name>finish_time</a:Name>
+<a:Code>finish_time</a:Code>
+<a:CreationDate>1574755091</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1574768985</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:DataType>datetime</a:DataType>
+<a:Column.Mandatory>1</a:Column.Mandatory>
+</o:Column>
+<o:Column Id="o109">
+<a:ObjectID>3BD17C62-9B2B-45F3-AE7F-07043BE0B71C</a:ObjectID>
+<a:Name>Cid</a:Name>
+<a:Code>Cid</a:Code>
+<a:CreationDate>1575252305</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1575252338</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:DataType>int</a:DataType>
+<a:Column.Mandatory>1</a:Column.Mandatory>
+</o:Column>
+</c:Columns>
+<c:Keys>
+<o:Key Id="o110">
+<a:ObjectID>220B5427-E35E-42B9-A743-2C1E019714FE</a:ObjectID>
+<a:Name>Key_1</a:Name>
+<a:Code>Key_1</a:Code>
+<a:CreationDate>1574755091</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1574755181</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<c:Key.Columns>
+<o:Column Ref="o105"/>
+</c:Key.Columns>
+</o:Key>
+</c:Keys>
+<c:PrimaryKey>
+<o:Key Ref="o110"/>
+</c:PrimaryKey>
+<c:ClusterObject>
+<o:Key Ref="o110"/>
+</c:ClusterObject>
+</o:Table>
+</c:Tables>
+<c:References>
+<o:Reference Id="o8">
+<a:ObjectID>16BA9ED8-A1BC-4507-9F5F-1E260C5C4CD3</a:ObjectID>
+<a:Name>Reference_1</a:Name>
+<a:Code>Reference_1</a:Code>
+<a:CreationDate>1574753404</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1574753404</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:Cardinality>0..*</a:Cardinality>
+<a:UpdateConstraint>1</a:UpdateConstraint>
+<a:DeleteConstraint>1</a:DeleteConstraint>
+<c:ParentTable>
+<o:Table Ref="o38"/>
+</c:ParentTable>
+<c:ChildTable>
+<o:Table Ref="o44"/>
+</c:ChildTable>
+<c:ParentKey>
+<o:Key Ref="o56"/>
+</c:ParentKey>
+<c:Joins>
+<o:ReferenceJoin Id="o111">
+<a:ObjectID>4C262590-4EFF-4E85-B537-ABAA6A49B517</a:ObjectID>
+<a:CreationDate>1574753404</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1574753404</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<c:Object1>
+<o:Column Ref="o51"/>
+</c:Object1>
+<c:Object2>
+<o:Column Ref="o70"/>
+</c:Object2>
+</o:ReferenceJoin>
+</c:Joins>
+</o:Reference>
+<o:Reference Id="o11">
+<a:ObjectID>4A058446-BE13-47B7-B681-0B50CA369B40</a:ObjectID>
+<a:Name>Reference_2</a:Name>
+<a:Code>Reference_2</a:Code>
+<a:CreationDate>1574753409</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1574753409</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:Cardinality>0..*</a:Cardinality>
+<a:UpdateConstraint>1</a:UpdateConstraint>
+<a:DeleteConstraint>1</a:DeleteConstraint>
+<c:ParentTable>
+<o:Table Ref="o43"/>
+</c:ParentTable>
+<c:ChildTable>
+<o:Table Ref="o44"/>
+</c:ChildTable>
+<c:ParentKey>
+<o:Key Ref="o69"/>
+</c:ParentKey>
+<c:Joins>
+<o:ReferenceJoin Id="o112">
+<a:ObjectID>8F4CDB04-F2EC-4ADD-9152-45F9A7A6F4C4</a:ObjectID>
+<a:CreationDate>1574753409</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1574753409</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<c:Object1>
+<o:Column Ref="o67"/>
+</c:Object1>
+<c:Object2>
+<o:Column Ref="o71"/>
+</c:Object2>
+</o:ReferenceJoin>
+</c:Joins>
+</o:Reference>
+<o:Reference Id="o14">
+<a:ObjectID>59088370-ECE6-413B-8207-5695557366E9</a:ObjectID>
+<a:Name>Reference_3</a:Name>
+<a:Code>Reference_3</a:Code>
+<a:CreationDate>1574753882</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1574753882</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:Cardinality>0..*</a:Cardinality>
+<a:UpdateConstraint>1</a:UpdateConstraint>
+<a:DeleteConstraint>1</a:DeleteConstraint>
+<c:ParentTable>
+<o:Table Ref="o43"/>
+</c:ParentTable>
+<c:ChildTable>
+<o:Table Ref="o45"/>
+</c:ChildTable>
+<c:ParentKey>
+<o:Key Ref="o69"/>
+</c:ParentKey>
+<c:Joins>
+<o:ReferenceJoin Id="o113">
+<a:ObjectID>E6BA4643-F218-42CF-B2AE-08B99F3A6311</a:ObjectID>
+<a:CreationDate>1574753882</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1574753882</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<c:Object1>
+<o:Column Ref="o67"/>
+</c:Object1>
+<c:Object2>
+<o:Column Ref="o75"/>
+</c:Object2>
+</o:ReferenceJoin>
+</c:Joins>
+</o:Reference>
+<o:Reference Id="o18">
+<a:ObjectID>F1CEE36A-EDB0-44C7-A411-03360C6D9C25</a:ObjectID>
+<a:Name>Reference_7</a:Name>
+<a:Code>Reference_7</a:Code>
+<a:CreationDate>1574754346</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1574754346</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:Cardinality>0..*</a:Cardinality>
+<a:UpdateConstraint>1</a:UpdateConstraint>
+<a:DeleteConstraint>1</a:DeleteConstraint>
+<c:ParentTable>
+<o:Table Ref="o46"/>
+</c:ParentTable>
+<c:ChildTable>
+<o:Table Ref="o47"/>
+</c:ChildTable>
+<c:ParentKey>
+<o:Key Ref="o90"/>
+</c:ParentKey>
+<c:Joins>
+<o:ReferenceJoin Id="o114">
+<a:ObjectID>B4D43BAF-F83E-4AA6-BC20-629674B5936F</a:ObjectID>
+<a:CreationDate>1574754346</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1574754346</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<c:Object1>
+<o:Column Ref="o86"/>
+</c:Object1>
+<c:Object2>
+<o:Column Ref="o91"/>
+</c:Object2>
+</o:ReferenceJoin>
+</c:Joins>
+</o:Reference>
+<o:Reference Id="o20">
+<a:ObjectID>1EB2C3F8-5765-44F1-A5B2-282633DCDD4F</a:ObjectID>
+<a:Name>Reference_8</a:Name>
+<a:Code>Reference_8</a:Code>
+<a:CreationDate>1574754360</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1574754360</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:Cardinality>0..*</a:Cardinality>
+<a:UpdateConstraint>1</a:UpdateConstraint>
+<a:DeleteConstraint>1</a:DeleteConstraint>
+<c:ParentTable>
+<o:Table Ref="o45"/>
+</c:ParentTable>
+<c:ChildTable>
+<o:Table Ref="o47"/>
+</c:ChildTable>
+<c:ParentKey>
+<o:Key Ref="o85"/>
+</c:ParentKey>
+<c:Joins>
+<o:ReferenceJoin Id="o115">
+<a:ObjectID>EAD61079-F4D5-4DCA-893C-C765C836DA46</a:ObjectID>
+<a:CreationDate>1574754360</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1574754360</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<c:Object1>
+<o:Column Ref="o72"/>
+</c:Object1>
+<c:Object2>
+<o:Column Ref="o92"/>
+</c:Object2>
+</o:ReferenceJoin>
+</c:Joins>
+</o:Reference>
+<o:Reference Id="o23">
+<a:ObjectID>AACD8406-91B3-4E21-9376-065EBF242951</a:ObjectID>
+<a:Name>Reference_9</a:Name>
+<a:Code>Reference_9</a:Code>
+<a:CreationDate>1574754501</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1574754501</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:Cardinality>0..*</a:Cardinality>
+<a:UpdateConstraint>1</a:UpdateConstraint>
+<a:DeleteConstraint>1</a:DeleteConstraint>
+<c:ParentTable>
+<o:Table Ref="o38"/>
+</c:ParentTable>
+<c:ChildTable>
+<o:Table Ref="o48"/>
+</c:ChildTable>
+<c:ParentKey>
+<o:Key Ref="o56"/>
+</c:ParentKey>
+<c:Joins>
+<o:ReferenceJoin Id="o116">
+<a:ObjectID>BF117BED-6210-4AF5-911C-0961FE0AB2F2</a:ObjectID>
+<a:CreationDate>1574754501</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1574754501</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<c:Object1>
+<o:Column Ref="o51"/>
+</c:Object1>
+<c:Object2>
+<o:Column Ref="o95"/>
+</c:Object2>
+</o:ReferenceJoin>
+</c:Joins>
+</o:Reference>
+<o:Reference Id="o25">
+<a:ObjectID>3F3D5865-9FAE-4DD5-BB9E-10D3FB2191DF</a:ObjectID>
+<a:Name>Reference_10</a:Name>
+<a:Code>Reference_10</a:Code>
+<a:CreationDate>1574754504</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1574754504</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:Cardinality>0..*</a:Cardinality>
+<a:UpdateConstraint>1</a:UpdateConstraint>
+<a:DeleteConstraint>1</a:DeleteConstraint>
+<c:ParentTable>
+<o:Table Ref="o46"/>
+</c:ParentTable>
+<c:ChildTable>
+<o:Table Ref="o48"/>
+</c:ChildTable>
+<c:ParentKey>
+<o:Key Ref="o90"/>
+</c:ParentKey>
+<c:Joins>
+<o:ReferenceJoin Id="o117">
+<a:ObjectID>95537E4A-1603-4F40-A008-7E6598F9BE64</a:ObjectID>
+<a:CreationDate>1574754504</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1574754504</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<c:Object1>
+<o:Column Ref="o86"/>
+</c:Object1>
+<c:Object2>
+<o:Column Ref="o96"/>
+</c:Object2>
+</o:ReferenceJoin>
+</c:Joins>
+</o:Reference>
+<o:Reference Id="o28">
+<a:ObjectID>11D2108C-B477-4DBF-9A94-03966ECF9BB7</a:ObjectID>
+<a:Name>Reference_14</a:Name>
+<a:Code>Reference_14</a:Code>
+<a:CreationDate>1575252294</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1575252295</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:Cardinality>0..*</a:Cardinality>
+<c:ParentTable>
+<o:Table Ref="o50"/>
+</c:ParentTable>
+<c:ChildTable>
+<o:Table Ref="o46"/>
+</c:ChildTable>
+<c:ParentKey>
+<o:Key Ref="o110"/>
+</c:ParentKey>
+<c:Joins>
+<o:ReferenceJoin Id="o118">
+<a:ObjectID>1B35810E-1CA2-4A0D-AA36-DF439125A759</a:ObjectID>
+<a:CreationDate>1575252294</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1575252295</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<c:Object1>
+<o:Column Ref="o105"/>
+</c:Object1>
+<c:Object2>
+<o:Column Ref="o87"/>
+</c:Object2>
+</o:ReferenceJoin>
+</c:Joins>
+</o:Reference>
+<o:Reference Id="o30">
+<a:ObjectID>BB4E4244-13DB-4A33-9DD2-BC12BED1FF45</a:ObjectID>
+<a:Name>Reference_15</a:Name>
+<a:Code>Reference_15</a:Code>
+<a:CreationDate>1575252347</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1575252347</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:Cardinality>0..*</a:Cardinality>
+<c:ParentTable>
+<o:Table Ref="o43"/>
+</c:ParentTable>
+<c:ChildTable>
+<o:Table Ref="o50"/>
+</c:ChildTable>
+<c:ParentKey>
+<o:Key Ref="o69"/>
+</c:ParentKey>
+<c:Joins>
+<o:ReferenceJoin Id="o119">
+<a:ObjectID>ED5C2334-9B88-4650-BFA3-CF2DEFB64B8C</a:ObjectID>
+<a:CreationDate>1575252347</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1575252347</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<c:Object1>
+<o:Column Ref="o67"/>
+</c:Object1>
+<c:Object2>
+<o:Column Ref="o109"/>
+</c:Object2>
+</o:ReferenceJoin>
+</c:Joins>
+</o:Reference>
+<o:Reference Id="o33">
+<a:ObjectID>7EDAAAA5-9B37-4966-8D62-6800D9FBA75A</a:ObjectID>
+<a:Name>Reference_11</a:Name>
+<a:Code>Reference_11</a:Code>
+<a:CreationDate>1575525545</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1575525545</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:Cardinality>0..*</a:Cardinality>
+<c:ParentTable>
+<o:Table Ref="o38"/>
+</c:ParentTable>
+<c:ChildTable>
+<o:Table Ref="o49"/>
+</c:ChildTable>
+<c:ParentKey>
+<o:Key Ref="o56"/>
+</c:ParentKey>
+<c:Joins>
+<o:ReferenceJoin Id="o120">
+<a:ObjectID>A7D9FE87-5290-4415-B828-8C2C64EFAE6B</a:ObjectID>
+<a:CreationDate>1575525545</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1575525545</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<c:Object1>
+<o:Column Ref="o51"/>
+</c:Object1>
+<c:Object2>
+<o:Column Ref="o100"/>
+</c:Object2>
+</o:ReferenceJoin>
+</c:Joins>
+</o:Reference>
+<o:Reference Id="o35">
+<a:ObjectID>3FED74A4-2B40-4C60-8788-CBBFB2760341</a:ObjectID>
+<a:Name>Reference_12</a:Name>
+<a:Code>Reference_12</a:Code>
+<a:CreationDate>1575525560</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1575525560</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:Cardinality>0..*</a:Cardinality>
+<c:ParentTable>
+<o:Table Ref="o46"/>
+</c:ParentTable>
+<c:ChildTable>
+<o:Table Ref="o49"/>
+</c:ChildTable>
+<c:ParentKey>
+<o:Key Ref="o90"/>
+</c:ParentKey>
+<c:Joins>
+<o:ReferenceJoin Id="o121">
+<a:ObjectID>B91E5C15-E499-4A9F-B040-02347BC8982A</a:ObjectID>
+<a:CreationDate>1575525560</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1575525560</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<c:Object1>
+<o:Column Ref="o86"/>
+</c:Object1>
+<c:Object2>
+<o:Column Ref="o101"/>
+</c:Object2>
+</o:ReferenceJoin>
+</c:Joins>
+</o:Reference>
+<o:Reference Id="o37">
+<a:ObjectID>BE0BC309-97B3-4A4B-9C5C-54D56ACEBE71</a:ObjectID>
+<a:Name>Reference_13</a:Name>
+<a:Code>Reference_13</a:Code>
+<a:CreationDate>1575525566</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1575525566</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:Cardinality>0..*</a:Cardinality>
+<c:ParentTable>
+<o:Table Ref="o45"/>
+</c:ParentTable>
+<c:ChildTable>
+<o:Table Ref="o49"/>
+</c:ChildTable>
+<c:ParentKey>
+<o:Key Ref="o85"/>
+</c:ParentKey>
+<c:Joins>
+<o:ReferenceJoin Id="o122">
+<a:ObjectID>8DA8E5D0-E0BB-4BD2-AF7E-654F39E30C1E</a:ObjectID>
+<a:CreationDate>1575525566</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1575525566</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<c:Object1>
+<o:Column Ref="o72"/>
+</c:Object1>
+<c:Object2>
+<o:Column Ref="o104"/>
+</c:Object2>
+</o:ReferenceJoin>
+</c:Joins>
+</o:Reference>
+</c:References>
+<c:DefaultGroups>
+<o:Group Id="o123">
+<a:ObjectID>641B40B3-60B8-4C05-A1EA-F82DB3C09FCE</a:ObjectID>
+<a:Name>PUBLIC</a:Name>
+<a:Code>PUBLIC</a:Code>
+<a:CreationDate>1574751567</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1574751567</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+</o:Group>
+</c:DefaultGroups>
+<c:TargetModels>
+<o:TargetModel Id="o124">
+<a:ObjectID>0CD29C4C-6E55-4E4D-A0BA-E955610072A0</a:ObjectID>
+<a:Name>Microsoft SQL Server 2016</a:Name>
+<a:Code>MSSQLSRV2016</a:Code>
+<a:CreationDate>1576419392</a:CreationDate>
+<a:Creator>asus</a:Creator>
+<a:ModificationDate>1576419392</a:ModificationDate>
+<a:Modifier>asus</a:Modifier>
+<a:TargetModelURL>file:///%[XDB]%/sqlsv2016.xdb</a:TargetModelURL>
+<a:TargetModelID>9AA965AB-581D-4C13-8165-852F9A00B38F</a:TargetModelID>
+<a:TargetModelClassID>4BA9F647-DAB1-11D1-9944-006097355D9B</a:TargetModelClassID>
+<a:TargetModelLastModificationDate>1463734090</a:TargetModelLastModificationDate>
+<c:SessionShortcuts>
+<o:Shortcut Ref="o3"/>
+</c:SessionShortcuts>
+</o:TargetModel>
+</c:TargetModels>
+</o:Model>
+</c:Children>
+</o:RootObject>
+
+</Model>
